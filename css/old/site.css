@@ -1,0 +1,203 @@
+body { background: #fafafa; color: #333; margin: auto; }
+a { color: #000; }
+a:hover { color: #333; }
+em { background: #FFC; }
+blockquote { font-style: italic; text-indent: -0.65em; }
+
+/**** H E A D E R ****/
+header#site {
+	background: #333;
+	color: #eee;
+	padding: 0 0;
+	width: 100%;
+}
+header#site a {
+	color: #fff;
+	text-decoration: none;
+}
+	header#site a:hover { text-decoration: underline; }
+header#site p { margin-top: 18px; }
+header#site nav ul {
+	float: right;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+header#site nav ul li {
+	float: left;
+	padding: 18px 0;
+	margin-left: 20px;
+}
+header#site nav ul li a {
+	color: #ccc;
+}
+	header#site nav ul li.current { background: url(/images/nav-arrow.gif) center 44px no-repeat;  }
+	header#site nav ul li.current a { color: #fff; }
+
+/**** C O N T E N T ****/
+#content { overflow: hidden; padding-top: 18px; }
+
+/**** A S I D E ****/
+aside { color: #666; margin-top: 36px; }
+aside h1, aside h2, aside h3,
+aside h4, aside h5, aside h6 { color: #333; }
+aside ul {
+	left: -10px;
+	list-style-type: none;
+	margin: 10px 0 27px 0;
+	width: 230px;
+}
+aside ul li {
+	border-bottom: 1px solid #ccc;
+	padding: 8px 10px 9px;
+}
+	aside ul li:last-child { border-bottom: none; }
+aside ul li a {
+	color: #666;
+	text-decoration: none;
+}
+	aside ul li a:hover {
+		color: #333;
+		text-decoration: underline;
+	}
+
+/**** H O M E ****/
+#activity-feed a {
+	text-decoration: none;
+}
+#activity-feed a:hover {
+	text-decoration: underline;
+}
+#activity-feed li em {
+	background: #fafafa;
+	color: #999;
+}
+#activity-feed li {
+	padding-bottom: 9px;
+}
+	#activity-feed li.delicious {
+		list-style-image: url(/images/icons/delicious.png);
+	}
+	#activity-feed li.flickr {
+		list-style-image: url(/images/icons/flickr.png);
+	}
+	#activity-feed li.google-reader {
+		list-style-image: url(/images/icons/googlereader.png);
+	}
+	#activity-feed li.lastfm {
+		list-style-image: url(/images/icons/lastfm.png);
+	}
+	#activity-feed li.stumbleupon {
+		list-style-image: url(/images/icons/stumbleupon.png);
+	}
+	#activity-feed li.twitter {
+		list-style-image: url(/images/icons/twitter.png);
+	}
+	#activity-feed li.vimeo-favorites {
+		list-style-image: url(/images/icons/vimeo.png);
+	}
+	#activity-feed li.youtube-favorites {
+		list-style-image: url(/images/icons/youtube.png);
+	}
+footer {
+	border-top: 1px solid #ccc;
+	color: #999;
+	display: block;
+	width: 100%;
+}
+footer a { color: #999; }
+footer a:hover { color: #666; } /* THE HOVER OF THE BEAST */
+.center { text-align: center; }
+/* O H  S O  S O C I A L */
+li.delicious { list-style-image: url(/images/icons/delicious.png); }
+li.facebook { list-style-image: url(/images/icons/facebook.png); }
+li.flickr { list-style-image: url(/images/icons/flickr.png); }
+li.googlereader { list-style-image: url(/images/icons/googlereader.png); }
+li.lastfm { list-style-image: url(/images/icons/lastfm.png); }
+li.linkedin { list-style-image: url(/images/icons/linkedin.png); }
+li.stumbleupon { list-style-image: url(/images/icons/stumbleupon.png); }
+li.twitter { list-style-image: url(/images/icons/twitter.png); }
+li.vimeo { list-style-image: url(/images/icons/vimeo.png); }
+li.ycombinator { list-style-image: url(/images/icons/ycombinator.png); }
+li.youtube { list-style-image: url(/images/icons/youtube.png); }
+
+#ie-warning { background: #c33; color: #fbb; overflow: hidden; }
+#ie-warning h1, #ie-warning h2, #ie-warning h3, #ie-warning h4, #ie-warning h5, #ie-warning h6 
+	{ color: #fff; filter: Shadow(Color=#990000, Direction=180, Strength=1); height: 1.2em; text-shadow: 0px 1px #900; }
+#ie-warning .container_12 { margin: 18px auto 24px; overflow: hidden; }
+#ie-warning a { color: #fbb; }
+#ie-warning a:hover { color: #fff; }
+#ie-warning strong { color: #fff; filter: Shadow(Color=#990000, Direction=180, Strength=1); height: 1.2em; text-shadow: 0px 1px #900; }
+#ie-warning .browser { margin-bottom: 26px; text-align: center; }
+#ie-warning .browser p { font-size: 10px; text-align: center; text-transform: uppercase;}
+#ie-warning .browser a:hover { position: relative; top: -2px; }
+#ie-warning h2 { margin-top: 0; }
+#ie-warning p:first-child { margin: 18px 0 0; }
+#ie-warning hr { border-top: 1px solid #e55; border-bottom: 1px solid #900; border-right: none; border-left: none; height: 0px; margin: 18px 0 14px; }
+#ie-warning .upgrade { margin-bottom: 0; }
+#ie-warning #matter-to-you { border-right: 1px solid #900; margin-right: 0; padding-right: 9px; }
+#ie-warning #matter-to-me { border-left: 1px solid #e55; margin-left: 0; padding-left: 9px; }
+
+.speech-bubble {
+	left: -10px;
+	margin-bottom: 16px;
+	margin-right: -10px;
+	position: relative;
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+}
+.speech-bubble .text {
+	background: #a4fe54;
+	background-image: -moz-linear-gradient(top, #a4fe54, #cdfa93);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #a4fe54),color-stop(1, #cdfa93));
+	-moz-border-radius: 5px; /* FF1+ */
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	-webkit-border-bottom-left-radius: 0px;
+	border-radius: 5px;
+	border-bottom-left-radius: 0px;
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0, 0.1);
+	-moz-box-shadow: 0 5px 5px rgba(0,0,0, 0.1);
+	box-shadow: 0 5px 5px rgba(0,0,0, 0.1);
+	padding: 64px 0 1px 10px;
+}
+.speech-bubble .tail img {
+	position: relative;
+	top: -1px;
+}
+
+.triangle-right {
+	background: #075698;
+	background:-webkit-gradient(linear, left top, left bottom, from(#2e88c4), to(#075698));
+	background:-moz-linear-gradient(top, #2e88c4, #075698);
+	background:-o-linear-gradient(top, #2e88c4, #075698);
+	background:linear-gradient(top, #2e88c4, #075698);
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-radius:10px;
+	border-bottom-left-radius: 0px;
+	color: #fff;
+	padding: 24px 10px 10px;
+	position: relative;
+}
+
+/* creates triangle */
+.triangle-right:after {
+	border-width: 20px 20px 20px 0; /* vary these values to change the angle of the vertex */
+	border-style: solid;
+	border-color: #075698 transparent transparent;
+	bottom: -40px;
+	content: "\00a0";
+	display: block;
+	left: 0px;
+	height: 0;
+	position: absolute;
+	width: 0;
+}
+h1.triangle-right {
+	left: -10px;
+	margin-bottom: 24px;
+	position: relative;
+}

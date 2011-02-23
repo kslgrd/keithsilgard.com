@@ -1,0 +1,164 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.center {
+	/* background: url(/images/grid/1px.jpg) repeat-y; */
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	width: 980px;
+}
+
+/*  H E A D E R  */
+#header {
+	overflow: hidden;
+	padding: 20px 20px 0;
+}
+
+#header p {
+	
+}
+
+/*  N A V  */
+#nav {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li a {
+	display: block;
+	margin-left: 10px;
+	padding: 0 10px 7px;
+}
+
+#nav li a:last-child {
+	padding-right: 0px;
+}
+
+/*  C O N T E N T  */ 
+#content {
+	float: left;
+	padding-top: 20px;
+	width: 760px;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+	margin: 0 120px 5px 230px;
+	max-width: 430px;
+	padding: 5px 0;
+}
+
+#content p {
+	margin: 0 120px 20px 230px;
+	max-width: 430px;
+}
+
+#content blockquote {
+	margin: 0 120px 20px 230px;
+	max-width: 430px;
+}
+
+#content code {
+	margin: 0 120px 20px 230px;
+	max-width: 430px;
+	overflow-x: scroll;
+}
+
+#content code ul, #content code ol {
+	margin: auto;
+}
+
+#content ul, #content ol {
+	margin: 0 120px 20px 260px;
+	max-width: 400px;
+	padding: 0px;
+}
+
+#content li {
+	margin-bottom: 0.5em;
+}
+
+#content .left {
+	float: left; 
+	margin-right: 20px;
+}
+#content .right {
+	float: right; 
+	margin-left: 20px;
+}
+#content .right.inset {
+	margin: 0 120px 0 20px; /* img floated right within text */
+} 
+#content .left.inset {
+	margin-left: 230px; /* img floated left within text */
+} 
+
+#content .pic p, #content .caption {
+	margin: 4px 0 10px;
+}
+
+/*  S I D E B A R  */
+#sidebar {
+	float: left;
+	padding-top: 20px;
+	width: 220px;
+}
+#sidebar h1, #sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6 {
+	margin: 0 10px 5px 20px;
+	max-width: 190px;
+	padding: 5px 0;
+}
+#sidebar p {
+	margin: 0 10px 20px 20px;
+	max-width: 190px;
+}
+
+#sidebar blockquote {
+	margin: 0 20px 20px 10px;
+	max-width: 190px;
+}
+
+#sidebar ul, #sidebar ol {
+	list-style-type: none;
+	margin: 0 0 20px;
+	max-width: 220px;
+	padding: 0;
+}
+
+#sidebar li {
+	border-top: 1px solid #CCC;
+	margin-left: 10px;
+	padding: 8px 10px 10px 10px;
+}
+#sidebar li:last-child {
+	border-bottom: 1px solid #CCC;
+}
+
+/* U T I L I T Y  C L A S S E S  */
+
+.one {width: 100px;}
+.two {width: 210px;}
+.three {width: 320px;}
+.four {width: 430px;}
+.five {width: 540px;}
+.six {width: 650px;}
+.seven {width: 760px;}
+
+.frame {
+	border: 1px solid #999;
+}
+.solo {
+	margin-bottom: 20px;
+}
+
+/*  H O M E  */
+ul.activity-feed li {
+	padding-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+/* ME! */
+Keith Silgard
+Contact: ksilgard [at] gmail.com
+Twitter: @ironkeith
+From: Edmonton, Alberta, Canada
+
+/* SITE */
+Last update: {{ site.time | date_to_xmlschema }}
+Language: English
+Doctype: HTML5 with CSS3
+Tools: SASS, Jekyll, Markdown
+Frameworks: HTML5 Reset, HTML5 Boilerplate, Baseline CSS
+IDE: Textmate

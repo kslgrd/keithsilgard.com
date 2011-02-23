@@ -1,0 +1,153 @@
+form { overflow: auto; }
+fieldset,
+legend { padding-bottom: 18px; }
+label { padding-top: 5px; margin: 0 0 11px 18px; float: left; display: block; }
+label.first { margin-left: 0; }
+input[type="text"],
+input[type="password"],
+input[type="select"],
+input[type="search"] { border: solid 1px #ccc; height: 16px; padding: 1px 2px; display: block;}
+input[type="file"] { border: none; }
+textarea { border: solid 1px #ccc; height: 16px; padding: 0 2px; display: block; line-height: 18px; }
+select { display: block; margin-top: 2px; }
+input[type="submit"],
+input[type="reset"],
+input[type="button"] { margin-left: 12px; }
+
+/** 960.gs widths **/
+label.grid_1,
+label.grid_2,
+label.grid_3,
+label.grid_4,
+label.grid_5,
+label.grid_6,
+label.grid_7,
+label.grid_8,
+label.grid_9,
+label.grid_10,
+label.grid_11,
+label.grid_12,
+label.grid_13,
+label.grid_14,
+label.grid_15,
+label.grid_16 { float: left; }
+
+/* form layouts, minus 6px for input margin and padding */
+.container_12 label.grid_3 input,
+.container_12 label.grid_3 textarea,
+.container_16 label.grid_4 input,
+.container_16 label.grid_4 textarea { width: 214px; }
+
+.container_12 label.grid_6 input,
+.container_12 label.grid_6 textarea,
+.container_16 label.grid_6 input,
+.container_16 label.grid_8 textarea { width: 454px; }
+
+.container_12 label.grid_9 input,
+.container_12 label.grid_9 textarea,
+.container_16 label.grid_12 input,
+.container_16 label.grid_12 textarea { width: 694px; }
+
+.container_12 label.grid_12 input,
+.container_12 label.grid_12 textarea,
+.container_16 label.grid_16 input,
+.container_16 label.grid_16 textarea { width: 934px; }
+
+.container_12 label.grid_1 input,
+.container_12 label.grid_1 textarea { width: 54px; }
+
+.container_12 label.grid_2 input,
+.container_12 label.grid_2 textarea { width: 134px; }
+
+.container_12 label.grid_4 input,
+.container_12 label.grid_4 textarea { width: 294px; }
+
+.container_12 label.grid_5 input,
+.container_12 label.grid_5 textarea  { width: 374px; }
+
+.container_12 label.grid_7 input,
+.container_12 label.grid_7 textarea { width: 534px; }
+
+.container_12 label.grid_8 input,
+.container_12 label.grid_8 textarea { width: 614px; }
+
+.container_12 label.grid_10 input,
+.container_12 label.grid_10 textarea { width: 774px; }
+
+.container_12 label.grid_11 input,
+.container_12 label.grid_11 textarea { width: 854px; }
+
+.container_16 label.grid_1 input,
+.container_16 label.grid_1 textarea { width: 34px; }
+
+.container_16 label.grid_2 input,
+.container_16 label.grid_2 textarea { width: 94px; }
+
+.container_16 label.grid_3 input,
+.container_16 label.grid_3 textarea { width: 154px; }
+
+.container_16 label.grid_5 input,
+.container_16 label.grid_5 textarea { width: 280px; }
+
+.container_16 label.grid_6 input,
+.container_16 label.grid_6 textarea { width: 340px; }
+
+.container_16 label.grid_7 input,
+.container_16 label.grid_7 textarea { width: 394px; }
+
+.container_16 label.grid_9 input,
+.container_16 label.grid_9 textarea { width: 514px; }
+
+.container_16 label.grid_10 input,
+.container_16 label.grid_10 textarea { width: 574px; }
+
+.container_16 label.grid_11 input,
+.container_16 label.grid_11 textarea { width: 634px; }
+
+.container_16 label.grid_13 input,
+.container_16 label.grid_13 textarea { width: 754px; }
+
+.container_16 label.grid_14 input,
+.container_16 label.grid_14 textarea { width: 814px; }
+
+.container_16 label.grid_15 input,
+.container_16 label.grid_15 textarea { width: 874px; }
+
+label.grid_1 select,
+label.grid_2 select,
+label.grid_3 select,
+label.grid_4 select,
+label.grid_5 select,
+label.grid_6 select,
+label.grid_7 select,
+label.grid_8 select,
+label.grid_9 select,
+label.grid_10 select,
+label.grid_11 select,
+label.grid_12 select,
+label.grid_13 select,
+label.grid_14 select,
+label.grid_15 select,
+label.grid_16 select { width: 100%; }
+
+.container_12 label.singleline, 
+.container_16 label.singleline { height: 32px; margin-bottom: 0; }
+.container_12 label.singleline input,
+.container_16 label.singleline input  { width: auto; display: inline; margin-left: 10px; margin-top: 0; }
+
+label.multilinex2 textarea { height: 36px; }
+label.multilinex3 textarea { height: 54px; }
+label.multilinex4 textarea { height: 72px; }
+label.multilinex5 textarea { height: 90px; }
+label.multilinex6 textarea { height: 108px; }
+
+.width1 .radio-text { width: 228px; }
+.width2	.radio-text { width: 480px; }
+.width3	.radio-text { width: 732px; }
+.width4	.radio-text { width: 984px; }
+
+.radio { margin: 6px 0 0 1px; float: left; display: block; clear: left; }
+.radio-label { margin: 0 0 13px 0; padding-left: 18px; float: none; display: block; clear: none; }
+
+.checkbox { margin: 6px 0 0 1px; float: left; display: block; clear: left; }
+.checkbox-label { margin: 0 0 13px 0; padding-left: 18px; float: none; display: block; clear: none; }

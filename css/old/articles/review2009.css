@@ -1,0 +1,206 @@
+.container_16 { width: 961px; }
+body { background: #000; text-shadow: rgba(0,0,0,0.01) 0 0 0; }
+header#site { background: #000; border-bottom: 3px solid #fff; }
+header.main { border-bottom: 3px double #fff; margin-bottom: 36px; text-align: center; }
+header.main h1 { text-align: center; }
+#content { 
+	background: #000 url(/images/articles/review2009/bg-sm.jpg) no-repeat top center; 
+	color:#fff; 
+	font: 1em Georgia, Times, "Times New Roman", Serif; 
+}
+
+#ie-warning { border-bottom: 3px solid #fff; }
+em { background: inherit;}
+a { color: #fff; }
+	a:hover { text-decoration: underline; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+
+hr { border: 1px solid #fff; margin: 18px 0 36px; }
+
+.subtext { color:#999; font-family: Helvetica, Arial, Sans; }
+.sans { font-family: Helvetica, Arial, Sans; }
+.serif { font-family: Georgia, Times, "Times New Roman", Serif; }
+
+.inactive { opacity: 0.5; }
+
+.hidden { display: none; }
+
+.small-medium { font-size: 1.5em; }
+.medium { font-size: 2em; }
+.big { font-size: 3em; }
+.biggest { font-size: 6em; }
+
+.less { color: #fcc; }
+.more { color: #cfc; }
+
+.blue { color: #b7ffff; }
+
+.center { text-align: center; }
+.right { text-align: right; }
+
+.section { 
+	border-right: 1px solid #fff;
+	margin-bottom: 18px; 
+	overflow: hidden;
+}
+.section-header { 
+	border-bottom: 1px solid #fff;  
+	font-family: Helvetica, Arial, Sans;
+	margin-bottom: 27px;
+	margin-right: 1px; 
+	padding-right: 9px; 
+	width: 939px; 
+}
+.section-header h1 { text-align: right; }
+
+
+.list { list-style-type: none; margin:0; padding:0; }
+.list li { 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#000)); 
+	background: -moz-linear-gradient(0% 100% 90deg, #222, #000);
+	padding: 2px 10px 3px;
+	position: relative;
+}
+	.list li:hover { 
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#000)); 
+		background: -moz-linear-gradient(0% 100% 90deg, #333, #000);
+	}
+.list li meter {
+	background: #b7ffff;
+	bottom: 0px;
+	display: block;
+	height: 1px;
+	left: 0px;
+	opacity: .8;
+	position: absolute;
+}
+.list em { opacity: 0.5; }
+
+
+.button-list { list-style-type: none; margin: 18px 0 36px 0;  padding:0; }
+.button-list li { display: inline; margin-right: 10px; }
+.button, button {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#111)); 
+	background: -moz-linear-gradient(0% 100% 90deg, #333, #111);
+	border: 1px solid #444;
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;
+	color: #ccc;
+	font-family: Helvetica, Arial, Sans;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	text-shadow: 0px -1px 1px #000;
+}
+	button:hover, .button:hover { 
+		color:#eee;
+		-moz-box-shadow: 0px 0px 3px #888;
+		-webkit-box-shadow: 0px 0px 3px #888;
+		box-shadow: 3px 3px 3px #666;
+		text-decoration: none;
+	}
+	button:active, .button:active { position: relative; top: 1px; }
+button time, .button time { color:#999; font-style: italic; }
+
+
+.tab-list { 
+	border-bottom: 1px solid #fff; 
+	display: inline-block;
+	list-style-type: none; 
+	margin: 18px 0; 
+	padding: 0 10px; 
+	width: 920px;
+}
+.tab-list li { display: inline; overflow: visible; }
+.tab-list li a {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#111)); 
+	background: -moz-linear-gradient(0% 100% 90deg, #333, #111);
+	border: 1px solid #444;
+	-moz-border-radius-topleft: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	display: block;
+	color: #ccc;
+	float: left;
+	font-family: Helvetica, Arial, Sans;
+	margin-right: 2px;
+	padding: 0.5em 1em 0.3em;
+	text-decoration: none;
+	text-shadow: 0px -1px 1px #000;
+}
+	.tab-list li a:hover { 
+		color:#fff; 
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444), to(#111)); 
+		background: -moz-linear-gradient(0% 100% 90deg, #444, #111);
+	}
+	.tab-list li a.active { 
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#000)); 
+		background: -moz-linear-gradient(0% 100% 90deg, #000, #333);
+		border: 1px solid #fff; 
+		border-bottom: 1px solid #000; 
+		position: relative; 
+		top: 1px; 
+		z-index: 3; 
+	}
+		.tab-list li a.active:hover {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444), to(#000)); 
+			background: -moz-linear-gradient(0% 100% 90deg, #000, #444);
+		}
+
+.gallery { list-style-type: none; margin: 0; padding: 0; }
+.gallery li { float: left; margin: 0 20px 20px 0; }
+.row-1 li:nth-child(1n) { margin-right: 0; }
+.row-2 li:nth-child(2n) { margin-right: 0; }
+.row-3 li:nth-child(3n) { margin-right: 0; }
+.row-4 li:nth-child(4n) { margin-right: 0; }
+.row-8 li:nth-child(8n) { margin-right: 0; }
+
+.thumbnails img { margin: 0 17px 10px 0; }
+	.thumbnails img:nth-of-type(4n) { margin-right: 0; }
+
+
+/* I N  M U S I C */
+#music.section { border-color: #b7ffff; }
+#music .section-header { color: #b7ffff; border-color:#b7ffff; }
+#music a:hover { color: #b7ffff; }
+#top-song-meta p { padding: 0 10px; }
+#top-artists { overflow: visible; }
+#top-songs { overflow: visible; }
+#top-songs li:hover { cursor: pointer; }
+#music-totals { font-size: 2em; margin: 18px 0; }
+#music-totals div { 
+	border-top: 1px solid #fff; 
+	border-bottom: 1px solid #fff; 
+	margin-bottom: 18px; 
+	padding: 18px 0 18px; 
+	text-align: center; 
+}
+#music-totals p { color: #999; text-align: center; }
+#music-totals p a {	color: #999; }
+	#music-totals p a:hover {	color: #fff; }
+
+#concerts { overflow: hidden; text-align: center; }
+
+/* I N  T R A V E L */
+#travel.section { border-color: #ffd99d; }
+#travel .section-header { color: #ffd99d; border-color:#ffd99d; }
+#baseball { 
+	background: url(/images/articles/review2009/baseball-game.jpg) no-repeat; 
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	min-height: 260px; 
+}
+
+#baseball p { margin-top: 18px; }
+
+/* O N L I N E */
+#online.section { border-color:#f9f; }
+#online .section-header { color: #f9f; border-color:#f9f; }
+#online a:hover { color: #f9f; }
+#youtube { border-top: 1px solid #fff; border-bottom: 1px solid #fff; margin: 18px 0 18px; padding: 16px 0; }
+
+/* P I C T U R E S */
+#pictures.section { border-color:#aaf; }
+#pictures .section-header { color: #aaf; border-color:#aaf; }
+#pictures a:hover { color: #aaf; }

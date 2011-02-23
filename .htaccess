@@ -1,0 +1,7 @@
+RewriteEngine On
+
+#www is for the weak.
+RewriteCond %{HTTP_HOST} ^www.keithsilgard\.com$ [NC]
+RewriteRule ^(.*)$ http://keithsilgard.com/$1 [R=301,L]
+
+#redirect 301 "/about.htm" http://www.whitespark.ca/about-us
