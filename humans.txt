@@ -11,6 +11,6 @@ From: Edmonton, Alberta, Canada
 Last update: {{ site.time | date_to_xmlschema }}
 Language: English
 Doctype: HTML5 with CSS3
-Tools: SASS, Jekyll, Markdown
-Frameworks: HTML5 Reset, HTML5 Boilerplate, Baseline CSS
+Tools: SASS, Jekyll, Markdown, Pygments
+Frameworks: HTML5 Reset, HTML5 Boilerplate, 320 & Up
 IDE: Textmate
