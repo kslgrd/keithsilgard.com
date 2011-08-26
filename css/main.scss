@@ -1,2 +1,42 @@
 @import 'normalize.scss';
 @import 'functions.scss';
+
+// colors, constants, and other jazz:
+
+/**
+ * Site base.
+ * Just a really simple setup that will create a base for a 320&up style mobile layout.
+ */
+
+// layout junk:
+
+.container {
+	width: 100%;
+}
+
+// I’m not going to use this explicitly, but rather, extend them for a nice, semantic setup:
+
+.grid_item {
+	float: left;
+	margin-left: 5%;
+}
+
+// only two cols at this resolution:
+.grid_1 { @extend .grid_item; 	width: 42.5%; }
+.grid_2 { @extend .grid_item; 	width: 90%; }
+
+
+
+#home {
+	
+	.content {
+		@extend .grid_2;
+	}
+	
+	#intro {
+		@extends .container;
+
+	}
+	
+	
+}

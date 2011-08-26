@@ -55,16 +55,6 @@ body, button, input, select, textarea {
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
-::-moz-selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
-
 /* =============================================================================
    Links
    ========================================================================== */
@@ -295,55 +285,6 @@ table {
 td {
   vertical-align: top; }
 
-/* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
-/* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
-   ========================================================================== */
-/* For image replacement */
-.ir {
-  display: block;
-  border: 0;
-  text-indent: -999em;
-  overflow: hidden;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr; }
-
-.ir br {
-  display: none; }
-
-/* Hide from both screenreaders and browsers: h5bp.com/u */
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible {
-  visibility: hidden; }
-
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after {
   content: "";
@@ -355,15 +296,6 @@ td {
 .clearfix {
   zoom: 1; }
 
-/* ==|== media queries ======================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */ }
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */ }
 /* ==|== print styles =======================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -413,3 +345,22 @@ td {
 
   h2, h3 {
     page-break-after: avoid; } }
+/**
+ * Site base.
+ * Just a really simple setup that will create a base for a 320&up style mobile layout.
+ */
+.container {
+  width: 100%; }
+
+.grid_item, .grid_1, .grid_2, #home .content {
+  float: left;
+  margin-left: 5%; }
+
+.grid_1 {
+  width: 42.5%; }
+
+.grid_2, #home .content {
+  width: 90%; }
+
+#home #intro {
+@extends .container; }
