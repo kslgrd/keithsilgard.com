@@ -1,0 +1,14 @@
+// ** 
+// * Drop a shadow like it's hot.
+// *
+// * @param $horz_offset
+// * @param $vert_offset
+// * @param $blur
+// * @param $color
+// *
+// */
+@mixin dropshadow($horz_offset, $vert_offset, $blur, $color) {
+-webkit-box-shadow: $horz_offset $vert_offset $blur $color;
+   -moz-box-shadow: $horz_offset $vert_offset $blur $color;
+		box-shadow: $horz_offset $vert_offset $blur $color;
+}

@@ -345,22 +345,51 @@ td {
 
   h2, h3 {
     page-break-after: avoid; } }
-/**
- * Site base.
- * Just a really simple setup that will create a base for a 320&up style mobile layout.
- */
-.container {
-  width: 100%; }
+h1, h2, h3 {
+  font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, Georgia;
+  margin: 30px 0 20px; }
 
-.grid_item, .grid_1, .grid_2, #home .content {
-  float: left;
-  margin-left: 5%; }
+h4, h5, h6 {
+  font-family: ff-meta-serif-sc-web-pro-1, ff-meta-serif-sc-web-pro-2, Georgia;
+  margin: 20px 0;
+  text-transform: lowercase; }
 
-.grid_1 {
-  width: 42.5%; }
+h1 {
+  font-size: 60px;
+  line-height: 60px; }
 
-.grid_2, #home .content {
-  width: 90%; }
+h2 {
+  font-size: 48px;
+  line-height: 60px; }
 
-#home #intro {
-@extends .container; }
+h3 {
+  font-size: 36px;
+  line-height: 48px; }
+
+h4 {
+  font-size: 24px;
+  line-height: 30px; }
+
+h5 {
+  font-size: 21px; }
+
+h6 {
+  font-size: 18px; }
+
+body, button, input, select, textarea {
+  font: 16px/21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+
+ol, ul {
+  padding-left: 20px; }
+
+blockquote {
+  border-left: 1px solid #999;
+  font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, Georgia;
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 20px; }
+  blockquote cite {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-style: normal; }
+    blockquote cite:before {
+      content: '— '; }
