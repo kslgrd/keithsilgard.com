@@ -379,6 +379,10 @@ h6 {
 body, button, input, select, textarea {
   font: 16px/21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
 
+p {
+  -webkit-hyphens: auto;
+  text-align: justify; }
+
 ol, ul {
   padding-left: 20px; }
 
@@ -393,3 +397,7 @@ blockquote {
     font-style: normal; }
     blockquote cite:before {
       content: '— '; }
+
+.content {
+  width: 500px;
+  margin: 0 auto; }

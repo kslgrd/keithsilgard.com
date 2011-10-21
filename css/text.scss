@@ -17,6 +17,8 @@ h6 { font-size: 18px; }
 
 body, button, input, select, textarea { font: 16px/21px $sans_serif; }
 
+p { -webkit-hyphens: auto; text-align: justify; }
+
 ol, ul { padding-left: 20px; }
 blockquote { 
 	border-left: 1px solid #999; 
