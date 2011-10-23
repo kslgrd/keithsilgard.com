@@ -1,0 +1,81 @@
+// Base (super tiny narrow browsers) // 
+
+.container { width: 100% }
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12,
+.col_quarter, .col_third, .col_half, .col_two_thirds, .col_three_quarters, .col_full { margin: 0 2%; width: 96%; } 
+
+.col_quarter 		{ @extend .col_3; } 
+.col_third 			{ @extend .col_4; } 
+.col_half			{ @extend .col_6; } 
+.col_two_thirds		{ @extend .col_8; } 
+.col_three_quarters	{ @extend .col_9; } 
+.col_full			{ @extend .col_12; } 
+
+/**
+ * iPhone Landscape
+ * - 2 cols
+ * flexible to fill the screen
+ */
+@media only screen and (min-width: 480px) {
+
+}
+
+/**
+ * iPad Portrait
+ * - full 12 cols
+ * - flexible so they always fill the screen
+ */
+@media only screen and (min-width: 768px) {
+	// gutters: 20px -> 1.953125%
+	// cols: 44px -> 8.333333333%
+	
+	.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, 
+	.col_7, .col_8, .col_9, .col_10, .col_11, .col_12 { margin: 0 1.302083333%; }
+	.col_1  { width: 5.729166667%; } 	//44px
+	.col_2  { width: 14.0625%; } 		//108px
+	.col_3  { width: 22.395833333%; } 	//172px
+	.col_4  { width: 30.729166667%; } 	//236px
+	.col_5  { width: 39.0625%; } 		//300px
+	.col_6  { width: 47.395833333%; } 	//364px
+	.col_7  { width: 55.729166667%; } 	//428px
+	.col_8  { width: 64.0625%; } 		//492px
+	.col_9  { width: 72.395833333%; } 	//556px
+	.col_10 { width: 80.729166667%; } 	//620px
+	.col_11 { width: 89.0625%; } 		//684px
+	.col_12 { width: 97.395833333%; } 	//748px
+}
+
+/** 
+ * iPad Landscape
+ * - fixed from here on up
+ */
+@media only screen and (min-width: 960px) {
+	// gutters: 20px
+	// cols: 60px
+	
+	.container { width: 960px; }
+	
+	.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, 
+	.col_7, .col_8, .col_9, .col_10, .col_11, .col_12 { margin: 0 10px; }
+	
+	.col_1  { width: 60px; }
+	.col_2  { width: 140px; }
+	.col_3  { width: 220px; }
+	.col_4  { width: 300px; }
+	.col_5  { width: 380px; }
+	.col_6  { width: 460px; }
+	.col_7  { width: 540px; }
+	.col_8  { width: 620px; }
+	.col_9  { width: 700px; }
+	.col_10 { width: 780px; }
+	.col_11 { width: 860px; }
+	.col_12 { width: 940px; }
+	
+
+}
+
+// Retina Display
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	
+}

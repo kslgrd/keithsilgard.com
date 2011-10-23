@@ -1,5 +1,15 @@
+// Variable Declarations //
+
+$serif: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
+$small_caps: ff-meta-serif-sc-web-pro-1,ff-meta-serif-sc-web-pro-2, serif;
+$sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+
 @import 'normalize.scss';
 @import 'functions.scss';
-@import 'text.scss';
+@import 'text.scss'; 
+@import 'layout.scss';
 
-.content { width: 500px; margin: 0 auto; }
+#home { @extend .container; } 
+.content { 
+	@extend .col_half;
+}
