@@ -48,7 +48,7 @@ body {
 
 body, button, input, select, textarea {
   font-family: sans-serif;
-  color: #222; }
+  color: #222222; }
 
 /* 
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -59,13 +59,13 @@ body, button, input, select, textarea {
    Links
    ========================================================================== */
 a {
-  color: #00e; }
+  color: #c23e00; }
 
 a:visited {
-  color: #551a8b; }
+  color: #222222; }
 
 a:hover {
-  color: #06e; }
+  color: #7d2a00; }
 
 a:focus {
   outline: thin dotted; }
@@ -285,17 +285,6 @@ table {
 td {
   vertical-align: top; }
 
-/* Contain floats: h5bp.com/q */
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  zoom: 1; }
-
 /* ==|== print styles =======================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -401,17 +390,67 @@ blockquote {
     blockquote cite:before {
       content: '— '; }
 
-.container, #home {
+/**
+ * Base (super tiny narrow browsers)
+ * - 1 col
+ * - full width
+ */
+.container {
   width: 100%; }
 
-.col_1, .col_2, .col_3, .col_quarter, .col_4, .col_third, .col_5, .col_6, .col_half, .content, .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full,
-.col_quarter, .col_third, .col_half, .content, .col_two_thirds, .col_three_quarters, .col_full {
+.col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main, .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full,
+.col_quarter, .col_third, .col_half, .main, .col_two_thirds, .col_three_quarters, .col_full {
+  float: left;
   margin: 0 2%;
   width: 96%; }
 
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11 {
+  position: relative; }
+
+.alpha {
+  margin-left: 0; }
+
+.omega {
+  margin-right: 0; }
+
+.clear {
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0; }
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0; }
+
+.clearfix:after,
+.container:after {
+  clear: both; }
+
 /**
  * iPhone Landscape
- * - 2 cols
+ * - 2 cols?
  * flexible to fill the screen
  */
 /**
@@ -420,7 +459,7 @@ blockquote {
  * - flexible so they always fill the screen
  */
 @media only screen and (min-width: 768px) {
-  .col_1, .col_2, .col_3, .col_quarter, .col_4, .col_third, .col_5, .col_6, .col_half, .content,
+  .col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main,
   .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
     margin: 0 1.302083333%; }
 
@@ -430,7 +469,7 @@ blockquote {
   .col_2 {
     width: 14.0625%; }
 
-  .col_3, .col_quarter {
+  .col_3, .col_quarter, #site-sitebar {
     width: 22.395833333%; }
 
   .col_4, .col_third {
@@ -439,7 +478,7 @@ blockquote {
   .col_5 {
     width: 39.0625%; }
 
-  .col_6, .col_half, .content {
+  .col_6, .col_half, .main {
     width: 47.395833333%; }
 
   .col_7 {
@@ -458,16 +497,82 @@ blockquote {
     width: 89.0625%; }
 
   .col_12, .col_full {
-    width: 97.395833333%; } }
+    width: 97.395833333%; }
+
+  .push_1 {
+    left: 8.333333333%; }
+
+  .push_2 {
+    left: 16.666666667%; }
+
+  .push_3 {
+    left: 25%; }
+
+  .push_4 {
+    left: 33.333333333%; }
+
+  .push_5 {
+    left: 41.666666667%; }
+
+  .push_6 {
+    left: 50%; }
+
+  .push_7 {
+    left: 58.333333333%; }
+
+  .push_8 {
+    left: 66.666666667%; }
+
+  .push_9 {
+    left: 75%; }
+
+  .push_10 {
+    left: 83.333333333%; }
+
+  .push_11 {
+    left: 91.666666667%; }
+
+  .pull_1 {
+    left: -8.333%; }
+
+  .pull_2 {
+    left: -16.667%; }
+
+  .pull_3 {
+    left: -25%; }
+
+  .pull_4 {
+    left: -33.333%; }
+
+  .pull_5 {
+    left: -41.667%; }
+
+  .pull_6 {
+    left: -50%; }
+
+  .pull_7 {
+    left: -58.333%; }
+
+  .pull_8 {
+    left: -66.667%; }
+
+  .pull_9 {
+    left: -75%; }
+
+  .pull_10 {
+    left: -83.333%; }
+
+  .pull_11 {
+    left: -91.667%; } }
 /** 
  * iPad Landscape
  * - fixed from here on up
  */
 @media only screen and (min-width: 960px) {
-  .container, #home {
+  .container {
     width: 960px; }
 
-  .col_1, .col_2, .col_3, .col_quarter, .col_4, .col_third, .col_5, .col_6, .col_half, .content,
+  .col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main,
   .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
     margin: 0 10px; }
 
@@ -477,7 +582,7 @@ blockquote {
   .col_2 {
     width: 140px; }
 
-  .col_3, .col_quarter {
+  .col_3, .col_quarter, #site-sitebar {
     width: 220px; }
 
   .col_4, .col_third {
@@ -486,7 +591,7 @@ blockquote {
   .col_5 {
     width: 380px; }
 
-  .col_6, .col_half, .content {
+  .col_6, .col_half, .main {
     width: 460px; }
 
   .col_7 {
@@ -506,3 +611,48 @@ blockquote {
 
   .col_12, .col_full {
     width: 940px; } }
+body {
+  background: #fafafa url(/images/bg-colorful-noise.gif); }
+
+#site-sitebar a {
+  color: #666;
+  text-decoration: none; }
+  #site-sitebar a:hover {
+    color: #7d2a00;
+    text-decoration: underline; }
+
+/**
+ * Anything smaller than an iPad in portrait
+ */
+@media only screen and (max-width: 767px) {
+  #site-sitebar {
+    margin-top: 20px;
+    text-align: center; }
+    #site-sitebar h6 {
+      margin: 10px 0; }
+    #site-sitebar ul {
+      color: #ccc; }
+    #site-sitebar nav li {
+      display: inline; }
+      #site-sitebar nav li:not(:last-child):after {
+        content: '\0000a0|\0000a0'; } }
+/**
+ * iPad Portrait
+ */
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-left: 10%;
+    width: 90%; }
+
+  .main {
+    margin-top: 20px; }
+
+  #site-sitebar {
+    margin-top: 100px; }
+    #site-sitebar header h6 {
+      margin: 10px 0 20px 20px; }
+    #site-sitebar nav ul {
+      margin-left: 20px; } }
+/** 
+ * Anything bigger...
+ */

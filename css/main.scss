@@ -1,15 +1,80 @@
 // Variable Declarations //
 
+$text_color: #222;
+
+$link_color: #c23e00;
+$link_hover: #7d2a00;
+$link_visited: #222;
+
 $serif: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 $small_caps: ff-meta-serif-sc-web-pro-1,ff-meta-serif-sc-web-pro-2, serif;
 $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+
+// Imports //
 
 @import 'normalize.scss';
 @import 'functions.scss';
 @import 'text.scss'; 
 @import 'layout.scss';
+@import 'zazz.scss';
 
-#home { @extend .container; } 
-.content { 
+body { background: #fafafa url(/images/bg-colorful-noise.gif); }
+
+#site-sitebar {
+	@extend .col_3;
+	a {
+		color: #666;
+		text-decoration: none;
+		&:hover { color: $link_hover; text-decoration: underline; }
+	}
+}
+
+.main {
 	@extend .col_half;
+}
+
+#home {  }
+
+/**
+ * Anything smaller than an iPad in portrait
+ */
+@media only screen and (max-width: 767px) {
+	#site-sitebar {
+		margin-top: 20px;
+		text-align: center;
+		h6 { margin: 10px 0; }
+		ul { color: #ccc; }
+		nav li {
+			display: inline;
+			&:not(:last-child):after { content: '\0000a0|\0000a0'; }
+
+		}
+	}
+}
+
+/**
+ * iPad Portrait
+ */
+@media only screen and (min-width: 768px) {
+	.container { margin-left: 10%; width: 90%; }
+	.main { margin-top: 20px; }
+	#site-sitebar {
+		margin-top: 100px;
+		
+		header {
+			h6 { margin: 10px 0 20px 20px; }
+		}
+
+		nav {
+			ul { margin-left: 20px; }
+		}
+		
+	}
+}
+
+/** 
+ * Anything bigger...
+ */
+@media only screen and (min-width: 960px) {
+
 }

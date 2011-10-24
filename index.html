@@ -3,29 +3,31 @@ layout: default
 title: Keith Silgard’s Super Cool Site
 description: This is Keith’s site. He does stuff here. If you're a geek, you just might like it. If you're not, save yourself a click and move along.
 ---
-<div id="home">
-	<section id="intro">
-		<div class="content">
 
-			<h1>I’m Keith, <br>I make stuff.</h1>
+<div class="container">
+	
+	{% include header.html %}
+	
+	<div id="home" class="main">
+	
+		<section id="intro">
+
+			<h1>I make stuff.</h1>
 
 			<p>Websites, mostly. I work at <a href="http://www.whitespark.ca">Whitespark</a>, happily programming away. If you want to get ahold of me, I’d suggest <a href="mailto:hey@keithsilgard.com">email</a>, though I guess <a href="http://twitter.com/ironkeith">Twitter</a> may work as well. I do HTML/CSS, PHP, JavaScript, even a little Ruby and Obj-C.</p>
-			
+		
 			<p>Take a peek at some of the stuff I’ve been working on below.</p>
-		</div>
-	</section>
+			
+		</section>
 
-	<section id="whitespark">
-		<div class="content">
-			
+		<section id="whitespark">
+	
 			<h2 id="whitespark.ca">Whitespark.ca</h2>
-			
+		
 			<p>I’m super proud of this one. It’s the first site I ever built where I was able to put the effort in to build it as well as I could.</p>
-			
-			
-			
+		
 			<h4>Stuff I did for this one:</h4>
-			
+		
 			<ul>
 				<li>All of the HTML/CSS/JS</li>
 				<li>Most of the page layouts (though not the actual design)</li>
@@ -36,7 +38,8 @@ description: This is Keith’s site. He does stuff here. If you're a geek, you j
 				<li>Easter eggs!</li>
 			</ul>
 			
-		</div>
-	</section>
+		</section>
+	
+	</div>
 	
 </div>
