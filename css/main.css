@@ -398,7 +398,7 @@ blockquote {
 .container {
   width: 100%; }
 
-.col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main, .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full,
+.col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main, .col_7, .main, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full,
 .col_quarter, .col_third, .col_half, .main, .col_two_thirds, .col_three_quarters, .col_full {
   float: left;
   margin: 0 2%;
@@ -431,8 +431,10 @@ blockquote {
   visibility: hidden;
   width: 0; }
 
-.clearfix:before,
+.clearfix:before, .main figure figcaption:before,
 .clearfix:after,
+.main figure figcaption:after, .main figure
+figcaption:after,
 .container:before,
 .container:after {
   content: '.';
@@ -444,7 +446,7 @@ blockquote {
   width: 0;
   height: 0; }
 
-.clearfix:after,
+.clearfix:after, .main figure figcaption:after,
 .container:after {
   clear: both; }
 
@@ -460,7 +462,8 @@ blockquote {
  */
 @media only screen and (min-width: 768px) {
   .col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main,
-  .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
+  .col_7,
+  .main, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
     margin: 0 1.302083333%; }
 
   .col_1 {
@@ -481,7 +484,7 @@ blockquote {
   .col_6, .col_half, .main {
     width: 47.395833333%; }
 
-  .col_7 {
+  .col_7, .main {
     width: 55.729166667%; }
 
   .col_8, .col_two_thirds {
@@ -573,7 +576,8 @@ blockquote {
     width: 960px; }
 
   .col_1, .col_2, .col_3, .col_quarter, #site-sitebar, .col_4, .col_third, .col_5, .col_6, .col_half, .main,
-  .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
+  .col_7,
+  .main, .col_8, .col_two_thirds, .col_9, .col_three_quarters, .col_10, .col_11, .col_12, .col_full {
     margin: 0 10px; }
 
   .col_1 {
@@ -594,7 +598,7 @@ blockquote {
   .col_6, .col_half, .main {
     width: 460px; }
 
-  .col_7 {
+  .col_7, .main {
     width: 540px; }
 
   .col_8, .col_two_thirds {
@@ -611,15 +615,108 @@ blockquote {
 
   .col_12, .col_full {
     width: 940px; } }
-body {
-  background: #fafafa url(/images/bg-colorful-noise.gif); }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1); }
 
+  50% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1); }
+
+  100% {
+    -moz-transform: scale(1); } }
+
+@-ms-keyframes pulse {
+  0% {
+    -ms-transform: scale(1); }
+
+  50% {
+    -ms-transform: scale(1.1); }
+
+  100% {
+    -ms-transform: scale(1); } }
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1); }
+
+  50% {
+    -o-transform: scale(1.1); }
+
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
+#site-sitebar header img:hover {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: pulse;
+  -moz-animation-duration: 0.25s;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-name: pulse;
+  -ms-animation-duration: 0.25s;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-name: pulse;
+  -o-animation-duration: 0.25s;
+  -o-animation-timing-function: ease-out;
+  animation-name: pulse;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out; }
 #site-sitebar a {
   color: #666;
   text-decoration: none; }
   #site-sitebar a:hover {
     color: #7d2a00;
     text-decoration: underline; }
+
+.main img {
+  width: 100%; }
+.main figure {
+  -webkit-box-shadow: 0 0 10px #aaaaaa;
+  -moz-box-shadow: 0 0 10px #aaaaaa;
+  box-shadow: 0 0 10px #aaaaaa;
+  display: block;
+  margin-bottom: 20px;
+  position: relative; }
+  .main figure figcaption {
+    background: #333;
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    padding: 0 20px; }
+
+#content {
+  background: #fafafa url(/images/bg-colorful-noise.gif);
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 2; }
+
+#site-footer {
+  background: #333;
+  bottom: 0;
+  height: 200px;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
 
 /**
  * Anything smaller than an iPad in portrait
@@ -646,6 +743,9 @@ body {
 
   .main {
     margin-top: 20px; }
+    .main figure {
+      display: block;
+      width: 100%; }
 
   #site-sitebar {
     margin-top: 100px; }
@@ -656,3 +756,11 @@ body {
 /** 
  * Anything bigger...
  */
+@media only screen and (min-width: 960px) {
+  .main {
+    width: 460px; }
+    .main figure {
+      display: block;
+      margin-left: -80px;
+      margin-right: -80px;
+      width: 620px; } }

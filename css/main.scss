@@ -18,10 +18,11 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 @import 'layout.scss';
 @import 'zazz.scss';
 
-body { background: #fafafa url(/images/bg-colorful-noise.gif); }
-
 #site-sitebar {
 	@extend .col_3;
+	header img:hover {
+		@include pulse(.25s);
+	}
 	a {
 		color: #666;
 		text-decoration: none;
@@ -31,9 +32,39 @@ body { background: #fafafa url(/images/bg-colorful-noise.gif); }
 
 .main {
 	@extend .col_half;
+	img { width: 100%; }
+	figure {
+		@include dropshadow(0, 0, 10px, #aaa);
+		
+		display: block;
+		margin-bottom: 20px;
+		position: relative;
+
+		figcaption {
+			@extend .clearfix;
+			background: #333;
+			color: #fff;
+			display: block;
+			font-weight: normal;
+			padding: 0 20px;
+		}
+	}
 }
 
-#home {  }
+#content {
+	background: #fafafa url(/images/bg-colorful-noise.gif);
+	margin-bottom: 200px;
+	position: relative;
+	z-index: 2;
+}
+#site-footer {
+	background: #333;
+	bottom: 0;
+	height: 200px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
 
 /**
  * Anything smaller than an iPad in portrait
@@ -57,7 +88,11 @@ body { background: #fafafa url(/images/bg-colorful-noise.gif); }
  */
 @media only screen and (min-width: 768px) {
 	.container { margin-left: 10%; width: 90%; }
-	.main { margin-top: 20px; }
+	.main { 
+		@extend .col_7; 
+		margin-top: 20px; 
+		figure { display: block; width: 100% }
+	}
 	#site-sitebar {
 		margin-top: 100px;
 		
@@ -76,5 +111,14 @@ body { background: #fafafa url(/images/bg-colorful-noise.gif); }
  * Anything bigger...
  */
 @media only screen and (min-width: 960px) {
-
+	.main { 
+		width: 460px; 
+		
+		figure {
+			display: block;
+			margin-left: -80px;
+			margin-right: -80px;
+			width: 620px;
+		}
+	}
 }
