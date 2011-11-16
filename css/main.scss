@@ -1,4 +1,4 @@
-// Variable Declarations //
+// Variable Declarations // 
 
 $text_color: #222;
 
@@ -12,11 +12,13 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 
 // Imports //
 
+@import 'zazz.scss';
 @import 'normalize.scss';
 @import 'functions.scss';
 @import 'text.scss'; 
 @import 'layout.scss';
-@import 'zazz.scss';
+
+//html, body { height: 100%; } // hack the height to hide the footer
 
 #site-sitebar {
 	@extend .col_3;
@@ -63,7 +65,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	height: 200px;
 	position: fixed;
 	width: 100%;
-	z-index: 1;
+	z-index: 12;
 }
 
 /**
@@ -111,8 +113,9 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
  * Anything bigger...
  */
 @media only screen and (min-width: 960px) {
+	
 	.main { 
-		width: 460px; 
+		width: 540px; 
 		
 		figure {
 			display: block;
@@ -121,4 +124,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 			width: 620px;
 		}
 	}
+	
+	
+	
 }

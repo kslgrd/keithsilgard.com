@@ -1,4 +1,69 @@
 @charset "UTF-8";
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1); }
+
+  100% {
+    -moz-transform: scale(1); } }
+
+@-ms-keyframes pulse {
+  0% {
+    -ms-transform: scale(1); }
+
+  50% {
+    -ms-transform: scale(1.1); }
+
+  100% {
+    -ms-transform: scale(1); } }
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1); }
+
+  50% {
+    -o-transform: scale(1.1); }
+
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
+/** 
+ * Make something pulse.
+ * Just gets bigger, then smaller. Like a heartbeat.
+ *
+ * @param $duration   How long the animation should take
+ * @param $timing_function Default: ease-out
+ *
+ */
+/** 
+ * Add an easing animation.
+ *
+ * @param $duration   How long the animation should take
+ * @param $properties Which properties will be animated
+ *
+ */
 /* 
  * HTML5 ✰ Boilerplate
  *
@@ -59,13 +124,22 @@ body, button, input, select, textarea {
    Links
    ========================================================================== */
 a {
-  color: #c23e00; }
+  color: #c23e00;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out; }
 
 a:visited {
-  color: #222222; }
+  color: #222222;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out; }
 
 a:hover {
-  color: #7d2a00; }
+  color: #7d2a00;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out; }
 
 a:focus {
   outline: thin dotted; }
@@ -246,15 +320,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box; }
 
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /* 
  * Remove inner padding and border in FF3/4: h5bp.com/l 
  */
@@ -369,11 +434,7 @@ h6 {
   font-size: 18px; }
 
 body, button, input, select, textarea {
-  font: 16px/21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
-
-p {
-  -webkit-hyphens: auto;
-  text-align: justify; }
+  font: 16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
 
 ol, ul {
   padding-left: 20px; }
@@ -615,56 +676,6 @@ figcaption:after,
 
   .col_12, .col_full {
     width: 940px; } }
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1); }
-
-  50% {
-    -webkit-transform: scale(1.1); }
-
-  100% {
-    -webkit-transform: scale(1); } }
-
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1); }
-
-  50% {
-    -moz-transform: scale(1.1); }
-
-  100% {
-    -moz-transform: scale(1); } }
-
-@-ms-keyframes pulse {
-  0% {
-    -ms-transform: scale(1); }
-
-  50% {
-    -ms-transform: scale(1.1); }
-
-  100% {
-    -ms-transform: scale(1); } }
-
-@-o-keyframes pulse {
-  0% {
-    -o-transform: scale(1); }
-
-  50% {
-    -o-transform: scale(1.1); }
-
-  100% {
-    -o-transform: scale(1); } }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); }
-
-  50% {
-    transform: scale(1.1); }
-
-  100% {
-    transform: scale(1); } }
-
 #site-sitebar header img:hover {
   -webkit-animation-name: pulse;
   -webkit-animation-duration: 0.25s;
@@ -716,7 +727,7 @@ figcaption:after,
   height: 200px;
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 12; }
 
 /**
  * Anything smaller than an iPad in portrait
@@ -758,7 +769,7 @@ figcaption:after,
  */
 @media only screen and (min-width: 960px) {
   .main {
-    width: 460px; }
+    width: 540px; }
     .main figure {
       display: block;
       margin-left: -80px;

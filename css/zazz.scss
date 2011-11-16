@@ -24,6 +24,14 @@
     100% { transform: scale(1); }
 }
 
+/** 
+ * Make something pulse.
+ * Just gets bigger, then smaller. Like a heartbeat.
+ *
+ * @param $duration   How long the animation should take
+ * @param $timing_function Default: ease-out
+ *
+ */
 @mixin pulse($duration, $timing_function: ease-out) {
 	-webkit-animation-name: pulse;
 	-webkit-animation-duration: $duration;
@@ -40,4 +48,17 @@
 	animation-name: pulse;
 	animation-duration: $duration;
 	animation-timing-function: $timing_function;
+}
+
+/** 
+ * Add an easing animation.
+ *
+ * @param $duration   How long the animation should take
+ * @param $properties Which properties will be animated
+ *
+ */
+@mixin ease($duration, $properties: all, $timing_function: ease-in-out) {
+ -webkit-transition: $properties $duration $timing_function;
+	-moz-transition: $properties $duration $timing_function;
+	  -o-transition: $properties $duration $timing_function;
 }
