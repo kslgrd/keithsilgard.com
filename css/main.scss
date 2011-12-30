@@ -1,3 +1,4 @@
+
 // Variable Declarations // 
 
 $text_color: #222;
@@ -18,25 +19,34 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 @import 'text.scss'; 
 @import 'layout.scss';
 
-//html, body { height: 100%; } // hack the height to hide the footer
+/**
+ * Default style, served to anything small, or that doesn't support media queries
+ */
 
-#site-sitebar {
+#site-sidebar {
 	@extend .col_3;
-	header img:hover {
-		@include pulse(.25s);
-	}
+	
+	h5 { margin: 10px 0; }
+	
+	ul { color: #ccc; }
+		
 	a {
 		color: #666;
 		text-decoration: none;
 		&:hover { color: $link_hover; text-decoration: underline; }
 	}
+
+	header img:hover {
+		@include pulse(.25s);
+	}
+	
 }
 
 .main {
 	@extend .col_half;
 	img { width: 100%; }
 	figure {
-		@include dropshadow(0, 0, 10px, #aaa);
+		@include dropshadow(0, 0, 10px, #aaa); 
 		
 		display: block;
 		margin-bottom: 20px;
@@ -55,51 +65,134 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 
 #content {
 	background: #fafafa url(/images/bg-colorful-noise.gif);
-	margin-bottom: 200px;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
+	
+	// drop shadow for depth: 
+	&:after {
+		@include vertical_gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+		bottom: -20px;
+		content: '';
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+	
 }
 #site-footer {
-	background: #333;
-	bottom: 0;
-	height: 200px;
-	position: fixed;
+	
+	background: #333 url(/images/grey-noise.gif);
+	color: #777;
+	font-size: 14px;
+	padding: 30px 0;
 	width: 100%;
-	z-index: 12;
+	z-index: 1;
+	
+	a {
+		color: #999;
+		&:hover { color: #eee; }
+		&:visited { color: #aaa; }
+	}
+	
+	#footer-search {
+		@extend .col_3;
+		
+		float: left;
+		margin-top: 4px;
+		
+		input {
+			background: #333;
+			font-size: 16px;
+			opacity: .4;
+			width: 100%;
+			
+			&:hover { opacity: .6; }
+			&:focus { opacity: .8; }
+		}	
+		
+		p {
+			font-size: 11px;
+			line-height: 16px;
+			padding: 0 10px;
+		}
+	}
+	
+	#get-in-touch {
+		@extend .col_9;
+		
+		float: right;
+		
+		h3 { color: #999; margin: 0; padding: 0 10px; }
+	}
+	
+	#about-me {
+		@extend .col_6;
+		
+		float: right;
+		
+		p {  padding: 0 10px; }
+	}
+}
+
+// peek-a-boo footer
+.positionfixed {
+	#content { margin-bottom: 330px; }
+	#site-footer { bottom: 0; height: 270px; position: fixed; }
 }
 
 /**
- * Anything smaller than an iPad in portrait
+ * Only when smaller than an iPad in portrait
  */
 @media only screen and (max-width: 767px) {
-	#site-sitebar {
+	#site-sidebar {
+		
 		margin-top: 20px;
 		text-align: center;
-		h6 { margin: 10px 0; }
-		ul { color: #ccc; }
+		
 		nav li {
-			display: inline;
-			&:not(:last-child):after { content: '\0000a0|\0000a0'; }
 
+			display: inline;
+
+
+			&:not(:last-child):after { content: '\0000a0\0000a0|\0000a0'; }
 		}
+		
 	}
+	
+	.articles {
+		list-style-type: none;
+		padding-left: 0;
+		
+		li { @extend .clearfix; }
+		
+		.date, .a { display: block; }
+		
+		.date { font-size: 12px; line-height: 12px; margin-top: 10px; }
+		a { float: left; }
+	}
+	
 }
 
 /**
  * iPad Portrait
  */
-@media only screen and (min-width: 768px) {
-	.container { margin-left: 10%; width: 90%; }
+@media only screen and (min-width: 768px) { 
+	
+	.container { margin-left: 10%; width: 90%; } 
+	
 	.main { 
 		@extend .col_7; 
 		margin-top: 20px; 
 		figure { display: block; width: 100% }
 	}
-	#site-sitebar {
-		margin-top: 100px;
+	
+	#site-sidebar {
+		margin-top: 88px; // try to get a nice baseline for text
 		
 		header {
-			h6 { margin: 10px 0 20px 20px; }
+			h5 { margin: 10px 0 10px 20px; }
 		}
 
 		nav {
@@ -107,13 +200,28 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		}
 		
 	}
+	
+	// peek-a-boo footer
+	.positionfixed {
+		#content { margin-bottom: 230px; }
+		#site-footer { 
+			height: 170px; 
+			#footer-search { height: 200px; }  
+		}
+	}
+	
+	.articles {
+		.date {
+			&:after { content: ' »'; }
+		}
+	}
+	
 }
 
 /** 
  * Anything bigger...
  */
-@media only screen and (min-width: 960px) {
-	
+@media only screen and (min-width: 1067px) { 
 	.main { 
 		width: 540px; 
 		
@@ -124,7 +232,5 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 			width: 620px;
 		}
 	}
-	
-	
 	
 }

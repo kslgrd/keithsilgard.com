@@ -12,9 +12,23 @@ description: This is Keith’s site. He does stuff here. If you're a geek, you j
 	
 		<section id="intro">
 
-			<h1>I make stuff.</h1>
+			<h1 class="intense">I make stuff.</h1>
 
-			<p>Websites, mostly. I work at <a href="http://www.whitespark.ca">Whitespark</a>, happily programming away. If you want to get ahold of me, I’d suggest <a href="mailto:hey@keithsilgard.com">email</a>, though I guess <a href="http://twitter.com/ironkeith">Twitter</a> may work as well. I do HTML/CSS, PHP, JavaScript, even a little Ruby and Obj-C.</p>
+			<p>Websites mostly, but it doesn't really matter. I just love to have a problem, and find a solution. I'm all about the search; putting together all of the pieces and trying to find a solution that's just right.</p>
+			
+			<p>I like the little details. The small things that separate good enough from amazing. In a perfect world, I could nit-pick and critique all day long, and that would somehow be productive.</p>
+			
+			<p>I want to create something that will last longer than me.</p>
+			
+			<br><br>
+			
+			<h4>Recently</h4>
+			
+			<ul class="articles">
+			{% for post in site.posts limit:10 %}
+				<li><span class="date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+			</ul>
 			
 		</section>
 	

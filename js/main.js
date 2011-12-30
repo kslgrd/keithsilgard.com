@@ -18,28 +18,52 @@ var Site = {
 	}
 };
 
+/**
+ * Check if the browser supports position fixed.
+ * I don't know how well this works, it needs to be tested.
+ */
+Modernizr.addTest('positionfixed', function () {
+    
+	// hard coded check for iOS
+	if(navigator.userAgent.match(/iPad|iPhone/i) !== null){
+	    /*Check if device runs iOS 5 or higher*/
+	    return navigator.userAgent.match(/[5-9]_[0-9]/) !== null;
+	}
+
+	var test  = document.createElement('div'),
+      control = test.cloneNode(false),
+         fake = false,
+         root = document.body || (function () {
+            fake = true;
+            return document.documentElement.appendChild(document.createElement('body'));
+      }());
+
+   var oldCssText = root.style.cssText;
+   root.style.cssText = 'padding:0;margin:0';
+   test.style.cssText = 'position:fixed;top:42px';
+   root.appendChild(test);
+   root.appendChild(control);
+   
+   var ret = test.offsetTop !== control.offsetTop;
+   
+   root.removeChild(test);
+   root.removeChild(control);
+   root.style.cssText = oldCssText;
+   
+   if (fake) {
+      document.documentElement.removeChild(root);
+   }
+   
+   return ret;
+});
+
 (function($) {
 	//on load:
 	$(function() {
-		var $q = $('#footer-search #q');
-		
-		// if they hit back, clear the site specific junk from the form:
-		$q.val($q.val().replace('site:keithsilgard.com ', ''));
-		
-		// hack to make Google search work now that Google is retarded:
-		$('#footer-search form').submit(function () {
-			var $this = $(this),
-				query = 'site:keithsilgard.com ' + $q.val();
-			// do this just in case the browser doesn't support Google's
-			// weirdo AJAX junk, or they change back to something sane:
-			$q.val(query);
-			// they use the hash instead of a query string now. Weirdos. 
-			$this.attr('action', $this.attr('action') + '#q=' + query);
-		});
 		
 		// fullscreen junk!
-		// this is so the site looks like it's 100% height, and the footer 
-		// is a sneaky surprise:
+		// this is so the site looks like it's 100% height, 
+		// and the footer is a sneaky surprise:
 		if (Site.should_go_fullscreen) Site.go_fullscreen();
 		
 	});	

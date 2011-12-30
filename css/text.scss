@@ -1,13 +1,13 @@
 h1, h2, h3 { font-family: $serif; margin: 30px 0 20px; }
-h2, h3 { font-weight: normal; }
-h4, h5, h6 { font-family: $small_caps; margin: 20px 0; text-transform: lowercase; }
+h1, h2, h3, h6 { font-weight: normal; }
+h4, h5, h6 { font-family: $small_caps; margin: 20px 0 10px; text-transform: lowercase; }
 
-h1 { font-size: 60px; line-height: 60px; }
-h2 { font-size: 48px; line-height: 50px; }
-h3 { font-size: 36px; line-height: 40px; }
-h4 { font-size: 24px; line-height: 30px; }
-h5 { font-size: 21px; }
-h6 { font-size: 18px; }
+h1 { font-size: 48px; line-height: 50px; &.intense { font-weight: bold; } }
+h2 { font-size: 36px; line-height: 40px; }
+h3 { font-size: 24px; line-height: 30px; }
+h4 { font-size: 21px; line-height: 21px; }
+h5 { font-size: 18px; line-height: 18px; }
+h6 { font-size: 16px; line-height: 16px; }
 
 body, button, input, select, textarea { font: 16px/24px $sans_serif; }
 
@@ -26,4 +26,8 @@ blockquote {
 		font-style: normal;
 		&:before { content: '— '; }
 	}
+}
+// anything bigger than the iPad in portrait
+@media only screen and (min-width: 768px) {
+	h1.intense { font-size: 60px; }
 }
