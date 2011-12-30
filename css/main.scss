@@ -100,7 +100,6 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		@extend .col_3;
 		
 		float: left;
-		margin-top: 4px;
 		
 		input {
 			background: #333;
@@ -121,14 +120,14 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	
 	#get-in-touch {
 		@extend .col_9;
-		
-		float: right;
+		@extend .push_3;
 		
 		h3 { color: #999; margin: 0; padding: 0 10px; }
 	}
 	
 	#about-me {
 		@extend .col_6;
+		@extend .pull_3; 
 		
 		float: right;
 		
@@ -201,6 +200,8 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		
 	}
 	
+	#footer-search { position: relative; top: -28px; }
+	
 	// peek-a-boo footer
 	.positionfixed {
 		#content { margin-bottom: 230px; }
@@ -232,5 +233,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 			width: 620px;
 		}
 	}
+	
+	#site-footer .container { max-width: 960px; }
 	
 }

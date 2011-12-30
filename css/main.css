@@ -474,7 +474,9 @@ blockquote {
 
 .push_1, .pull_1,
 .push_2, .pull_2,
-.push_3, .pull_3,
+.push_3,
+#site-footer #get-in-touch, #site-footer
+#get-in-touch, .pull_3, #site-footer #about-me,
 .push_4, .pull_4,
 .push_5, .pull_5,
 .push_6, .pull_6,
@@ -578,7 +580,7 @@ li:after,
   .push_2 {
     left: 16.666666667%; }
 
-  .push_3 {
+  .push_3, #site-footer #get-in-touch {
     left: 25%; }
 
   .push_4 {
@@ -611,7 +613,7 @@ li:after,
   .pull_2 {
     left: -16.667%; }
 
-  .pull_3 {
+  .pull_3, #site-footer #about-me {
     left: -25%; }
 
   .pull_4 {
@@ -685,7 +687,73 @@ li:after,
     width: 860px; }
 
   .col_12, .col_full {
-    width: 940px; } }
+    width: 940px; }
+
+  .push_1 {
+    left: 80px; }
+
+  .push_2 {
+    left: 160px; }
+
+  .push_3, #site-footer #get-in-touch {
+    left: 240px; }
+
+  .push_4 {
+    left: 320px; }
+
+  .push_5 {
+    left: 400px; }
+
+  .push_6 {
+    left: 480px; }
+
+  .push_7 {
+    left: 560px; }
+
+  .push_8 {
+    left: 640px; }
+
+  .push_9 {
+    left: 720px; }
+
+  .push_10 {
+    left: 800px; }
+
+  .push_11 {
+    left: 880px; }
+
+  .pull_1 {
+    left: -80px; }
+
+  .pull_2 {
+    left: -160px; }
+
+  .pull_3, #site-footer #about-me {
+    left: -240px; }
+
+  .pull_4 {
+    left: -320px; }
+
+  .pull_5 {
+    left: -400px; }
+
+  .pull_6 {
+    left: -480px; }
+
+  .pull_7 {
+    left: -560px; }
+
+  .pull_8 {
+    left: -640px; }
+
+  .pull_9 {
+    left: -720px; }
+
+  .pull_10 {
+    left: -800px; }
+
+  .pull_11 {
+    left: -880px; } }
 /**
  * Default style, served to anything small, or that doesn't support media queries
  */
@@ -762,8 +830,7 @@ li:after,
     #site-footer a:visited {
       color: #aaa; }
   #site-footer #footer-search {
-    float: left;
-    margin-top: 4px; }
+    float: left; }
     #site-footer #footer-search input {
       background: #333;
       font-size: 16px;
@@ -777,12 +844,10 @@ li:after,
       font-size: 11px;
       line-height: 16px;
       padding: 0 10px; }
-  #site-footer #get-in-touch {
-    float: right; }
-    #site-footer #get-in-touch h3 {
-      color: #999;
-      margin: 0;
-      padding: 0 10px; }
+  #site-footer #get-in-touch h3 {
+    color: #999;
+    margin: 0;
+    padding: 0 10px; }
   #site-footer #about-me {
     float: right; }
     #site-footer #about-me p {
@@ -839,6 +904,10 @@ li:after,
     #site-sidebar nav ul {
       margin-left: 20px; }
 
+  #footer-search {
+    position: relative;
+    top: -28px; }
+
   .positionfixed #content {
     margin-bottom: 230px; }
   .positionfixed #site-footer {
@@ -858,4 +927,7 @@ li:after,
       display: block;
       margin-left: -80px;
       margin-right: -80px;
-      width: 620px; } }
+      width: 620px; }
+
+  #site-footer .container {
+    max-width: 960px; } }
