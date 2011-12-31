@@ -13,7 +13,7 @@ var Site = {
 	 */
 	go_fullscreen: function () {
 		if ($('#content').height() < $(window).height()) {
-			$('#content').height($(window).height());
+			$('#content').css('minHeight', $(window).height());
 		}
 	}
 };
