@@ -1,0 +1,32 @@
+---
+layout: default
+title: Everything I've Ever Written
+description: Take a gander, it should all be in these here archives.
+---
+<div class="container">
+	
+	{% include header.html %}
+	
+	<section>
+
+		<div class="col_8"><h1 class="intense">Archives</h1></div>
+
+		{% for category in site.categories %}
+			<div class="col_4">
+				<h5>{{ category | first }}</h5>
+				
+				<ul>
+				{% for posts in category %} 
+					{% for post in posts %} 
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+					{% endfor %} 
+				{% endfor %}
+				</ul>
+				
+			</div>
+			
+		{% endfor %}
+		
+	</section>
+
+</div>
