@@ -32,6 +32,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		
 	a {
 		color: #666;
+		font: 16px $sans_serif;
 		text-decoration: none;
 		&:hover { color: $link_hover; text-decoration: underline; }
 	}
@@ -39,12 +40,34 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	header img:hover {
 		@include pulse(.25s);
 	}
+
+	&.minimized {
+		@extend .col_full;
+		
+		img, h5, nav, li { float: left; }
+		
+		img { 
+			height: 30px;
+			position: relative;
+			top: 5px;
+		}
+		
+		li { 
+			margin-top: 7px;
+			&:not(:last-child):after { content: '\0000a0\0000a0|\0000a0\0000a0'; }
+		}
+		
+	}
+	
+	&.light {
+		a { color: #ccc; }
+	}
 	
 }
 
 .main {
 	@extend .col_half;
-	img { width: 100%; }
+	img.full { width: 100%; }
 	figure {
 		@include dropshadow(0, 0, 10px, #aaa); 
 		
@@ -212,6 +235,9 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	}
 	
 	.articles {
+		
+		list-style-type: disc;
+		
 		.date {
 			&:after { content: ' »'; }
 		}
