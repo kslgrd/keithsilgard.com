@@ -31,7 +31,7 @@ I have **123 feeds** in my Google Reader.
 
 A massive **1,837 visitors** tallied up **2,917 page views** on this blog (according to Google Analytics).
 
-I wrote **40 posts** for this blog. [One of which](/articles/risk.html) I’m proud of, one which I only let my wife read and left unpublished. 
+I wrote **40 posts** for this blog. [One of which](/articles/risk.html) I&rsquo;m proud of, one which I only let my wife read and left unpublished. 
 
 I performed **3,150 Google searches** (while logged in). 
 
@@ -61,7 +61,7 @@ I performed **3,150 Google searches** (while logged in).
 9. dev.mysql.com
 10. ultimate-guitar.com
 
-I have **143 “friends”** on Facebook.
+I have **143 &ldquo;friends&rdquo;** on Facebook.
 
 I was personally involved in building and launching **1 website** (the fewest since 1999). 
 
@@ -82,10 +82,10 @@ Faye has **10 teeth** and weighs **21lbs 12oz**.
 
 I weigh **245lbs**. 
 
-I (with Ali’s help) took **4,155 pictures**. 
+I (with Ali&rsquo;s help) took **4,155 pictures**. 
 
 I photographed **1 wedding** (something I had vowed never to do).
 
-I went to **3 weddings** (Gursky, Ali’s friend who I don’t know, Isaac & Mel). 
+I went to **3 weddings** (Gursky, Ali&rsquo;s friend who I don&rsquo;t know, Isaac & Mel). 
 
-I can’t think of anything else.
+I can&rsquo;t think of anything else.
