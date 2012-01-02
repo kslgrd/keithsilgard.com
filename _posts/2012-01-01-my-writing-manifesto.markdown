@@ -22,6 +22,10 @@ No one cares about my whining.
 
 Observational humour about my life isn't interesting to anyone who isn't me.
 
+##### No &ldquo;Me Too&rdquo; Posts
+
+Why write something if I don't have anything to offer beyond agreement?
+
 ##### Be Constructive
 
 Cynicism is equally easy and worthless. It's great to have an opinion, but don't be a dick about it.
