@@ -11,7 +11,7 @@ I've been making professional websites since 2004 (though I was making terribly 
 
 I work for [Whitespark](http://www.whitespark.ca) in Edmonton, doing a bit of everything.
 
-I love reading, writing, music, and wine. I hate scented candles, mint chocolate, and lazy grammar.
+I love reading, writing, music, and wine. I hate scented candles, mint chocolate, and people who make lists about stuff they hate.
 
 I have a personal life, filled with wonderful things which if you know me, you already know all about, and if you don't, you don't need to.
 
