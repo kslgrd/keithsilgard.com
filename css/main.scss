@@ -26,11 +26,16 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 #site-sidebar {
 	@extend .col_3;
 	
-	h5 { margin: 10px 0; }
+	h5 { 
+		margin: 10px 0; 
+		
+		a { text-decoration: none; }
+		
+	}
 	
 	ul { color: #ccc; }
 		
-	a {
+	li a {
 		color: #666;
 		font: 16px $sans_serif;
 		text-decoration: none;
@@ -60,7 +65,10 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	}
 	
 	&.light {
-		a { color: #ccc; }
+		
+		text-shadow: rgba(0,0,0,0.01) 0 0 0;
+		
+		a { color: #ccc;  }
 	}
 	
 }
@@ -88,6 +96,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 
 #content {
 	background: #fafafa url(/images/bg-colorful-noise.gif);
+	padding-bottom: 40px;
 	position: relative;
 	z-index: 3;
 	
@@ -164,6 +173,11 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	#site-footer { bottom: 0; height: 270px; position: fixed; }
 }
 
+#archives {
+	@extend .col_9;
+	.col_4:nth-child(2n-1) { clear: left; }
+}
+
 /**
  * Only when smaller than an iPad in portrait
  */
@@ -199,7 +213,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 
 /**
  * iPad Portrait
- */
+ */ 
 @media only screen and (min-width: 768px) { 
 	
 	.container { margin-left: 10%; width: 90%; } 
@@ -238,7 +252,21 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		list-style-type: disc;
 		
 		.date {
-			&:after { content: ' »'; }
+			
+			color: #666;
+			display: inline-block;
+			font-size: 14px;
+			min-width: 100px;
+			position: relative;
+			
+			&:after { 
+				content: ' »'; 
+				display: block;
+				font-size: 16px;
+				left: 87px;
+				position: absolute;
+				top: -1px;
+			}
 		}
 	}
 	

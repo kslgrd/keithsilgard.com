@@ -1,5 +1,5 @@
 h1, h2, h3 { font-family: $serif; margin: 30px 0 20px; }
-h1, h2, h3, h6 { font-weight: normal; }
+h6 { font-weight: normal; }
 h4, h5, h6 { font-family: $small_caps; margin: 20px 0 10px; text-transform: lowercase; }
 
 h1 { font-size: 48px; line-height: 50px; &.intense { font-weight: bold; } }

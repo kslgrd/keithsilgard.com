@@ -760,13 +760,15 @@ li:after,
  */
 #site-sidebar h5 {
   margin: 10px 0; }
+  #site-sidebar h5 a {
+    text-decoration: none; }
 #site-sidebar ul {
   color: #ccc; }
-#site-sidebar a {
+#site-sidebar li a {
   color: #666;
   font: 16px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   text-decoration: none; }
-  #site-sidebar a:hover {
+  #site-sidebar li a:hover {
     color: #7d2a00;
     text-decoration: underline; }
 #site-sidebar header img:hover {
@@ -795,8 +797,10 @@ li:after,
   margin-top: 7px; }
   #site-sidebar.minimized li:not(:last-child):after {
     content: '\0000a0\0000a0|\0000a0\0000a0'; }
-#site-sidebar.light a {
-  color: #ccc; }
+#site-sidebar.light {
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 0; }
+  #site-sidebar.light a {
+    color: #ccc; }
 
 .main img.full {
   width: 100%; }
@@ -874,6 +878,9 @@ li:after,
   height: 270px;
   position: fixed; }
 
+#archives {
+  max-width: 1100px; }
+
 /**
  * Only when smaller than an iPad in portrait
  */
@@ -905,11 +912,9 @@ li:after,
     margin-left: 10%;
     width: 90%; }
 
-  .main {
-    margin-top: 20px; }
-    .main figure {
-      display: block;
-      width: 100%; }
+  .main figure {
+    display: block;
+    width: 100%; }
 
   #site-sidebar {
     margin-top: 88px; }
