@@ -6,9 +6,9 @@ category: articles
 ---
 # My Writing Manifesto 
 
-I've written a lot of stuff online over the years. I've also removed almost all of it. 
+**I want to create something that can last, and something that I can be proud of.**
 
-I want to create something that can last, and something that I can be proud of. 
+I've written hundred of posts over the years. I've also removed almost all of them. Especially any that break the following rules:
 
 ##### No Link Posts
 
