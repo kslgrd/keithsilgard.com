@@ -3,7 +3,7 @@ layout: nil
 ---
 /* ME! */
 Keith Silgard
-Contact: ksilgard [at] gmail.com
+Contact: keith@thesilgards.com
 Twitter: @ironkeith
 From: Edmonton, Alberta, Canada
 
