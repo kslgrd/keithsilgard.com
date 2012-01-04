@@ -9,7 +9,7 @@ I like the little details. The small things that separate good enough from amazi
 
 I want to create something that will last longer than me.
 
-<br><br>
+***
 
 #### Recently
 
