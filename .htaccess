@@ -1,8 +1,8 @@
 RewriteEngine On
 
 #www is for the weak.
-RewriteCond %{HTTP_HOST} ^www.keithsilgard\.com$ [NC]
-RewriteRule ^(.*)$ http://keithsilgard.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule (.*) //%1/$1 [L,R=301]
 
 redirect 301 "/projects/stupidly-expensive-german-clock" http://keithsilgard.com/stupidly-expensive-german-clock.html
 redirect 301 "/projects/stupidly-expensive-german-clock.html" http://keithsilgard.com/stupidly-expensive-german-clock.html
