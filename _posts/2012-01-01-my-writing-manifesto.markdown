@@ -1,11 +1,9 @@
 ---
-layout: blog
+layout: default
 title: My Writing Manifesto
 description: I've built this brand new site, let's see if I can't come up with a few guidelines so that I don't start to hate it.
 category: articles
 ---
-# My Writing Manifesto 
-
 **I want to create something that can last, and something that I can be proud of.**
 
 I've written hundred of posts over the years. I've also removed almost all of them. Especially any that break the following rules:

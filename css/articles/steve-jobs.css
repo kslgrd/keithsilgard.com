@@ -403,7 +403,7 @@ h1, h2, h3 {
   font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, serif;
   margin: 30px 0 20px; }
 
-h1, h2, h3, h6 {
+h6 {
   font-weight: normal; }
 
 h4, h5, h6 {
@@ -466,7 +466,7 @@ blockquote {
 .container {
   width: 100%; }
 
-.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
+.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
 .col_quarter, .col_third, .col_half, .main, .col_two_thirds, .col_three_quarters, .col_full, #site-sidebar.minimized {
   float: left;
   margin: 0 2%;
@@ -536,7 +536,7 @@ li:after,
 @media only screen and (min-width: 768px) {
   .col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me,
   .col_7,
-  .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
+  .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
     margin: 0 1.302083333%; }
 
   .col_1 {
@@ -563,7 +563,7 @@ li:after,
   .col_8, .col_two_thirds, article {
     width: 64.0625%; }
 
-  .col_9, .col_three_quarters, #site-footer #get-in-touch {
+  .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives {
     width: 72.395833333%; }
 
   .col_10 {
@@ -651,7 +651,7 @@ li:after,
 
   .col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me,
   .col_7,
-  .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
+  .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
     margin: 0 10px; }
 
   .col_1 {
@@ -678,7 +678,7 @@ li:after,
   .col_8, .col_two_thirds, article {
     width: 620px; }
 
-  .col_9, .col_three_quarters, #site-footer #get-in-touch {
+  .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives {
     width: 700px; }
 
   .col_10 {
@@ -820,6 +820,7 @@ li:after,
 
 #content {
   background: #fafafa url(/images/bg-colorful-noise.gif);
+  padding-bottom: 40px;
   position: relative;
   z-index: 3; }
   #content:after {
@@ -878,8 +879,8 @@ li:after,
   height: 270px;
   position: fixed; }
 
-#archives {
-  max-width: 1100px; }
+#archives .col_4:nth-child(2n-1), #archives .col_third:nth-child(2n-1) {
+  clear: left; }
 
 /**
  * Only when smaller than an iPad in portrait
@@ -936,8 +937,19 @@ li:after,
 
   .articles {
     list-style-type: disc; }
-    .articles .date:after {
-      content: ' »'; } }
+    .articles .date {
+      color: #666;
+      display: inline-block;
+      font-size: 14px;
+      min-width: 100px;
+      position: relative; }
+      .articles .date:after {
+        content: ' »';
+        display: block;
+        font-size: 16px;
+        left: 87px;
+        position: absolute;
+        top: -1px; } }
 /** 
  * Anything bigger...
  */
@@ -964,6 +976,8 @@ article {
   margin: 40px auto;
   position: relative; }
   article h1 {
+    display: none; }
+  article h2 {
     margin-bottom: 36px; }
 
 /**

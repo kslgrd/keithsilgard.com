@@ -1,12 +1,10 @@
 ---
-layout: blog
+layout: default
 title: 2008 by the Numbers
 description: A list of some of the random things I kept track of in 2008.
 category: retrospectives
 permalink: /articles/2008-by-the-numbers.html
 ---
-#2008 by the Numbers
-
 #####Most Listened to Artists (Last.fm):
 
 * The Smashing Pumpkins – 1359 plays
