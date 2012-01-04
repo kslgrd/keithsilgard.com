@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ http://keithsilgard.com/$1 [R=301,L]
 redirect 301 "/projects/stupidly-expensive-german-clock" http://keithsilgard.com/stupidly-expensive-german-clock.html
 redirect 301 "/projects/stupidly-expensive-german-clock.html" http://keithsilgard.com/stupidly-expensive-german-clock.html
 redirect 301 "/articles/2009-in-review" http://keithsilgard.com/articles/2009-in-review.html
-redirect 301 "/meatspin" http://keithsilgard.com/why-real-meatspin.html
+redirect 301 "/meatspin" http://keithsilgard.com/random/why-real-meatspin.html
