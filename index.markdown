@@ -1,7 +1,7 @@
 ---
 layout: default
 title: I make stuff.
-description: This is Keith’s site. He does stuff here. If you're a geek, you just might like it. If you're not, save yourself a click and move along.
+description: This is Keith's site. He does stuff here. If you're a geek, you just might like it. If you're not, save yourself a click and move along.
 ---
 Websites mostly, but it doesn't really matter. I just love to have a problem, and find a solution. I'm all about the search; putting together all of the pieces and trying to find a solution that's just right.
 
