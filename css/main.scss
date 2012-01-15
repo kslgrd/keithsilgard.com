@@ -1,15 +1,16 @@
-
 // Variable Declarations // 
 
 $text_color: #222;
 
-$link_color: #c23e00;
+$link_color: #c23e00; 
 $link_hover: #7d2a00;
 $link_visited: #222;
 
-$serif: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
+$serif: Palatino, "Palatino Linotype", "Book Antiqua", Garamond, serif;
 $small_caps: ff-meta-serif-sc-web-pro-1,ff-meta-serif-sc-web-pro-2, serif;
 $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+
+$heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 
 // Imports //
 
@@ -27,7 +28,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	@extend .col_3;
 	
 	h5 { 
-		margin: 10px 0; 
+		margin: 8px 0; 
 		
 		a { text-decoration: none; }
 		
@@ -38,6 +39,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	li a {
 		color: #666;
 		font: 16px $sans_serif;
+		line-height: 24px;
 		text-decoration: none;
 		&:hover { color: $link_hover; text-decoration: underline; }
 	}
@@ -49,6 +51,10 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	&.minimized {
 		@extend .col_full;
 		
+		margin-bottom: 16px;
+		margin-top: -8px;
+		
+		
 		img, h5, nav, li { float: left; }
 		
 		img { 
@@ -58,7 +64,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		}
 		
 		li { 
-			margin-top: 7px;
+			margin-top: 13px;
 			&:not(:last-child):after { content: '\0000a0\0000a0|\0000a0\0000a0'; }
 		}
 		
@@ -77,27 +83,12 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	@extend .col_half;
 	
 	img.full { width: 100%; }
-	figure {
-		@include dropshadow(0, 0, 10px, #aaa); 
-		
-		display: block;
-		margin-bottom: 20px;
-		position: relative;
 
-		figcaption {
-			@extend .clearfix;
-			background: #333;
-			color: #fff;
-			display: block;
-			font-weight: normal;
-			padding: 0 20px;
-		}
-	}
 }
 
 #content {
 	background: #fafafa url(/images/bg-colorful-noise.gif);
-	padding: 40px 0;
+	padding: 24px 0;
 	position: relative;
 	z-index: 3;
 	
@@ -113,11 +104,16 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		z-index: 2;
 	}
 	
+	&.baseline {
+		background: #fafafa url(/images/baseline.png);
+	}
+	
 }
 #site-footer {
 	
 	background: #333 url(/images/grey-noise.gif);
 	color: #777;
+	font-family: $sans_serif;
 	font-size: 14px;
 	padding: 30px 0;
 	width: 100%;
@@ -164,7 +160,7 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		
 		float: right;
 		
-		p {  padding: 0 10px; }
+		p {  padding: 0 10px; margin-top: 12px; }
 	}
 }
 
@@ -179,13 +175,30 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 	.col_4:nth-child(2n-1) { clear: left; }
 }
 
+figure.featured {
+	left: 0;
+	max-height: 300px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	
+	img { 
+		height: auto;
+		position: relative;
+		width: 100%; 
+		margin-top: -10%;
+	}
+}
+
 /**
  * Only when smaller than an iPad in portrait
  */
 @media only screen and (max-width: 767px) {
 	#site-sidebar {
 		
-		margin-top: 20px;
+		margin-bottom: 12px;
+		margin-top: 24px;
 		text-align: center;
 		
 		nav li {
@@ -228,11 +241,12 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 		margin-top: 88px; // try to get a nice baseline for text
 		
 		header {
-			h5 { margin: 10px 0 10px 20px; }
+			h5 { margin: 12px 0 5px 20px; }
 		}
 
 		nav {
 			ul { margin-left: 20px; }
+			a { line-height: 21px; }
 		}
 		
 	}
@@ -279,13 +293,6 @@ $sans_serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sa
 @media only screen and (min-width: 1067px) { 
 	.main { 
 		width: 540px; 
-		
-		figure {
-			display: block;
-			margin-left: -80px;
-			margin-right: -80px;
-			width: 620px;
-		}
 	}
 	
 	#site-footer .container { max-width: 960px; }

@@ -7,6 +7,13 @@ var Site = {
 	should_go_fullscreen: true,
 	
 	/**
+	 * @var bool
+	 */
+	display_baseline: function () {
+		$('#content').addClass('baseline');
+	},
+	
+	/**
 	 * Quick method to force fullscreen for the fancy footer.
 	 * 
 	 * @return void

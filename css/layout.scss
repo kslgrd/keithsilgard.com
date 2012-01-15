@@ -57,6 +57,16 @@
   	clear: both;
 }
 
+table {
+	width: 100%;
+	
+	th, td { font-size: 14px; padding: 2px 5px 3px; }
+	th { border-bottom: 2px solid #333; text-align: left; }
+
+	.yep { color: #75A63A; }
+	.nope { color: #c00; }
+	.na { color: #ccc; }
+}
 
 /**
  * iPhone Landscape
