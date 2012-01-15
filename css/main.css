@@ -450,7 +450,7 @@ h1 + p {
 ol, ul {
   padding-left: 20px; }
 
-h5 + ul, h5 + ol {
+h4 + ul, h4 + ol, h5 + ul, h5 + ol, h6 + ul, h6 + ol {
   margin-top: 24px; }
 
 blockquote {
@@ -914,6 +914,9 @@ figure.featured {
     position: relative;
     width: 100%;
     margin-top: -10%; }
+
+.date {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif !important; }
 
 /**
  * Only when smaller than an iPad in portrait

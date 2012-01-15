@@ -14,7 +14,7 @@ body, button, input, select, textarea { font: 16px/24px $serif; }
 p { margin: 24px 0; }
 h1 + p { margin-top: 16px; }
 ol, ul { padding-left: 20px; }
-h5 + ul, h5 + ol { margin-top: 24px; }
+h4 + ul, h4 + ol, h5 + ul, h5 + ol, h6 + ul, h6 + ol { margin-top: 24px; }
 blockquote { 
 	border-left: 1px solid #999; 
 	font-family: $serif; 
