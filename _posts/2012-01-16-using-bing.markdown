@@ -15,8 +15,8 @@ The unfortunately reality is that I still end up using Google daily. If I'm bein
 The first stumbling block is just trying to skim the results. Bing has borrowed heavily from Google's design, but everything is just different enough to feel a little off, and where they are truly different, it's for the worse. Let's take a look at their search results:
 
 <figure class="full" id="results-comparison">
-	<img src="/images/articles/bing-vs-google/example-1-bing.png" alt="Bing search results for: check memory usage in PHP">
-	<img src="/images/articles/bing-vs-google/example-1-google.png" alt="Google search results for: check memory usage in PHP">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-1-bing.png" alt="Bing search results for: check memory usage in PHP">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-1-google.png" alt="Google search results for: check memory usage in PHP">
 	<figcaption>Click to alternate between Google and Bing</figcaption>
 </figure>
 
@@ -36,32 +36,32 @@ Most of the time, Bing does a solid job, but when I see a posting like [this one
 Unfortunately, I spend much of my day searching for relatively esoteric things, and Bing consistently fails to find what I'm looking for. Let's look at a few examples (click any result to see how Google handled the same query): 
 
 <figure class="full">
-	<img src="/images/articles/bing-vs-google/example-2-bing.png" alt="Bing search results for: iTunes Match laggy scroll">
-	<img src="/images/articles/bing-vs-google/example-2-google.png" alt="Google search results for: iTunes Match laggy scroll">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-2-bing.png" alt="Bing search results for: iTunes Match laggy scroll">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-2-google.png" alt="Google search results for: iTunes Match laggy scroll">
 	<figcaption>I signed up for iCloud and iTunes scrolling broke, Bing's index isn't fresh enough to tell me why.</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/articles/bing-vs-google/example-3-bing.png" alt="Bing search results for: &raquo;">
-	<img src="/images/articles/bing-vs-google/example-3-google.png" alt="Google search results for: &raquo;">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-3-bing.png" alt="Bing search results for: &raquo;">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-3-google.png" alt="Google search results for: &raquo;">
 	<figcaption>Trying to search for the HTML entity to create a "&raquo;" by just pasting the character.<br> Google provides a helpful autocomplete, Bing is baffled.</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/articles/bing-vs-google/example-4-bing.png" alt="Bing search results for: moderizer position fixed ios">
-	<img src="/images/articles/bing-vs-google/example-4-google.png" alt="Google search results for: moderizer position fixed ios">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-4-bing.png" alt="Bing search results for: moderizer position fixed ios">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-4-google.png" alt="Google search results for: moderizer position fixed ios">
 	<figcaption>Google notices and fixes a made-up word typo.</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/articles/bing-vs-google/example-5-bing.png" alt="Bing search results for: ">
-	<img src="/images/articles/bing-vs-google/example-5-google.png" alt="Google search results for: ">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-5-bing.png" alt="Bing search results for: ">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-5-google.png" alt="Google search results for: ">
 	<figcaption>Bing incorrectly fixes a made-up word query.</figcaption>
 </figure>
 
 <figure class="full">
-	<img src="/images/articles/bing-vs-google/example-6-bing.png" alt="Bing search results for: rbenv">
-	<img src="/images/articles/bing-vs-google/example-6-google.png" alt="Google search results for: rbenv">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-6-bing.png" alt="Bing search results for: rbenv">
+	<img src="http://static.keithsilgard.com/images/articles/bing-vs-google/example-6-google.png" alt="Google search results for: rbenv">
 	<figcaption>I suspect Bing has issues indexing Stack Overflow, <br>it rarely finds results there, even on direct keyword matches.</figcaption>
 </figure>
 
