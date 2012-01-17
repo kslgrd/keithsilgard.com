@@ -6,9 +6,9 @@ category: articles
 scripts:
 - /js/articles/bing-vs-google.js
 ---
-Google's actions of late have left me wondering: can I live without them? Well there's really only one way \[[1](#footnotes)\] to find out: **try Bing**.
+Google's actions of late have left me wondering: can I live without them? Well there's really only one way \[[1](#footnotes)\] to find out: **try Bing**. So I switched my default search engine, and since then, I've only used Google if Bing fails me. 
 
-So I switched my default search engine to Bing, and since then, I've only used Google if Bing fails me. The unfortunately reality is that I still end up using Google daily. If I'm being honest, I'd much rather still be using Google, on the whole it's a better product. Bing isn't a lost cause though, they're just running a year or so behind. When they launched, there was a lot of clever innovation to be found. There are obviously talented people working there, but they really need to smooth some of the rough edges and differentiate themselves.
+The unfortunately reality is that I still end up using Google daily. If I'm being honest, I'd much rather still be using Google, on the whole it's a better product. Bing isn't a lost cause though, they're just running a year or so behind. When they launched, there was a lot of clever innovation to be found. There are obviously talented people working there, but they really need to smooth some of the rough edges and differentiate themselves.
 
 #### Design
 
