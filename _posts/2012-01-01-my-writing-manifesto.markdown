@@ -39,3 +39,9 @@ Nothing here is written in stone. Feel free to edit.
 ##### Make it Mean Something
 
 Don't write for the sake of writing.
+
+---
+
+> Here's some general advice: if you find yourself beginning \[...\] with a disclaimer of the form &ldquo;I hate to be that guy&rdquo; or &ldquo;I hate to write this,&rdquo; just don't say it.
+>
+> <cite><a href="http://news.ycombinator.com/item?id=3469554">Paul Graham</a></cite>

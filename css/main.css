@@ -548,6 +548,15 @@ table {
   table .na {
     color: #ccc; }
 
+figure {
+  background: #ddd;
+  border: 1px solid #888;
+  padding: 2px;
+  max-width: 100%; }
+  figure img {
+    height: auto;
+    width: 100%; }
+
 /**
  * iPhone Landscape
  * - 2 cols?
@@ -902,6 +911,22 @@ table {
 #archives .col_4:nth-child(2n-1), #archives .col_third:nth-child(2n-1) {
   clear: left; }
 
+figure {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 5px; }
+  figure figcaption {
+    font: 12px/18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    margin-top: 6px;
+    text-align: center; }
+  figure img {
+    height: auto;
+    position: relative;
+    width: 100%; }
+
+figure + figure {
+  margin-top: 24px; }
+
 figure.featured {
   left: 0;
   max-height: 300px;
@@ -915,8 +940,19 @@ figure.featured {
     width: 100%;
     margin-top: -10%; }
 
+hr#footnotes + ol {
+  color: #666;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+  hr#footnotes + ol a:visited {
+    color: #666; }
+
 .date {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif !important; }
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+
+.meta {
+  color: #888;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  margin-top: -24px; }
 
 /**
  * Only when smaller than an iPad in portrait

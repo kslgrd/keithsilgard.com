@@ -175,6 +175,29 @@ $heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 	.col_4:nth-child(2n-1) { clear: left; }
 }
 
+figure {
+	
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 5px;
+	
+	figcaption {
+		font: 12px/18px $sans_serif;
+		margin-top: 6px;
+		text-align: center;
+	}
+	
+	img {
+		height: auto;
+		position: relative;
+		width: 100%;
+	}
+}
+
+figure + figure {
+	margin-top: 24px;
+}
+
 figure.featured {
 	left: 0;
 	max-height: 300px;
@@ -191,7 +214,15 @@ figure.featured {
 	}
 }
 
-.date { font-family: $sans_serif !important; }
+hr#footnotes + ol {
+	color: #666;
+	font-family: $sans_serif;
+	a:visited { color: #666; }
+}
+
+.date { font-family: $sans_serif; }
+.meta { color: #888; font-family: $sans_serif; margin-top: -24px; }
+
 
 /**
  * Only when smaller than an iPad in portrait

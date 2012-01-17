@@ -16,6 +16,10 @@
 				</figure>
 				{% endunless %}
 				
+				{% if page.date %}
+				<p class="meta">Posted <date class="date" datetime="{{ page.date }}">{{ page.date | date: "%A, %B %d, %Y" }}</date></p>
+				{% endif %}
+				
 				{{ content }}
 			
 			</article>
