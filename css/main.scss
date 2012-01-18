@@ -214,7 +214,7 @@ figure.featured {
 	}
 }
 
-hr#footnotes + ol {
+hr#footnotes + ol, hr#footnotes + p {
 	color: #666;
 	font-family: $sans_serif;
 	a:visited { color: #666; }

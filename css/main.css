@@ -940,10 +940,10 @@ figure.featured {
     width: 100%;
     margin-top: -10%; }
 
-hr#footnotes + ol {
+hr#footnotes + ol, hr#footnotes + p {
   color: #666;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
-  hr#footnotes + ol a:visited {
+  hr#footnotes + ol a:visited, hr#footnotes + p a:visited {
     color: #666; }
 
 .date {

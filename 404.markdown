@@ -1,0 +1,19 @@
+---
+layout: default
+title: Page Not Found
+description: I don't know what you're looking for buddy, but it ain't here.
+---
+
+**I don't know what you're looking for, but it's not here.**
+
+---
+
+<img src="http://static.keithsilgard.com/images/IE7-sads.png" alt="Sad IE is sad" style="float: left; position: relative; top: -5px; left: -20px;">
+
+####How did you get here? 
+
+Did you type the address yourself? If so, maybe you should give that another go. Did you follow a link to get here? Perhaps you should let the person who gave you that link know that they're no good at internet.
+
+<hr id="footnotes">
+
+Honestly, I've pulled a lot of pages off of this site over the years, so there's a decent chance that you've found some obscure link from somewhere, and come here expecting something and all I've given you in return is a (hilarious) picture of a sad Internet Explorer logo. If that's the case, I apologize. I really should put up a whole whack of 410 Gone's, but then I'd have to figure out all of the URLs I've had on this domain over the years, and honestly I didn't really keep track of any of that. Sorry!
