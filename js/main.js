@@ -49,13 +49,12 @@ var Site = {
  * I don't know how well this works, it needs to be tested.
  */
 Modernizr.addTest('positionfixed', function () {
-    
-	// hard coded check for iOS
-	if(navigator.userAgent.match(/iPad|iPhone/i) !== null){
-	    /*Check if device runs iOS 5 or higher*/
-	    return navigator.userAgent.match(/[5-9]_[0-9]/) !== null;
-	}
 
+	// Neither iOS or Android handle position fixed very well
+	if (navigator.userAgent.match(/android|iPad|iPhone/i) !== null) {
+		return false;
+	}
+	  c aa
 	var test  = document.createElement('div'),
       control = test.cloneNode(false),
          fake = false,
