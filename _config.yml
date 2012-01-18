@@ -1,3 +1,4 @@
 auto:        false
+file_prefix: http://local.keithsilgard.com
 permalink:   none
 pygments:    true
