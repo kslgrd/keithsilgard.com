@@ -26,11 +26,11 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.6.2.min.js"%3E%3C/script%3E'))</script>
 
-	<script defer src="/js/main.js"></script>
+	<script defer src="{{ site.file_prefix }}/js/main.js"></script>
 
 	{% if page.scripts %}
 		{% for script in page.scripts %}
-			<script src="{{ script }}"></script>
+			<script src="{{ site.file_prefix }}{{ script }}"></script>
 		{% endfor %}
 	{% endif %}
 
