@@ -54,7 +54,7 @@ Modernizr.addTest('positionfixed', function () {
 	if (navigator.userAgent.match(/android|iPad|iPhone/i) !== null) {
 		return false;
 	}
-	  c aa
+
 	var test  = document.createElement('div'),
       control = test.cloneNode(false),
          fake = false,
