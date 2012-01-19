@@ -12,7 +12,7 @@ description: Take a gander, it should all be in these here archives.
 	<ul>
 	{% for posts in category %} 
 		{% for post in posts %} 
-			{% if post.url != '' %}
+			{% if post.url.size > 0 %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
 			{% endif %}
 		{% endfor %} 
