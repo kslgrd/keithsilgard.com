@@ -9,7 +9,7 @@ stylesheets:
 ---
 ## ![Steve Job (1955-2011)](/images/articles/steve-jobs/steve-jobs-1955-2011.png) 
 
-<img src="/images/articles/steve-jobs/steve-jobs-hero.png" alt="Steve Job (1955-2011)">
+<img src="http://static.keithsilgard.com/images/articles/steve-jobs/steve-jobs-hero.png" alt="Steve Job (1955-2011)">
 
 I loved to fantasize about going to dinner with Steve Jobs. I&#8217;d agonize over the exactly perfect way to phrase an email, explaining that I don&#8217;t really want anything from him, but how an opportunity to meet him is one of my life&#8217;s ambitions. I&#8217;d imagine checking my mail, and running to tell my wife &#8220;something crazy has happened, and I need to fly to California.&#8221; I&#8217;d spend hours thinking: what I would say if I were sitting across the table from him, drinking a little too much wine to try and calm my nerves?
 
