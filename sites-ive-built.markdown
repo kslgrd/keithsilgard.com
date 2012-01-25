@@ -51,7 +51,7 @@ This is a fairly complete listing of all the sites I've built. There are likely 
   	<td>2004</td>
   </tr>
   <tr class="for-mindtravellers">
-  	<td scope="row"><a href="http://www.picturesofplaces.com">PicturesOfPlace.com</a></td>
+  	<td scope="row"><a href="http://www.picturesofplaces.com">PicturesOfPlaces.com</a></td>
   	<td><span class="yep">Yep!</span></td>
   	<td><span class="nope">Nope</span></td>
   	<td>2005</td>

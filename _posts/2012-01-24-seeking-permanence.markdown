@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Seeking Permanence
-description: 
+description: I've been stuck on the idea of creating something larger than myself lately. Something more important than my next paycheque. Something that people love, and that I can be truly proud of.
 category: articles
 ---
 I've been stuck on the idea of creating something larger than myself lately. Something more important than my next paycheque. Something that people love, and that I can be truly proud of. I made a list of all of the web projects I can remember working on, and [it's a dismal showing](/sites-ive-built.html). The vast majority of the work I've done no longer exists.
@@ -18,4 +18,4 @@ What does it take to make an impact though? It usually requires founding a start
 
 A simpler plan would be finding a way to share everything I've learned. I've amassed a hoard of experience, but it's taken me thirty years to get here. I honestly feel like I could condense a lot of what I know, and help people to fast forward their own ambitions. I'm only capable of doing so much, but if I were to share what I know, and find a way to really connect with people, I might help dozens, hundreds, or (dare to dream) thousands of other people. It's a little humbling to think of the effect someone like [Joel Spolsky](http://joelonsoftware.com/) has had on software developers all around the world. 
 
-The key to all of this is finding a way to create something that people love. Whether it's a simple piece of software that makes somebody's life easier, a blog where you share everything you know, or The Next Big Thing&trade;, you just need people to need it. That's the big secret. Permanence comes with indispensability, and that what I really want.
+The key to all of this is finding a way to create something that people love. Whether it's a simple piece of software that makes somebody's life easier, a blog where you share everything you know, or The Next Big Thing&trade;, you just need people to need it. That's the big secret. Permanence comes with indispensability, and that's what I really want.
