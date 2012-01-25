@@ -50,9 +50,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: $text_co
    Links
    ========================================================================== */
 
-a { color: $link_color; @include ease(.5s, color); }
-a:visited { color: $link_visited; @include ease(.5s, color); }
-a:hover { color: $link_hover; @include ease(.5s, color); }
+a { color: $link_color; @include ease(.5s, $link_color); }
+a:visited { color: $link_visited; @include ease(.5s, $link_visited); }
+a:hover { color: $link_hover; @include ease(.5s, $link_hover); }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */

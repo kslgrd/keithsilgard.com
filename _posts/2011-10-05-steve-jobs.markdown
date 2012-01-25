@@ -4,8 +4,7 @@ title: Steve Jobs
 permalink: /steve-jobs.html
 category: articles
 sidebar_styles: minimized light
-stylesheets:
-- /css/articles/steve-jobs.css
+stylesheet: /css/articles/steve-jobs.css
 ---
 ## ![Steve Job (1955-2011)](/images/articles/steve-jobs/steve-jobs-1955-2011.png) 
 

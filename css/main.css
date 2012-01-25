@@ -125,21 +125,21 @@ body, button, input, select, textarea {
    ========================================================================== */
 a {
   color: #c23e00;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #c23e00 0.5s ease-in-out;
+  -moz-transition: #c23e00 0.5s ease-in-out;
+  -o-transition: #c23e00 0.5s ease-in-out; }
 
 a:visited {
   color: #222222;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #222222 0.5s ease-in-out;
+  -moz-transition: #222222 0.5s ease-in-out;
+  -o-transition: #222222 0.5s ease-in-out; }
 
 a:hover {
   color: #7d2a00;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #7d2a00 0.5s ease-in-out;
+  -moz-transition: #7d2a00 0.5s ease-in-out;
+  -o-transition: #7d2a00 0.5s ease-in-out; }
 
 a:focus {
   outline: thin dotted; }

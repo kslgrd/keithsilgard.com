@@ -17,12 +17,16 @@
 	<link rel="shortcut icon" href="http://static.keithsilgard.com/images/favicon.png">
 	<link rel="alternate" type="application/atom+xml" href="/atom.xml" />
 
-	{% if page.stylesheets %}
-		{% for stylesheet in page.stylesheets %}
-			<link rel="stylesheet" href="{{ stylesheet }}">
-		{% endfor %}
+	{% if page.stylesheet %}
+		<link rel="stylesheet" href="{{ page.stylesheet }}">
 	{% else %}
 		<link rel="stylesheet" href="/css/main.css">
+	{% endif %}
+	
+	{% if page.additional_stylesheets %}
+		{% for stylesheet in page.additional_stylesheets %}
+			<link rel="stylesheet" href="{{ stylesheet }}">
+		{% endfor %}
 	{% endif %}
 	
 	<script src="{{ site.file_prefix }}/js/libs/modernizr-2.0.6.min.js"></script>
