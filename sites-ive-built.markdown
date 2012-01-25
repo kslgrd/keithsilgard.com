@@ -226,8 +226,8 @@ This is a fairly complete listing of all the sites I've built. There are likely 
   </tr>
   <tr class="for-whitespark">
   	<td scope="row"><a href="http://www.edenlilly.com">Eden Lilly</a></td>
+  	<td><span class="maybe">Maybe?</span></td>
   	<td><span class="nope">Never Did</span></td>
-  	<td><span class="na">—</span></td>
   	<td>2011</td>
   </tr>
   <tr class="for-whitespark">
