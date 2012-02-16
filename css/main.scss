@@ -297,7 +297,8 @@ hr#footnotes + ol, hr#footnotes + p {
 	
 	.articles {
 		
-		list-style-type: disc;
+		list-style-type: none;
+		padding-left: 6px;
 		
 		.date {
 			

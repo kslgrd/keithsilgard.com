@@ -1011,7 +1011,8 @@ hr#footnotes + ol, hr#footnotes + p {
       height: 200px; }
 
   .articles {
-    list-style-type: disc; }
+    list-style-type: none;
+    padding-left: 6px; }
     .articles .date {
       color: #666;
       display: inline-block;
