@@ -14,7 +14,7 @@ I want to create something that will last longer than me.
 #### Recently
 
 <ul class="articles">
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:20 %}
 	<li><span class="date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
