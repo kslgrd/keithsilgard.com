@@ -117,6 +117,7 @@
   redirect 301 "/projects/stupidly-expensive-german-clock.html" http://keithsilgard.com/stupidly-expensive-german-clock.html
   redirect 301 "/articles/2009-in-review" http://keithsilgard.com/articles/2009-in-review.html
   redirect 301 "/meatspin" http://keithsilgard.com/random/why-real-meatspin.html
+  redirect 301 "/what-the-internet-knows-about-you.html" http://keithsilgard.com/articles/what-the-internet-knows-about-you.html
 
 </IfModule>
 

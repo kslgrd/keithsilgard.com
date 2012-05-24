@@ -2,6 +2,7 @@
 layout: default
 title: What the Internet Knows About You
 description: Most people don't have any idea how much information they put out onto the internet each and every day. I try to explain what's out there, why it's used, and what you can do.
+category: articles
 ---
 
 #### A scenario
