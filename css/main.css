@@ -441,6 +441,9 @@ h6 {
 body, button, input, select, textarea {
   font: 16px/24px Palatino, "Palatino Linotype", "Book Antiqua", Garamond, serif; }
 
+strong {
+  font-weight: 700; }
+
 p {
   margin: 24px 0; }
 
@@ -479,7 +482,7 @@ pre {
 .container {
   width: 100%; }
 
-.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .main, .col_8, .col_two_thirds, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
+.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
 .col_quarter, .col_third, .col_half, .main, .col_two_thirds, .col_three_quarters, .col_full, #site-sidebar.minimized {
   float: left;
   margin: 0 2%;
@@ -488,8 +491,7 @@ pre {
 .push_1, .pull_1,
 .push_2, .pull_2,
 .push_3,
-#site-footer #get-in-touch, #site-footer
-#get-in-touch, .pull_3, #site-footer #about-me,
+#site-footer #get-in-touch, .pull_3, #site-footer #about-me,
 .push_4, .pull_4,
 .push_5, .pull_5,
 .push_6, .pull_6,
@@ -514,10 +516,8 @@ pre {
   visibility: hidden;
   width: 0; }
 
-.clearfix:before, .articles li:before,
+.clearfix:before,
 .clearfix:after,
-.articles li:after, .articles
-li:after,
 .container:before,
 .container:after {
   content: '.';
@@ -529,7 +529,7 @@ li:after,
   width: 0;
   height: 0; }
 
-.clearfix:after, .articles li:after,
+.clearfix:after,
 .container:after {
   clear: both; }
 
@@ -643,37 +643,37 @@ figure {
     left: 91.666666667%; }
 
   .pull_1 {
-    left: -8.333%; }
+    left: -8.33333%; }
 
   .pull_2 {
-    left: -16.667%; }
+    left: -16.66667%; }
 
   .pull_3, #site-footer #about-me {
     left: -25%; }
 
   .pull_4 {
-    left: -33.333%; }
+    left: -33.33333%; }
 
   .pull_5 {
-    left: -41.667%; }
+    left: -41.66667%; }
 
   .pull_6 {
     left: -50%; }
 
   .pull_7 {
-    left: -58.333%; }
+    left: -58.33333%; }
 
   .pull_8 {
-    left: -66.667%; }
+    left: -66.66667%; }
 
   .pull_9 {
     left: -75%; }
 
   .pull_10 {
-    left: -83.333%; }
+    left: -83.33333%; }
 
   .pull_11 {
-    left: -91.667%; } }
+    left: -91.66667%; } }
 /** 
  * iPad Landscape
  * - fixed from here on up
@@ -684,8 +684,7 @@ figure {
     width: 90%; }
 
   .col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me,
-  .col_7,
-  .main, .col_8, .col_two_thirds, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
+  .col_7, .col_8, .col_two_thirds, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
     margin: 0 10px; }
 
   .col_1 {
@@ -706,7 +705,7 @@ figure {
   .col_6, .col_half, .main, #site-footer #about-me {
     width: 460px; }
 
-  .col_7, .main {
+  .col_7 {
     width: 540px; }
 
   .col_8, .col_two_thirds {
@@ -864,18 +863,18 @@ figure {
 
 #site-footer {
   background: #333333 url(http://static.keithsilgard.com/images/grey-noise.gif);
-  color: #777;
+  color: #aaa;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-size: 14px;
   padding: 30px 0;
   width: 100%;
   z-index: 1; }
   #site-footer a {
-    color: #999; }
+    color: #bbb; }
     #site-footer a:hover {
-      color: #eee; }
+      color: #ddd; }
     #site-footer a:visited {
-      color: #aaa; }
+      color: #ddd; }
   #site-footer #footer-search {
     float: left; }
     #site-footer #footer-search input {
@@ -886,13 +885,13 @@ figure {
       #site-footer #footer-search input:hover {
         opacity: .6; }
       #site-footer #footer-search input:focus {
-        opacity: .8; }
+        opacity: .9; }
     #site-footer #footer-search p {
       font-size: 11px;
       line-height: 16px;
       padding: 0 10px; }
   #site-footer #get-in-touch h3 {
-    color: #999;
+    color: #bbb;
     margin: 0;
     padding: 0 10px; }
   #site-footer #about-me {

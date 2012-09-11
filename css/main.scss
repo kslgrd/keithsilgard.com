@@ -112,7 +112,7 @@ $heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 #site-footer {
 	
 	background: #333 url(http://static.keithsilgard.com/images/grey-noise.gif);
-	color: #777;
+	color: #aaa;
 	font-family: $sans_serif;
 	font-size: 14px;
 	padding: 30px 0;
@@ -120,9 +120,9 @@ $heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 	z-index: 1;
 	
 	a {
-		color: #999;
-		&:hover { color: #eee; }
-		&:visited { color: #aaa; }
+		color: #bbb;
+		&:hover { color: #ddd; }
+		&:visited { color: #ddd; }
 	}
 	
 	#footer-search {
@@ -137,7 +137,7 @@ $heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 			width: 100%;
 			
 			&:hover { opacity: .6; }
-			&:focus { opacity: .8; }
+			&:focus { opacity: .9; }
 		}	
 		
 		p {
@@ -151,7 +151,7 @@ $heading_font: ff-meta-serif-web-pro-1,ff-meta-serif-web-pro-2, serif;
 		@extend .col_9;
 		@extend .push_3;
 		
-		h3 { color: #999; margin: 0; padding: 0 10px; }
+		h3 { color: #bbb; margin: 0; padding: 0 10px; }
 	}
 	
 	#about-me {
