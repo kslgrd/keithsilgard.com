@@ -21,6 +21,7 @@ body, button, input, select, textarea { font-family: "museo-slab", Courier, mono
 a { color: $text_color; text-decoration: underline; }
 a:hover { color: $hover_color; }
 a:visited { color: $text_color; }
+strong { font-weight: 700; }
 
 hr { margin: -1px 0; }
 hr#footnotes { margin-bottom: 22px; }

@@ -73,6 +73,8 @@ There are already a crop of "hey look at me" style job sites ([Zerply](http://ze
 
 **One last, quick note on matching.** I think an ideal candidate would be slightly below an employer's requirements, and not over any important ones. The reason being that someone overqualified for a position is going to get bored quickly, whereas a person slightly underqualified will be just challenged enough to be focussed and interested.
 
+*If you have a something to say about this idea, you can [email me](mailto:hey@keithsilgard.com), or let me know on [Twitter](http://twitter.com/ironkeith). If you're interested in following what I write, there's an [RSS feed](/atom.xml), and a [mailing list](http://eepurl.com/jgbR9).*
+
 <hr id="footnotes">
 
 1. Pay doesn't have to be published, but it should be. I understand the reasons why employers wouldn't want to publish it, but I think they're silly. Most employers seem to be of the belief that while hiring, they are in a position of power, and that they can exploit that to minimize salaries. Fear of overpaying seems like a weird concern when weighed against the cost of lost opportunities or hiring someone who's underqualified. I suppose I'd rather spend too much money well than waste it frugally.
