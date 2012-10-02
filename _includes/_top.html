@@ -30,11 +30,10 @@
 	{% endif %}
 	
 	<script src="{{ site.file_prefix }}/js/libs/modernizr-2.0.6.min.js"></script>
-	<script type="text/javascript" src="http://use.typekit.com/{{ page.typekit || xqr2qfw}}.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/{% if page.typekit %}{{ page.typekit }}{% else %}{{site.typekit}}{% endif %}.js"></script>
 	
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
-	
 	<div id="content">
