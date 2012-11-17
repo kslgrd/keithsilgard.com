@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: v2
 title: Steve Jobs
 permalink: /steve-jobs.html
 category: articles
