@@ -125,21 +125,21 @@ body, button, input, select, textarea {
    ========================================================================== */
 a {
   color: #c23e00;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #c23e00 0.5s ease-in-out;
+  -moz-transition: #c23e00 0.5s ease-in-out;
+  -o-transition: #c23e00 0.5s ease-in-out; }
 
 a:visited {
   color: #222222;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #222222 0.5s ease-in-out;
+  -moz-transition: #222222 0.5s ease-in-out;
+  -o-transition: #222222 0.5s ease-in-out; }
 
 a:hover {
   color: #7d2a00;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out; }
+  -webkit-transition: #7d2a00 0.5s ease-in-out;
+  -moz-transition: #7d2a00 0.5s ease-in-out;
+  -o-transition: #7d2a00 0.5s ease-in-out; }
 
 a:focus {
   outline: thin dotted; }
@@ -401,51 +401,64 @@ td {
     page-break-after: avoid; } }
 h1, h2, h3 {
   font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, serif;
-  margin: 30px 0 20px; }
+  margin: 24px 0; }
 
 h6 {
   font-weight: normal; }
 
 h4, h5, h6 {
   font-family: ff-meta-serif-sc-web-pro-1, ff-meta-serif-sc-web-pro-2, serif;
-  margin: 20px 0 10px;
+  margin: 24px 0 -24px;
   text-transform: lowercase; }
 
 h1 {
   font-size: 48px;
-  line-height: 50px; }
+  line-height: 60px;
+  margin-bottom: 16px; }
   h1.intense {
     font-weight: bold; }
 
 h2 {
   font-size: 36px;
-  line-height: 40px; }
+  line-height: 48px; }
 
 h3 {
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 24px; }
 
 h4 {
   font-size: 21px;
-  line-height: 21px; }
+  line-height: 24px; }
 
 h5 {
   font-size: 18px;
-  line-height: 18px; }
+  line-height: 24px; }
 
 h6 {
   font-size: 16px;
-  line-height: 16px; }
+  line-height: 24px; }
 
 body, button, input, select, textarea {
-  font: 16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+  font: 16px/24px Palatino, "Palatino Linotype", "Book Antiqua", Garamond, serif; }
+
+strong {
+  font-weight: 700; }
+
+p {
+  margin: 24px 0; }
+
+h1 + p {
+  margin-top: 16px; }
 
 ol, ul {
   padding-left: 20px; }
 
+h4 + ul, h4 + ol, h5 + ul, h5 + ol, h6 + ul, h6 + ol {
+  margin-top: 24px; }
+
 blockquote {
   border-left: 1px solid #999;
-  font-family: ff-meta-serif-web-pro-1, ff-meta-serif-web-pro-2, serif;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Garamond, serif;
   font-style: italic;
   margin-left: 0;
   padding-left: 20px; }
@@ -454,6 +467,9 @@ blockquote {
     font-style: normal; }
     blockquote cite:before {
       content: '— '; }
+
+pre {
+  margin: 24px 0; }
 
 @media only screen and (min-width: 768px) {
   h1.intense {
@@ -466,7 +482,7 @@ blockquote {
 .container {
   width: 100%; }
 
-.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
+.col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me, .col_7, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized,
 .col_quarter, .col_third, .col_half, .main, .col_two_thirds, .col_three_quarters, .col_full, #site-sidebar.minimized {
   float: left;
   margin: 0 2%;
@@ -476,8 +492,7 @@ blockquote {
 .push_2,
 article, .pull_2,
 .push_3,
-#site-footer #get-in-touch, #site-footer
-#get-in-touch, .pull_3, #site-footer #about-me,
+#site-footer #get-in-touch, .pull_3, #site-footer #about-me,
 .push_4, .pull_4,
 .push_5, .pull_5,
 .push_6, .pull_6,
@@ -502,12 +517,8 @@ article, .pull_2,
   visibility: hidden;
   width: 0; }
 
-.clearfix:before, .main figure figcaption:before, .articles li:before,
+.clearfix:before,
 .clearfix:after,
-.main figure figcaption:after, .main figure
-figcaption:after,
-.articles li:after, .articles
-li:after,
 .container:before,
 .container:after {
   content: '.';
@@ -519,9 +530,33 @@ li:after,
   width: 0;
   height: 0; }
 
-.clearfix:after, .main figure figcaption:after, .articles li:after,
+.clearfix:after,
 .container:after {
   clear: both; }
+
+table {
+  width: 100%; }
+  table th, table td {
+    font-size: 14px;
+    padding: 2px 5px 3px; }
+  table th {
+    border-bottom: 2px solid #333;
+    text-align: left; }
+  table .yep {
+    color: #75A63A; }
+  table .nope {
+    color: #c00; }
+  table .na {
+    color: #ccc; }
+
+figure {
+  background: #ddd;
+  border: 1px solid #888;
+  padding: 2px;
+  max-width: 100%; }
+  figure img {
+    height: auto;
+    width: 100%; }
 
 /**
  * iPhone Landscape
@@ -609,37 +644,37 @@ li:after,
     left: 91.666666667%; }
 
   .pull_1 {
-    left: -8.333%; }
+    left: -8.33333%; }
 
   .pull_2 {
-    left: -16.667%; }
+    left: -16.66667%; }
 
   .pull_3, #site-footer #about-me {
     left: -25%; }
 
   .pull_4 {
-    left: -33.333%; }
+    left: -33.33333%; }
 
   .pull_5 {
-    left: -41.667%; }
+    left: -41.66667%; }
 
   .pull_6 {
     left: -50%; }
 
   .pull_7 {
-    left: -58.333%; }
+    left: -58.33333%; }
 
   .pull_8 {
-    left: -66.667%; }
+    left: -66.66667%; }
 
   .pull_9 {
     left: -75%; }
 
   .pull_10 {
-    left: -83.333%; }
+    left: -83.33333%; }
 
   .pull_11 {
-    left: -91.667%; } }
+    left: -91.66667%; } }
 /** 
  * iPad Landscape
  * - fixed from here on up
@@ -650,8 +685,7 @@ li:after,
     width: 90%; }
 
   .col_1, .col_2, .col_3, .col_quarter, #site-sidebar, #site-footer #footer-search, .col_4, .col_third, .col_5, .col_6, .col_half, .main, #site-footer #about-me,
-  .col_7,
-  .main, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
+  .col_7, .col_8, .col_two_thirds, article, .col_9, .col_three_quarters, #site-footer #get-in-touch, #archives, .col_10, .col_11, .col_12, .col_full, #site-sidebar.minimized {
     margin: 0 10px; }
 
   .col_1 {
@@ -672,7 +706,7 @@ li:after,
   .col_6, .col_half, .main, #site-footer #about-me {
     width: 460px; }
 
-  .col_7, .main {
+  .col_7 {
     width: 540px; }
 
   .col_8, .col_two_thirds, article {
@@ -759,7 +793,7 @@ li:after,
  * Default style, served to anything small, or that doesn't support media queries
  */
 #site-sidebar h5 {
-  margin: 10px 0; }
+  margin: 8px 0; }
   #site-sidebar h5 a {
     text-decoration: none; }
 #site-sidebar ul {
@@ -767,6 +801,7 @@ li:after,
 #site-sidebar li a {
   color: #666;
   font: 16px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  line-height: 24px;
   text-decoration: none; }
   #site-sidebar li a:hover {
     color: #7d2a00;
@@ -787,16 +822,19 @@ li:after,
   animation-name: pulse;
   animation-duration: 0.25s;
   animation-timing-function: ease-out; }
-#site-sidebar.minimized img, #site-sidebar.minimized h5, #site-sidebar.minimized nav, #site-sidebar.minimized li {
-  float: left; }
-#site-sidebar.minimized img {
-  height: 30px;
-  position: relative;
-  top: 5px; }
-#site-sidebar.minimized li {
-  margin-top: 7px; }
-  #site-sidebar.minimized li:not(:last-child):after {
-    content: '\0000a0\0000a0|\0000a0\0000a0'; }
+#site-sidebar.minimized {
+  margin-bottom: 16px;
+  margin-top: -8px; }
+  #site-sidebar.minimized img, #site-sidebar.minimized h5, #site-sidebar.minimized nav, #site-sidebar.minimized li {
+    float: left; }
+  #site-sidebar.minimized img {
+    height: 30px;
+    position: relative;
+    top: 5px; }
+  #site-sidebar.minimized li {
+    margin-top: 13px; }
+    #site-sidebar.minimized li:not(:last-child):after {
+      content: '\0000a0\0000a0|\0000a0\0000a0'; }
 #site-sidebar.light {
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 0; }
   #site-sidebar.light a {
@@ -804,23 +842,10 @@ li:after,
 
 .main img.full {
   width: 100%; }
-.main figure {
-  -webkit-box-shadow: 0 0 10px #aaaaaa;
-  -moz-box-shadow: 0 0 10px #aaaaaa;
-  box-shadow: 0 0 10px #aaaaaa;
-  display: block;
-  margin-bottom: 20px;
-  position: relative; }
-  .main figure figcaption {
-    background: #333;
-    color: #fff;
-    display: block;
-    font-weight: normal;
-    padding: 0 20px; }
 
 #content {
-  background: #fafafa url(/images/bg-colorful-noise.gif);
-  padding-bottom: 40px;
+  background: #fafafa url(http://static.keithsilgard.com/images/bg-colorful-noise.gif);
+  padding: 24px 0;
   position: relative;
   z-index: 3; }
   #content:after {
@@ -834,20 +859,23 @@ li:after,
     position: absolute;
     width: 100%;
     z-index: 2; }
+  #content.baseline {
+    background: #fafafa url(http://static.keithsilgard.com/images/baseline.png); }
 
 #site-footer {
-  background: #333333 url(/images/grey-noise.gif);
-  color: #777;
+  background: #333333 url(http://static.keithsilgard.com/images/grey-noise.gif);
+  color: #aaa;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-size: 14px;
   padding: 30px 0;
   width: 100%;
   z-index: 1; }
   #site-footer a {
-    color: #999; }
+    color: #bbb; }
     #site-footer a:hover {
-      color: #eee; }
+      color: #ddd; }
     #site-footer a:visited {
-      color: #aaa; }
+      color: #ddd; }
   #site-footer #footer-search {
     float: left; }
     #site-footer #footer-search input {
@@ -858,19 +886,20 @@ li:after,
       #site-footer #footer-search input:hover {
         opacity: .6; }
       #site-footer #footer-search input:focus {
-        opacity: .8; }
+        opacity: .9; }
     #site-footer #footer-search p {
       font-size: 11px;
       line-height: 16px;
       padding: 0 10px; }
   #site-footer #get-in-touch h3 {
-    color: #999;
+    color: #bbb;
     margin: 0;
     padding: 0 10px; }
   #site-footer #about-me {
     float: right; }
     #site-footer #about-me p {
-      padding: 0 10px; }
+      padding: 0 10px;
+      margin-top: 12px; }
 
 .positionfixed #content {
   margin-bottom: 330px; }
@@ -882,12 +911,56 @@ li:after,
 #archives .col_4:nth-child(2n-1), #archives .col_third:nth-child(2n-1) {
   clear: left; }
 
+figure {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 5px; }
+  figure figcaption {
+    font: 12px/18px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    margin-top: 6px;
+    text-align: center; }
+  figure img {
+    height: auto;
+    position: relative;
+    width: 100%; }
+
+figure + figure {
+  margin-top: 24px; }
+
+figure.featured {
+  left: 0;
+  max-height: 300px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  figure.featured img {
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-top: -10%; }
+
+hr#footnotes + ol, hr#footnotes + p {
+  color: #666;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+  hr#footnotes + ol a:visited, hr#footnotes + p a:visited {
+    color: #666; }
+
+.date {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; }
+
+.meta {
+  color: #888;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  margin-top: -24px; }
+
 /**
  * Only when smaller than an iPad in portrait
  */
 @media only screen and (max-width: 767px) {
   #site-sidebar {
-    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-top: 24px;
     text-align: center; }
     #site-sidebar nav li {
       display: inline; }
@@ -920,9 +993,11 @@ li:after,
   #site-sidebar {
     margin-top: 88px; }
     #site-sidebar header h5 {
-      margin: 10px 0 10px 20px; }
+      margin: 12px 0 5px 20px; }
     #site-sidebar nav ul {
       margin-left: 20px; }
+    #site-sidebar nav a {
+      line-height: 21px; }
 
   #footer-search {
     position: relative;
@@ -936,7 +1011,8 @@ li:after,
       height: 200px; }
 
   .articles {
-    list-style-type: disc; }
+    list-style-type: none;
+    padding-left: 6px; }
     .articles .date {
       color: #666;
       display: inline-block;
@@ -956,11 +1032,6 @@ li:after,
 @media only screen and (min-width: 1067px) {
   .main {
     width: 540px; }
-    .main figure {
-      display: block;
-      margin-left: -80px;
-      margin-right: -80px;
-      width: 620px; }
 
   #site-footer .container {
     max-width: 960px; } }

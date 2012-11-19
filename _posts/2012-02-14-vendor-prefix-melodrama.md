@@ -6,7 +6,7 @@ category: articles
 ---
 [Today's A List Apart](http://www.alistapart.com/issues/344) is taking a look into this whole [browser prefix debacle](http://www.glazman.org/weblog/dotclear/index.php?post/2012/02/09/CALL-FOR-ACTION:-THE-OPEN-WEB-NEEDS-YOU-NOW). The crux of the issue is that WebKit has a monopoly in mobile browsing, and as a result, standards based development is being pushed aside for WebKit only experiences. Now Mozilla is considering implementing the `-webkit` prefix for certain properties, and changing their user-agent to appear to be WebKit. IE and Opera may choose to follow suit. Chris Coyier has a [really nice overview](http://css-tricks.com/tldr-on-vendor-prefix-drama/) over on CSS-Tricks.
 
-#### Mozilla is Missing the Point
+## Mozilla are Missing the Point
 
 Developers aren't developing WebKit only because they're lazy. They're doing it because they're competing with native apps, and right now that means iOS and Android. If you want a web based experience that has a chance of competing with native, you target WebKit because it's what people have on their phones, and you need the prefixed properties to create a comparable experience. It's not a knock against standardization, it's a practical reflection of reality. Developers can build a WebKit only solution and hit their entire target market, so why wouldn't they?
 
@@ -16,13 +16,13 @@ Mozilla aren't necessarily being excluded because their implementation is lackin
 	
 Looking at those example, I find almost all of them completely acceptable (Google needs a few tweaks). Since when is it not okay to degrade the experience for obscure browsers? Have we forgotten how strongly we latched on to progressive enhancement when explaining to clients why things look different in IE6? So few people are using mobile Firefox it's not even broken out of "Other" in [Wikipedia's browser usage chart](http://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_table). I would not be surprised if you had more visitors hitting your sites in IE6 than mobile Firefox. 
 
-#### This Isn't Like IE
+## This Isn't Like IE
 
 A common comparison for the current situation is to IE6, but the argument fails to understand WebKit. ActiveX, filters, XMLHttpRequest, etc. were completely proprietary, and their functionality and implementation were proprietary. WebKit is open source. Discussions involving new features are publicly available. The [code can be downloaded](http://www.webkit.org/building/checkout.html) and viewed at any time, by anyone. You can even download a nightly build to see what's coming in the pipeline. The spec, the intent, the implementation, and the browser itself are all freely available to anyone on almost any platform. This is decidedly different that Microsoft's implementation and objective with IE. If Mozilla were to choose to do so, they could freely switch from Gecko to WebKit and not need to fake support for the prefixes. They could submit changes to the code base, and they could be involved in the conversation to help steer the future of the renderer.
 
 Further, I feel we're doing IE6 a disservice if we don't mention how many of its innovations ended up as standards: XMLHttpRequest, drag and drop (regrettably), contentEditable, and web fonts. Was IE6 terrible? For the most part. Did it do a great deal to accelerate the advancement of the web? Well, it would be difficult to ague otherwise. The true problem with IE6 was that the upgrade path to IE7 (and 8, and 9, and 10) was so painful, that many chose not to bother. The browser itself was really pretty great from a development standpoint.
 
-#### It Won't Work
+## It Won't Work
 
 Mozilla have sat on their hands for the last five years, and have been forgotten in the mobile space. Mobile Firefox is still a "test pilot" five years after the announcement of the iPhone, and four years after Android started releasing modern smart phones. It's not available on iOS. On the desktop, Firefox's marketshare has steadily eroded as faster, and more innovative browsers have pushed to the forefront. If Mozilla wants to fix this problem, the path to success isn't complaining about standards, it's creating a better browser. Firefox needs to be available, and it needs to kick ass. If Mozilla wants people to care about the `-moz` prefix, they need to create mobile Firefox users. Developers didn't shift en masse to standards based development until people started using Firefox. "We're basically as good as the browser you're already using, but we're not on your platform yet" isn't a great sales pitch. When I switched from IE6 to Firefox it wasn't just because Firefox was better. It was because Firefox was insanely better. Google just released Chrome for Android, and it is insanely better than Browser. Mozilla has had five years, why haven't they done the same?
 
@@ -30,7 +30,7 @@ I understand Mozilla's motivations. They need people to see mobile Firefox as a 
 
 Developers are going to flock to any environment that saves them time and pain. If anything, actions like this are going to push developers away from the web and towards native solutions.
 
-#### It's Okay to Break the Web
+## It's Okay to Break the Web
 
 If prefixes change, and sites break, so be it. Let them break. It's a developer's choice whether or not they use prefixes, and it's their responsibility to repair broken sites if browsers change the implementation. These "broken web" arguments are an appeal to antiquity. We need to allow the web to move fast and break things. It's still in its infancy — especially the mobile web — and we're still figuring out how it needs to work. [I've built over 40 sites](/sites-ive-built.html), and few of them still exist in their original form. The web moves fast. Three year old sites are ancient. If a browser drops prefix support in favor of a standardized implementation, most sites will be fine, and the few that do break will just be casualties of progress. It's not a real problem if a site loses progressive enhancements. That's kind of the point.
 

@@ -2,4 +2,5 @@ auto:        false
 file_prefix: http://local.keithsilgard.com
 permalink:   none
 pygments:    true
-typekit:     xqr2qfw
+safe:        false
+typekit:     cdm8mfk

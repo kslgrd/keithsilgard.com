@@ -1,0 +1,301 @@
+// Grays
+// -------------------------
+$black:			#000;
+$grayDarker:	#222;
+$grayDark:		#333;
+$gray:			#555;
+$grayLight:		#999;
+$grayLighter:	#eee;
+$white:			#fff;
+
+
+// Accent colors
+// -------------------------
+$blue:		#049cdb;
+$blueDark:	#0064cd;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:	$white;
+$textColor:			$gray;
+
+
+// Links
+// -------------------------
+$linkColor:						 #08c;
+$linkColorHover:				darken($linkColor, 15%);
+
+
+// Typography
+// -------------------------
+$sansFontFamily:	"Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:	"chaparral-pro", Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:	Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$baseFontSize:		18px;
+$baseFontFamily:	$serifFontFamily;
+$baseLineHeight:	28px;
+$altFontFamily:		$sansFontFamily;
+
+$headingsFontFamily:	$sansFontFamily; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:	normal;		// instead of browser default, bold
+$headingsColor:			black; // empty to use BS default, $textColor
+
+
+// Hr border color
+// -------------------------
+$hrBorder:	$grayLighter;
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 940px grid
+// -------------------------
+$gridColumns:		12;
+$gridColumnWidth:	60px;
+$gridGutterWidth:	20px;
+$gridRowWidth:		($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1));
+
+// 1200px min
+$gridColumnWidth1200:	70px;
+$gridGutterWidth1200:	30px;
+$gridRowWidth1200:		($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1));
+
+// 768px-979px
+$gridColumnWidth768:	42px;
+$gridGutterWidth768:	20px;
+$gridRowWidth768:		($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1));
+
+
+@import '_bootstrap';
+@import '_bootstrap-responsive';
+
+//
+// Typography
+// --------------------------------------------------
+
+
+// Body text
+// -------------------------
+
+p {
+	margin: 0 0 $baseLineHeight;
+}
+.lead {
+	margin-bottom: $baseLineHeight;
+	font-size: $baseFontSize * 1.5;
+	font-weight: 200;
+	line-height: $baseLineHeight * 1.5;
+}
+.meta {
+	color: darken($grayLighter, 10%);
+	margin: -$baseLineHeight 0 ($baseLineHeight / 2);
+	font-family: $sansFontFamily;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+a { color: darken($blue, 10%); }
+
+// Emphasis & misc
+// -------------------------
+
+small { font-size: 85%; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+cite { font-style: normal; }
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+	margin: $baseLineHeight 0;
+	font-family: $headingsFontFamily;
+	font-weight: $headingsFontWeight;
+	letter-spacing: 2px;
+	line-height: 1;
+	color: $headingsColor;
+	text-rendering: optimizelegibility; // Fix the character spacing for headings
+	text-transform: uppercase;
+	text-align: center;
+	
+	small {
+		font-weight: normal;
+		line-height: 1;
+		color: $grayLight;
+	}
+}
+h1 { font-size: 22px; line-height: 40px; }
+h2 { font-size: 16px; line-height: 20px; }
+h3 { font-size: 14px; line-height: 20px; }
+h4 { font-size: 14px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
+
+h1 small { font-size: 24px; }
+h2 small { font-size: 18px; }
+h3 small { font-size: 14px; }
+h4 small { font-size: 14px; }
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+	padding: 0;
+	margin: 0 0 $baseLineHeight / 2 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin-bottom: 0;
+}
+li {
+	line-height: $baseLineHeight;
+}
+
+// Description Lists
+dl { margin-bottom: $baseLineHeight; }
+dt,
+dd { line-height: $baseLineHeight; }
+dt { font-weight: bold; }
+dd { margin-left: $baseLineHeight / 2; }
+
+// MISC
+// ----
+
+// Horizontal rules
+hr {
+	margin: $baseLineHeight 0;
+	border: 0;
+	border-top: 1px solid $hrBorder;
+	border-bottom: 1px solid $white;
+}
+
+// Abbreviations and acronyms
+abbr[title] {
+	cursor: help;
+	border-bottom: 1px dotted $grayLight;
+}
+abbr.initialism {
+	font-size: 90%;
+	text-transform: uppercase;
+}
+
+// Blockquotes
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 0 0 $baseLineHeight;
+	border-left: 5px solid $grayLighter;
+	p {
+		margin-bottom: 0;
+		@include font-shorthand(16px,300,$baseLineHeight * 1.25);
+	}
+	small {
+		display: block;
+		line-height: $baseLineHeight;
+		color: $grayLight;
+		&:before {
+			content: '\2014 \00A0';
+		}
+	}
+
+	// Float right with text-align: right
+	&.pull-right {
+		float: right;
+		padding-right: 15px;
+		padding-left: 0;
+		border-right: 5px solid $grayLighter;
+		border-left: 0;
+		p,
+		small {
+			text-align: right;
+		}
+		small {
+			&:before {
+				content: '';
+			}
+			&:after {
+				content: '\00A0 \2014';
+			}
+		}
+	}
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	content: "";
+}
+
+// Addresses
+address {
+	display: block;
+	margin-bottom: $baseLineHeight;
+	font-style: normal;
+	line-height: $baseLineHeight;
+}
+
+header {
+	h3 { text-align: left; }
+	a { color: $blue; }
+}
+
+#content {
+	
+	background: #fff;
+	background: -moz-linear-gradient(left, #eff5f7 0%, #ffffff 50%, #eff5f7 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eff5f7), color-stop(50%,#ffffff), color-stop(100%,#eff5f7));
+	background: -webkit-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
+	background: -o-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
+	background: -ms-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
+	background: linear-gradient(to right, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
+	
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 3;
+	
+	// drop shadow for depth: 
+	&:after {
+		background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0)));
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+		background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+		background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+		bottom: -40px;
+		content: '';
+		display: block;
+		height: 40px;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+footer {
+	
+	background: $grayDarker;
+	color: #d3dce0;
+	padding: 30px 0;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	
+	h1, h2, h3, h4, h5, h6 { color: white; }
+	a { color: lighten($blue, 45%); }
+	a:hover { color: white; }
+	
+}
+
+// peek-a-boo footer
+.positionfixed {
+	#content { margin-bottom: 330px; }
+	footer { bottom: 0; height: 270px; position: fixed; }
+}
