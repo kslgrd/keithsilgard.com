@@ -8,7 +8,7 @@ additional_stylesheets:
 sidebar_styles: minimized light
 typekit: yfd5avy
 ---
-####Job sites are terrible for hiring, or for finding a job. Employers create postings filled with uninformative corporate drivel, and ridiculous requirements. Résumés focus on bios and facile action verbs. There should be a better way.
+<p class="lead">Job sites are terrible for hiring, or for finding a job. Employers create postings filled with uninformative corporate drivel, and ridiculous requirements. Résumés focus on bios and facile action verbs. There should be a better way.</p>
 
 Employers and employees have aligned interests; employers need to hire and employees need a job. The purpose of a job site is to broker a relationship between the two, but there's no logic making the connection. Skills are treated as binary, you either have them or you don't. There's no room for priorities or emphasis. Making matches is a crap shoot, with neither side fully understanding what it is the other requires.
 

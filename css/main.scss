@@ -3,38 +3,38 @@
 $black:			#000;
 $grayDarker:	#222;
 $grayDark:		#333;
-$gray:			#555;
-$grayLight:		#999;
+$gray:			#34525e;
+$grayLight:		#acbbc1;
 $grayLighter:	#eee;
 $white:			#fff;
 
 
 // Accent colors
 // -------------------------
-$blue:		#049cdb;
-$blueDark:	#0064cd;
+$blue: #049cdb;
+$blueDark: #0064cd;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:	$white;
-$textColor:			$gray;
+$bodyBackground: $white;
+$textColor:	$gray;
 
 
 // Links
 // -------------------------
-$linkColor:						 #08c;
-$linkColorHover:				darken($linkColor, 15%);
+$linkColor:	#08c;
+$linkColorHover: darken($linkColor, 15%);
 
 
 // Typography
 // -------------------------
-$sansFontFamily:	"Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:	"chaparral-pro", Georgia, "Times New Roman", Times, serif;
+$sansFontFamily:	"proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:	"adelle", Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:	Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$baseFontSize:		18px;
+$baseFontSize:		1em;
 $baseFontFamily:	$serifFontFamily;
-$baseLineHeight:	28px;
+$baseLineHeight:	1.625em;
 $altFontFamily:		$sansFontFamily;
 
 $headingsFontFamily:	$sansFontFamily; // empty to use BS default, $baseFontFamily
@@ -74,25 +74,22 @@ $gridRowWidth768:		($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 *
 //
 // Typography
 // --------------------------------------------------
-
+body { font-size: 16px; font-weight: 300; }
 
 // Body text
 // -------------------------
 
-p {
-	margin: 0 0 $baseLineHeight;
-}
+p { margin: 0 0 $baseLineHeight; }
 .lead {
 	margin-bottom: $baseLineHeight;
-	font-size: $baseFontSize * 1.5;
-	font-weight: 200;
-	line-height: $baseLineHeight * 1.5;
+	font-size: $baseFontSize * 1.125;
+	line-height: $baseLineHeight;
 }
 .meta {
-	color: darken($grayLighter, 10%);
-	margin: -$baseLineHeight 0 ($baseLineHeight / 2);
+	color: darken($grayLight, 10%);
+	margin: -($baseLineHeight * 2) 0 $baseLineHeight;
 	font-family: $sansFontFamily;
-	font-size: 12px;
+	font-size: .666666667em;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
@@ -116,7 +113,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headingsFontFamily;
 	font-weight: $headingsFontWeight;
 	letter-spacing: 2px;
-	line-height: 1;
 	color: $headingsColor;
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
 	text-transform: uppercase;
@@ -128,17 +124,12 @@ h1, h2, h3, h4, h5, h6 {
 		color: $grayLight;
 	}
 }
-h1 { font-size: 22px; line-height: 40px; }
-h2 { font-size: 16px; line-height: 20px; }
-h3 { font-size: 14px; line-height: 20px; }
-h4 { font-size: 14px; line-height: 20px; }
-h5 { font-size: 14px; line-height: 20px; }
-h6 { font-size: 12px; line-height: 20px; }
-
-h1 small { font-size: 24px; }
-h2 small { font-size: 18px; }
-h3 small { font-size: 14px; }
-h4 small { font-size: 14px; }
+h1 { font-size: 1.5em; line-height: 1.625em; }
+h2 { font-size: 1em; line-height: 1.625em; }
+h3 { font-size: .875em; line-height: 1.625em; }
+h4 { font-size: .875em; line-height: 1.625em; }
+h5 { font-size: .875em; line-height: 1.625em; }
+h6 { font-size: .875em; line-height: 1.625em; }
 
 // Lists
 // --------------------------------------------------
@@ -191,6 +182,7 @@ blockquote {
 	padding: 0 0 0 15px;
 	margin: 0 0 $baseLineHeight;
 	border-left: 5px solid $grayLighter;
+	font-style: italic;
 	p {
 		margin-bottom: 0;
 		@include font-shorthand(16px,300,$baseLineHeight * 1.25);
@@ -250,12 +242,12 @@ header {
 #content {
 	
 	background: #fff;
-	background: -moz-linear-gradient(left, #eff5f7 0%, #ffffff 50%, #eff5f7 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eff5f7), color-stop(50%,#ffffff), color-stop(100%,#eff5f7));
-	background: -webkit-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
-	background: -o-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
-	background: -ms-linear-gradient(left, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
-	background: linear-gradient(to right, #eff5f7 0%,#ffffff 50%,#eff5f7 100%);
+	background: -moz-linear-gradient(left, #fafeff 0%, #ffffff 50%, #fafeff 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fafeff), color-stop(50%,#ffffff), color-stop(100%,#fafeff));
+	background: -webkit-linear-gradient(left, #fafeff 0%,#ffffff 50%,#fafeff 100%);
+	background: -o-linear-gradient(left, #fafeff 0%,#ffffff 50%,#fafeff 100%);
+	background: -ms-linear-gradient(left, #fafeff 0%,#ffffff 50%,#fafeff 100%);
+	background: linear-gradient(to right, #fafeff 0%,#ffffff 50%,#fafeff 100%);
 	
 	padding-bottom: 100px;
 	position: relative;
@@ -279,6 +271,11 @@ header {
 	}
 }
 
+#footnotes + ol {
+	color: $grayLight;
+	font-family: $sansFontFamily;
+}
+
 footer {
 	
 	background: $grayDarker;
@@ -298,4 +295,56 @@ footer {
 .positionfixed {
 	#content { margin-bottom: 330px; }
 	footer { bottom: 0; height: 270px; position: fixed; }
+}
+
+// Small screens
+@media (max-width: 767px) {
+	body { font-size: 14px; font-weight: 400; padding: 0; }
+	#content, footer { padding-left: 10px; padding-right: 10px; }
+}
+
+// Tablets, probably
+@media (min-width: 768px) and (max-width: 979px) {
+	body { font-size: 20px; }
+	#content, footer { padding-left: 40px; padding-right: 40px; }
+	.container {
+	    width: auto;
+	  }
+	  // Fluid rows
+	  .row-fluid {
+	    width: 100%;
+	  }
+	  // Undo negative margin on rows and thumbnails
+	  .row,
+	  .thumbnails {
+	    margin-left: 0;
+	  }
+	  .thumbnails > li {
+	    float: none;
+	    margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
+	  }
+	  // Make all grid-sized elements block level again
+	  [class*="span"],
+	  .row-fluid [class*="span"] {
+	    float: none;
+	    display: block;
+	    width: 100%;
+	    margin-left: 0;
+	    @include box-sizing(border-box);
+	  }
+	  .span12,
+	  .row-fluid .span12 {
+	    width: 100%;
+	    @include box-sizing(border-box);
+	  }
+}
+
+// Normal screens
+@media (min-width: 980px) {
+	.content { margin-left: ($gridColumnWidth * 2) + ($gridGutterWidth * 3); }
+}
+
+@media (min-width: 1200px) {
+	body { font-size: 20px; }
+	.content { margin-left: ($gridColumnWidth1200 * 2) + ($gridGutterWidth1200 * 3); }
 }

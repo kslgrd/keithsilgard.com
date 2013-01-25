@@ -10,7 +10,7 @@ Google's actions of late have left me wondering: can I live without them? Well t
 
 The unfortunately reality is that I still end up using Google daily. If I'm being honest, I'd much rather still be using Google, on the whole it's a better product. Bing isn't a lost cause though, they're just running a year or so behind. When they launched, there was a lot of clever innovation to be found. There are obviously talented people working there, but they really need to smooth some of the rough edges and differentiate themselves.
 
-#### Design
+## Design
 
 The first stumbling block is just trying to skim the results. Bing has borrowed heavily from Google's design, but everything is just different enough to feel a little off, and where they are truly different, it's for the worse. Let's take a look at their search results:
 
@@ -29,7 +29,7 @@ If you click the image a few times, you'll get a good idea of how similar the tw
 3.	**Page Layout**  
 	Bing chooses to list related searches and search history in the left column. Neither of those are ever useful to me, but because they're blue links, and the often contain bolded words, I find them difficult to ignore \[[3](#footnotes)\]. The placement of search history is understandable \[[4](#footnotes)\], but it's functionally useless as I am yet to search for something, find a result, then need to run the exact same query again.
 
-#### Search Results
+## Search Results
 
 Most of the time, Bing does a solid job, but when I see a posting like [this one on Reddit](http://www.reddit.com/r/pics/comments/l80eb/why_i_use_google_a_comparison_vs_bing_yahoo/), I can't say I'm really surprised. Google has progressed beyond keywords in pages, and seems to be taking intent into consideration when processing results. They've done this by slowly switching from page based algorithms to [entity based ones](http://justinbriggs.org/entity-search-results-the-on-going-evolution-of-search). It's likely that Bing is also doing similar work (the article says as much), but if so, the results just aren't there yet.
 
@@ -73,15 +73,15 @@ These are just a handful of the queries where Bing has let me down. I cherry pic
 - 	If you make a typo, or are searching for an obscure term, Bing will often fail
 - 	Anecdotally, Bing seems to do a poor job of indexing and returning results for Stack Overflow. Stack Overflow is basically the Wikipedia of programming queries, it should almost always be in the results
 
-#### Start Your Photocopiers
+## Start Your Photocopiers
 
 I think my biggest gripe with Bing is that it lacks originality. Certainly, Google has done an outstanding job of search, but that doesn't mean it's perfect. Bing lacks any sense of uniqueness. It has similar blended results, similar local results, similar maps, and similar images. If I were to replace the Bing logo with a Google one, and tell people that Google has redesigned, most would believe me. What Bing desperately needs is an answer to the question "why would I use this instead of Google?" Innovate, experiment, strike aggressive deals to get content Google can't access. They need to differentiate because "we're basically identical, but a little worse" isn't going to cut it.
 
-#### Speed
+## Speed
 
 My final grievance with Bing is that it's a little slower. For example, when I'm typing a query, I usually outpace Bing's autocomplete. It's not a huge deal, but Google's autocomplete loads *live results* at a faster rate. It is impossible for me to outpace Google's autocomplete, and often I'll see a recommended search that's exactly what I'm looking for, so I just have to hit the down arrow, then **boom** results. Further, with Google Instant, the results are loaded before I'm finished typing my query. With Bing it's always an additional page load. It's a tiny little thing, but the incredible responsiveness of Google make Bing look sluggish, which adds to its general knock-off feel.
 
-#### And So...
+## And So...
 
 Why am I still using Bing? Well, there are a few reasons. One, I don't think it's possible for Bing to get better than Google until it hits some critical traffic point. Google has a huge advantage because of its astonishing amount of search data. That's why Bing was surreptitiously [scraping Google's results](http://searchengineland.com/google-bing-is-cheating-copying-our-search-results-62914); they lacked the data to generate those results themselves. If I continue to use Bing, I'm one more data point they can use to create a viable competitor. My other reason: trust. Due to some perverse twist of fate, I find myself in a position where I trust Microsoft (of all the companies in the world) more than Google \[[5](#footnotes)\]. So can I live without Google? No. Not yet, at least. But I'm still going to try.
 	
