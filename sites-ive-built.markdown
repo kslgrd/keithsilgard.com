@@ -7,7 +7,7 @@ additional_stylesheets:
 ---
 This is a fairly complete listing of all the sites I've built. There are likely some omissions as a result of my generally terrible memory.
 
-<table class="">
+<table class="table">
   <tr>
 	<th scope="col">Site</th>
 	<th scope="col">Still Exists?</th>

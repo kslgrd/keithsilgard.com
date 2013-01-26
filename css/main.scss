@@ -219,10 +219,12 @@ blockquote {
 }
 
 // Quotes
+blockquote { border-left: 2px solid $grayLighter; }
 q:before,
 q:after,
 blockquote:before,
 blockquote:after {
+	
 	content: "";
 }
 
@@ -237,6 +239,24 @@ address {
 header {
 	h3 { text-align: left; }
 	a { color: $blue; }
+}
+
+figure {
+	border: 1px solid lighten($grayLighter, 2%);
+	background: white;
+	margin: $baseLineHeight 0;
+	padding: 5px;
+	width: 100%;
+	img { 
+		@include box-sizing(border-box);
+		border: 1px solid $grayLighter; 
+	}
+}
+figcaption {
+	color: $grayLight;
+	font: .875em $sansFontFamily;
+	padding: $baseLineHeight / 2 0 0;
+	text-align: center;
 }
 
 #content {
@@ -336,6 +356,9 @@ footer {
 	#content { margin-bottom: 400px; }
 	footer { bottom: 0; height: 340px; position: fixed; }
 }
+
+.nope { color: $red; }
+.yep { color: $green; }
 
 @media (max-width: 979px) {
 	#big-dumb-mug {

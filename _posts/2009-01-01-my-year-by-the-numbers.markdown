@@ -5,7 +5,7 @@ description: A list of some of the random things I kept track of in 2008.
 category: retrospectives
 permalink: /articles/2008-by-the-numbers.html
 ---
-#####Most Listened to Artists (Last.fm):
+## Most Listened to Artists (Last.fm):
 
 * The Smashing Pumpkins – 1359 plays
 * The Police – 1076 plays
@@ -33,7 +33,7 @@ I wrote **40 posts** for this blog. [One of which](/articles/risk.html) I&rsquo;
 
 I performed **3,150 Google searches** (while logged in). 
 
-#####Top queries (via Google)
+## Top queries (via Google)
 
 1. zend api
 2. pants
@@ -46,7 +46,7 @@ I performed **3,150 Google searches** (while logged in).
 9. iamthejeff (moderately embarrassing…)
 10. fogbugz
  
-#####Top sites (via Google searches)
+## Top sites (via Google searches)
 
 1. en.wikipedia.org
 2. youtube.com
@@ -67,7 +67,7 @@ I watched **326 videos** on YouTube (while logged in).
 
 I took **3 trips** (Phoenix, Vancouver, and Houston).
 
-#####Concerts
+## Concerts
 
 * Foo Fighters
 * Iron Maiden
