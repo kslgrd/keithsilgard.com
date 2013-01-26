@@ -289,24 +289,80 @@ footer {
 	a { color: lighten($blue, 45%); }
 	a:hover { color: white; }
 	
+	hr {
+		border-top-color: #111;
+		border-bottom-color: #333;
+	}
+}
+#big-dumb-mug { padding-top: 30px; }
+#about-me { padding-top: 60px; }
+
+#footer-search {
+	text-align: center;
+	input {
+		@include border-radius(25px);
+		@include box-shadow(#{inset 0 1px 1px rgba(0,0,0,.075)});
+		@include transition(#{border linear .2s, box-shadow linear .2s});
+		
+		background-color: #1f1f1f;
+		border: 1px solid #333;
+		color: $grayLighter;
+		display: inline-block;
+		font-size: $baseFontSize;
+		height: $baseLineHeight;
+		line-height: $baseLineHeight;
+		padding: 4px 6px;
+		padding-right: 14px;
+		padding-right: 4px \9;
+		padding-left: 14px;
+		padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
+		margin-bottom: 0; // Remove the default margin on all inputs
+		width: 240px;
+
+		// Focus state
+		&:focus {
+			border-color: rgba(82,168,236,.8);
+			outline: 0;
+			outline: thin dotted \9; /* IE6-9 */
+			@include box-shadow(#{inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)});
+		}
+
+	}
+	
 }
 
 // peek-a-boo footer
 .positionfixed {
-	#content { margin-bottom: 330px; }
-	footer { bottom: 0; height: 270px; position: fixed; }
+	#content { margin-bottom: 400px; }
+	footer { bottom: 0; height: 340px; position: fixed; }
+}
+
+@media (max-width: 979px) {
+	#big-dumb-mug {
+		text-align: center;
+		img { max-width: 170px; }
+	}
+	.content, header, footer { 
+		@include box-sizing(border-box);
+	}
 }
 
 // Small screens
 @media (max-width: 767px) {
 	body { font-size: 14px; font-weight: 400; padding: 0; }
-	#content, footer { padding-left: 10px; padding-right: 10px; }
+	.content, header, footer {
+		padding-left: 10px; 
+		padding-right: 10px; 
+	}
 }
 
 // Tablets, probably
 @media (min-width: 768px) and (max-width: 979px) {
 	body { font-size: 20px; }
-	#content, footer { padding-left: 40px; padding-right: 40px; }
+	.content, header, footer {
+		padding-left: 40px; 
+		padding-right: 40px; 
+	}
 	.container {
 	    width: auto;
 	  }
@@ -347,4 +403,10 @@ footer {
 @media (min-width: 1200px) {
 	body { font-size: 20px; }
 	.content { margin-left: ($gridColumnWidth1200 * 2) + ($gridGutterWidth1200 * 3); }
+	// peek-a-boo footer
+	.positionfixed {
+		#content { margin-bottom: 460px; }
+		footer { bottom: 0; height: 400px; position: fixed; }
+	}
+	#big-dumb-mug { padding-top: 20px; }
 }
