@@ -94,10 +94,10 @@ p { margin: 0 0 $baseLineHeight; }
 	text-align: center;
 	text-transform: uppercase;
 }
-.subtle {
+.subtle, #footnotes + ol {
 	color: $grayLight;
-	
 	a { color: $grayLight; text-decoration: underline; }
+	a:hover { color: darken($grayLight, 20%); }
 }
 
 a { color: darken($blue, 10%); }
