@@ -94,6 +94,11 @@ p { margin: 0 0 $baseLineHeight; }
 	text-align: center;
 	text-transform: uppercase;
 }
+.subtle {
+	color: $grayLight;
+	
+	a { color: $grayLight; text-decoration: underline; }
+}
 
 a { color: darken($blue, 10%); }
 
@@ -241,7 +246,8 @@ header {
 	a { color: $blue; }
 }
 
-figure {
+.polaroid {
+	@include box-sizing(border-box);
 	border: 1px solid lighten($grayLighter, 2%);
 	background: white;
 	margin: $baseLineHeight 0;
@@ -250,14 +256,21 @@ figure {
 	img { 
 		@include box-sizing(border-box);
 		border: 1px solid $grayLighter; 
-	}
+	}	
 }
+
 figcaption {
 	color: $grayLight;
 	font: .875em $sansFontFamily;
 	padding: $baseLineHeight / 2 0 0;
 	text-align: center;
 }
+
+.extra-wide {
+	margin-left: -($gridColumnWidth + $gridGutterWidth)/2;
+	@include grid-core-span(9, $gridColumnWidth, $gridGutterWidth);
+}
+
 
 #content {
 	
@@ -368,6 +381,11 @@ footer {
 	.content, header, footer { 
 		@include box-sizing(border-box);
 	}
+	.extra-wide {
+		img	{ width: 100%; }
+		margin-left: 0;
+		width: 100%;
+	}
 }
 
 // Small screens
@@ -432,4 +450,10 @@ footer {
 		footer { bottom: 0; height: 400px; position: fixed; }
 	}
 	#big-dumb-mug { padding-top: 20px; }
+	
+	.extra-wide {
+		img	{ width: 100%; }
+		margin-left: -($gridColumnWidth + $gridGutterWidth)/2;
+		@include grid-core-span(9, $gridColumnWidth1200, $gridGutterWidth1200);
+	}
 }
