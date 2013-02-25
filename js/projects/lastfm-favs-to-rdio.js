@@ -89,6 +89,7 @@ actions = {
 				playlist_form.find('#description').val(),
 				tracks
 			);
+			submit_btn.removeAttr('disabled').addClass('btn-success').html('Done!');
 		} else {
 			actions.search_tracks();
 		}
@@ -112,7 +113,8 @@ $(function () {
 	
 	playlist_form.submit(function (e) {
 		e.preventDefault();
-		submit_btn.attr('disabled', true).html("Workin' on it...");
+		submit_btn.attr('disabled', true).removeClass('btn-primary').html("Workin' on it...");
+		$('.progress').fadeIn('fast');
 		actions.init();
 	});
 
