@@ -2,7 +2,7 @@
 layout: default
 title: Last.fm Loved Tracks to Rdio playlist
 description: Because doing this manually would just be awful. AWFUL I TELL YOU.
-category: articles
+category: projects
 ---
 Hey, this is super easy and safe \[[1](#footnotes)\]! I'm going to make you a super great Rdio playlist using all of the songs you've loved on Last.fm \[[2](#footnotes)\], and I'm going to do it pretty automagically. Stick with me kid, I'll have you farting through silk.
 
