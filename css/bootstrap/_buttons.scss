@@ -74,7 +74,7 @@
 // Large
 .btn-large {
   padding: 9px 14px;
-  font-size: $baseFontSize + 2px;
+  font-size: $baseFontSize + .1em;
   line-height: normal;
   @include border-radius(5px);
 }
@@ -85,8 +85,8 @@
 // Small
 .btn-small {
   padding: 3px 9px;
-  font-size: $baseFontSize - 2px;
-  line-height: $baseLineHeight - 2px;
+  font-size: $baseFontSize - .1em;
+  line-height: $baseLineHeight - .1em
 }
 .btn-small [class^="icon-"] {
   margin-top: 0;
@@ -95,8 +95,8 @@
 // Mini
 .btn-mini {
   padding: 2px 6px;
-  font-size: $baseFontSize - 3px;
-  line-height: $baseLineHeight - 3px;
+  font-size: $baseFontSize - .2em;
+  line-height: $baseLineHeight - .2em;
 }
 
 

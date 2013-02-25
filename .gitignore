@@ -3,3 +3,5 @@ _site/*
 .sass-cache
 css/.sass-cache
 css/articles/.sass-cache/*
+
+lastfm-favs-to-rdio/config.php
