@@ -40,7 +40,7 @@ And it's not even all that much closer either. Around 4" does the trick. Unless 
 
 ---
 
-<p class="subtle">If you would like to comment on this article, you can <a href="mailto:hey@keithsilgard.com">email me</a>, or <a href="http://twitter.com/ironkeith">let me know on Twitter</a>. If you're interested in following what I write, there's an <a href="/atom.xml">RSS feed</a>, and a <a href="http://eepurl.com/jgbR9">mailing list</a>.</p>
+<p class="subtle">If you would like to comment on this article, you can <a href="mailto:hey@keithsilgard.com?subject=Maybe you need a bigger face">email me</a>, or <a href="http://twitter.com/ironkeith">let me know on Twitter</a>. If you're interested in following what I write, there's an <a href="/atom.xml">RSS feed</a>, and a <a href="http://eepurl.com/jgbR9">mailing list</a>.</p>
 
 <hr id="footnotes">
 1.	These would be even higher if I took the time to filter out phones with QWERTY keyboards. [Brent](https://twitter.com/brentley_11/) pointed out that it would be interesting to try and figure out the average screen size per phone sold (to filter out all the weirdos and failures)

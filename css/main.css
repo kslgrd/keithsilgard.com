@@ -2612,11 +2612,13 @@ p {
   text-align: center;
   text-transform: uppercase; }
 
-.subtle {
+.subtle, #footnotes + ol {
   color: #acbbc1; }
-  .subtle a {
+  .subtle a, #footnotes + ol a {
     color: #acbbc1;
     text-decoration: underline; }
+  .subtle a:hover, #footnotes + ol a:hover {
+    color: #728b95; }
 
 a {
   color: #0378a9; }
