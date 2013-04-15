@@ -246,6 +246,12 @@ header {
 	a { color: $blue; }
 }
 
+code {
+	background: transparent;
+	border: 1px solid $grayLighter;
+	color: darken($blueDark, 10%);
+}
+
 .polaroid {
 	@include box-sizing(border-box);
 	border: 1px solid lighten($grayLighter, 2%);

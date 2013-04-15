@@ -2763,6 +2763,11 @@ header h3 {
 header a {
   color: #049cdb; }
 
+code {
+  background: transparent;
+  border: 1px solid #eeeeee;
+  color: #004b9a; }
+
 .polaroid {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
