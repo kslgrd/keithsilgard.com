@@ -272,6 +272,13 @@ figcaption {
 	text-align: center;
 }
 
+caption {
+	color: $grayLight;
+	font: .875em $sansFontFamily;
+	padding: $baseLineHeight / 2 0 0;
+	text-align: center;
+}
+
 .extra-wide {
 	margin-left: -($gridColumnWidth + $gridGutterWidth)/2;
 	@include grid-core-span(9, $gridColumnWidth, $gridGutterWidth);

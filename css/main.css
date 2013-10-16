@@ -2789,6 +2789,12 @@ figcaption {
   padding: 0.8125em 0 0;
   text-align: center; }
 
+caption {
+  color: #acbbc1;
+  font: 0.875em "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.8125em 0 0;
+  text-align: center; }
+
 .extra-wide {
   margin-left: -40px;
   width: 700px; }
