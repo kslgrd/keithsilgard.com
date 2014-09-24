@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Idea: A Better Job Site
+title: "Idea: A Better Job Site"
 description: "Jobs sites are all awful because none solve the basic problem: what employers want vs. what employees want are opposed."
 category: ideas
 ---
