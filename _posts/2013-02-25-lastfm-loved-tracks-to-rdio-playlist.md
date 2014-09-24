@@ -12,7 +12,7 @@ Hey, this is super easy and safe \[[1](#footnotes)\]! I'm going to make you a su
 	</div>
 </form>
 
-<!-- END -->
+
 <hr id="footnotes">
 
 1. I won't do anything creepy or annoying with your Rdio or Last.fm accounts. I'll just create a playlist, then forget all about you.

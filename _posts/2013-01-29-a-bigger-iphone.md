@@ -11,7 +11,6 @@ category: articles
 
 The average Android phone released in 2012 had a 4.2" screen. The Galaxy Note II was the size champ at an amazing 5.5", and people are actually buying those monstrosities. In comparison, the iPhone 5 has a paltry 4" screen. So the question is, if people want giant phones, should Apple release one?
 
-<!-- END -->
 
 There are a lot of reasons why I don't think I'd like it. I recently spent a few weeks with a 4.65" Galaxy Nexus, and even though I have big mitts, I couldn't reach the full screen with one hand. I found that I'd have to either hold it with both hands, like a tiny tablet, or hold it with one hand, and tap with the other. It was annoying.
 

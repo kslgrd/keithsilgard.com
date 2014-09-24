@@ -4,9 +4,10 @@ title: My Writing Manifesto
 description: I've built this brand new site, let's see if I can't come up with a few guidelines so that I don't start to hate it.
 category: articles
 ---
-<p class="lead">Create something that can last, and something that I can be proud of.</p>
+Create something that can last, and something that I can be proud of.
 
 I've written hundred of posts over the years. I've also removed almost all of them. Especially any that break the following rules:
+
 
 **No Link Posts** — If I want to share a link, I'll post it to Twitter.
 

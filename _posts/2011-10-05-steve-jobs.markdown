@@ -6,7 +6,7 @@ category: articles
 sidebar_styles: minimized light
 stylesheet: /css/articles/steve-jobs.css
 ---
-## ![Steve Job (1955-2011)](/images/articles/steve-jobs/steve-jobs-1955-2011.png) 
+## ![Steve Job (1955-2011)](/images/articles/steve-jobs/steve-jobs-1955-2011.png)
 
 <img src="http://static.keithsilgard.com/images/articles/steve-jobs/steve-jobs-hero.png" alt="Steve Job (1955-2011)">
 
@@ -18,11 +18,11 @@ What do you say to someone like that? Maybe I&#8217;d ask where he found the cou
 
 Maybe I&#8217;d ask if it was frustrating, to see where things where headed and having to wait for the world to catch up. In 1996 at WWDC, he opened the stage to questions from a hostile crowd after announcing changes that they didn&#8217;t like, to a company that was on life support. While responding to their criticisms, he described—with a stunning clarity—the world he&#8217;d deliver 15 years later.
 
-Maybe I&#8217;d ask where he sees the world 15 years from now. If he had another decade, where would he try and lead us? Was he content with building the world&#8217;s most successful company from nothing, or was he still driven to further it? 
+Maybe I&#8217;d ask where he sees the world 15 years from now. If he had another decade, where would he try and lead us? Was he content with building the world&#8217;s most successful company from nothing, or was he still driven to further it?
 
 But he didn&#8217;t have 15 years. When he stepped down as CEO, my heart sank a little. I knew that if it was bad enough to pull him away from Apple, that it must be serious, but I still held on to the hope that there might be one last comeback.
 
-I never wrote that email. I was never brave enough to face rejection, or worse still, nothingness. I held the dream so dearly that I preferred its comfort to the fear of rejection. And now I regret that. I&#8217;ll always have to regret it. That I&#8217;ll never have the chance to meet my hero, and say the only thing that really matters: &#8220;thank-you&#8221;.
+I never wrote that email. I was never brave enough to face rejection, or worse still, nothingness. I held the dream so dearly that I preferred its comfort to the fear of rejection. And now I regret that. I&#8217;ll always have to regret it. That I&#8217;ll never have the chance to meet one of my heroes, and say the only thing that really matters: &#8220;thank-you&#8221;.
 
 It&#8217;s funny too; had I paid any attention, I&#8217;d have known better. One of the only truly personal moments he ever shared with the world was his Stanford address, where he warned of the impending presence of death, and importance of embracing life. Take chances. Stay hungry, stay foolish.
 

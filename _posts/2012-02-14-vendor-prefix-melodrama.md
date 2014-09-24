@@ -6,6 +6,7 @@ category: articles
 ---
 [Today's A List Apart](http://www.alistapart.com/issues/344) is taking a look into this whole [browser prefix debacle](http://www.glazman.org/weblog/dotclear/index.php?post/2012/02/09/CALL-FOR-ACTION:-THE-OPEN-WEB-NEEDS-YOU-NOW). The crux of the issue is that WebKit has a monopoly in mobile browsing, and as a result, standards based development is being pushed aside for WebKit only experiences. Now Mozilla is considering implementing the `-webkit` prefix for certain properties, and changing their user-agent to appear to be WebKit. IE and Opera may choose to follow suit. Chris Coyier has a [really nice overview](http://css-tricks.com/tldr-on-vendor-prefix-drama/) over on CSS-Tricks.
 
+
 ## Mozilla are Missing the Point
 
 Developers aren't developing WebKit only because they're lazy. They're doing it because they're competing with native apps, and right now that means iOS and Android. If you want a web based experience that has a chance of competing with native, you target WebKit because it's what people have on their phones, and you need the prefixed properties to create a comparable experience. It's not a knock against standardization, it's a practical reflection of reality. Developers can build a WebKit only solution and hit their entire target market, so why wouldn't they?
@@ -13,8 +14,8 @@ Developers aren't developing WebKit only because they're lazy. They're doing it 
 Mozilla aren't necessarily being excluded because their implementation is lacking, it's because they're completely non-present. If a company makes an iOS app, and an Android app, but ignores Windows Phone and Blackberry, is anyone surprised? So why should we expect anything different on the mobile web? At least with WebKit specific sites, it's rare that the developers aren't providing a reasonable fallback for non-WebKit browsers. Apparently, this isn't good enough for [Tantek Çelik](http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/):
 
 > [They’re often broken.](http://people.mozilla.com/~atrain/mobile/Evangelism/chrome-compare/chrome-compare.html) These downlevel mobile sites are different and significantly less functional. When users see a substantially worse experience in a different browser on the site on the same device, they blame the browser, not the site, nor the device.
-	
-Looking at those example, I find almost all of them completely acceptable (Google needs a few tweaks). Since when is it not okay to degrade the experience for obscure browsers? Have we forgotten how strongly we latched on to progressive enhancement when explaining to clients why things look different in IE6? So few people are using mobile Firefox it's not even broken out of "Other" in [Wikipedia's browser usage chart](http://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_table). I would not be surprised if you had more visitors hitting your sites in IE6 than mobile Firefox. 
+
+Looking at those example, I find almost all of them completely acceptable (Google needs a few tweaks). Since when is it not okay to degrade the experience for obscure browsers? Have we forgotten how strongly we latched on to progressive enhancement when explaining to clients why things look different in IE6? So few people are using mobile Firefox it's not even broken out of "Other" in [Wikipedia's browser usage chart](http://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_table). I would not be surprised if you had more visitors hitting your sites in IE6 than mobile Firefox.
 
 ## This Isn't Like IE
 

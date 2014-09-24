@@ -1,6 +1,3 @@
-auto:        false
-file_prefix: http://local.keithsilgard.com
 permalink:   none
-pygments:    true
-safe:        false
-typekit:     cdm8mfk
+highlighter: pygments
+timezone:    Canada/Mountain

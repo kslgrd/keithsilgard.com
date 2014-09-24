@@ -6,7 +6,6 @@ category: articles
 ---
 Do you have one password that you use for everything? Is that password shorter than 12 characters long? If so, that's super dumb. Don't feel bad though, pretty well everyone does that same dumb thing. I don't blame you either. Remembering unique, 12+ character passwords — in addition to usernames — for every site you use is basically impossible.
 
-<!-- END -->
 
 ## Why every site needs a different password
 
@@ -14,7 +13,7 @@ When you sign up for any site online \[[1](#footnotes)\], they need to save your
 
 ## Common password tactics that do nothing
 
-Does your password end in a "1", or some other number? Did you swap a vowel for a number? Congrats, you've effectively made it take a few minutes instead of a few seconds to crack your password. You've probably saved yourself from some clown guessing it by typing a few common patterns, but that's about it. 
+Does your password end in a "1", or some other number? Did you swap a vowel for a number? Congrats, you've effectively made it take a few minutes instead of a few seconds to crack your password. You've probably saved yourself from some clown guessing it by typing a few common patterns, but that's about it.
 
 Common tactics that lead to a false sense of security involve:
 
@@ -36,13 +35,13 @@ Huge success. You've created an easy to remember, easy to type password that's e
 
 Those passwords are hard to crack. If a bad guy gets a database with your password in it (and it's properly stored), it would be really annoying to figure it out. That said, it's not impossible (and it's not always going to be properly stored), so that's why you need to create and remember three different passwords.
 
-1. **Super Important Password**  
+1. **Super Important Password**
 	This is your bank, and your email address. Anything where your life could be ruined if bad guys gain access. (Remember, your email can likely be used to access every other site you use.)
 
-2. **Pretty Important Password**  
+2. **Pretty Important Password**
 	This is Facebook, Twitter, Amazon, TicketMaster, and anything that stores your credit card number. If someone gets this password it would be bad, but you could probably recover. You want to keep this group pretty small if you can.
 
-3. **Everything Else Password**  
+3. **Everything Else Password**
 	This is pretty straight forward. If some jerk site stores your password in plain text, and some asshat steals their database and gets your password, hopefully it can't be used to ruin your life.
 
 This is a totally manageable system that is probably a whole heck of a lot safer than whatever you're doing right now. You're still sharing passwords, but at least you've managed to contain the possible damage \[[3](#footnotes)\].

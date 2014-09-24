@@ -8,7 +8,6 @@ I'm an Apple fan, and I've bought into the Apple ecosystem in a pretty big way. 
 
 There's been a lot of press since the launch of iOS 6 about the inconsistent map data for Apple Maps, but otherwise reviews have been fairly glowing. Mountain Lion was released earlier this summer, also to a positive reception. When people review Apple products, they often mention the value of the Apple ecosystem and how everything "just works". I think that's fast becoming Apple's biggest misconception.
 
-<!-- END --> 
 
 I've become incredible frustrated with the quality of Apple's software. Two weeks ago, I started keeping a list of every bug I encountered during normal daily usage:
 

@@ -4,19 +4,19 @@ title: What the Internet Knows About You
 description: Most people don't have any idea how much information they put out onto the internet each and every day. I try to explain what's out there, why it's used, and what you can do.
 category: articles
 ---
-
 ## A scenario
 Pretend that you're shopping, and you visit The Gap. As soon as you walk in the door, someone quietly — and without asking — attaches a tracking device to you. As you continue to shop and visit different stores, the device reports back to The Gap on where you've been, what you're looking at, and what you ended up buying. Would you accept that? Would you continue to shop at The Gap?
 
 ## The reality
 Google, Facebook, Twitter and many others are doing exactly that to millions of people every day, but not many people know or care. If you have a Google account, and you keep yourself logged in, you may be interested to see [Google's ad profile for you](http://www.google.com/settings/ads/onweb/). The first time I saw my profile, I was shocked at its accuracy. How does Google know so much about me?
 
+
 ## In a word, cookies
-Whenever you visit google.com (or Gmail, YouTube, Picasa, and Google+) Google can write a simple text file to your computer called a cookie. In that file is a bunch of random looking text that uniquely identifies you, and from then on, whatever you do on any Google site, Google tracks exactly what you're doing. 
+Whenever you visit google.com (or Gmail, YouTube, Picasa, and Google+) Google can write a simple text file to your computer called a cookie. In that file is a bunch of random looking text that uniquely identifies you, and from then on, whatever you do on any Google site, Google tracks exactly what you're doing.
 
-It gets even more interesting once you consider Google AdSense. Google sells ads on millions of web pages all across the internet, you may even recognize the familiar "ads by Google" ad blocks. Whenever you see those ads, your personally identifiable cookie is sent to Google and Google knows which site you're visiting. 
+It gets even more interesting once you consider Google AdSense. Google sells ads on millions of web pages all across the internet, you may even recognize the familiar "ads by Google" ad blocks. Whenever you see those ads, your personally identifiable cookie is sent to Google and Google knows which site you're visiting.
 
-Have you heard of Google+? Well, you may have also seen Google's +1 button which lets you share pages on Google+. Guess what? Any time you see that button, you're cookie data is being sent to Google, and they know which article you're reading. 
+Have you heard of Google+? Well, you may have also seen Google's +1 button which lets you share pages on Google+. Guess what? Any time you see that button, you're cookie data is being sent to Google, and they know which article you're reading.
 
 Let's not point fingers at Google though. The exact same is true for Facebook's "like" button, (or the confusingly similar "like" box), and Twitter's "tweet" or "follow" buttons.
 

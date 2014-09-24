@@ -1,24 +1,19 @@
 ---
 layout: default
-title: "Idea: A Better Job Site"
+title: Idea: A Better Job Site
 description: "Jobs sites are all awful because none solve the basic problem: what employers want vs. what employees want are opposed."
 category: ideas
-additional_stylesheets: 
-- /css/ideas.css
-sidebar_styles: minimized light
-typekit: yfd5avy
 ---
-<p class="lead">Job sites are terrible for hiring, or for finding a job. Employers create postings filled with uninformative corporate drivel, and ridiculous requirements. Résumés focus on bios and facile action verbs. There should be a better way.</p>
+Job sites are terrible for hiring, or for finding a job. Employers create postings filled with uninformative corporate drivel, and ridiculous requirements. Résumés focus on bios and facile action verbs. There should be a better way.
 
 Employers and employees have aligned interests; employers need to hire and employees need a job. The purpose of a job site is to broker a relationship between the two, but there's no logic making the connection. Skills are treated as binary, you either have them or you don't. There's no room for priorities or emphasis. Making matches is a crap shoot, with neither side fully understanding what it is the other requires.
 
----
 
 So how do we improve the system? Let's start from the employer's side. I've worked — and hired — as a programmer for the last 9 years, so for this exercise, let's pretend you're hiring a web developer. The question we need to answer is "what type of developer do you need?"
 
 If you scan job sites, you'll see a common theme: every company is a "dynamic", "laid back" and "cool" place to work. They all need "rock star ninjas" who are "detail-driven" and "can work both independently and collaboratively" and blah blah blah. In short, every company needs the best, most talented people in the world. Next come the required skills, which is a laundry list of technologies that candidates must possess "expert knowledge" of, as well as having at least two years job experience. The icing on the cake is often the requirement of a degree. In short, employer job listings are an impossible dream so bereft of real information that no one takes them seriously.
 
-So how do we improve this? We constrain your options. Your company name and URL are both required; employees need to know about your company. Describe your company, but do it in less than 140 characters. Then, tell us how much you are willing to pay for this position \[[1](#footnotes)\], how much work experience you require, and what level of education prospective employees will need. 
+So how do we improve this? We constrain your options. Your company name and URL are both required; employees need to know about your company. Describe your company, but do it in less than 140 characters. Then, tell us how much you are willing to pay for this position \[[1](#footnotes)\], how much work experience you require, and what level of education prospective employees will need.
 
 What we're going to do with those three factors: pay, experience, and education, is assign points. With those points, we're going to allow you to adjust sliders for your job requirements, so you can create a more accurate picture of exactly who you're looking for.
 
@@ -49,11 +44,11 @@ This leads us to employees. First off, if you're looking for a job, chances are 
 
 So let's learn who you really are. The first thing we want to know about you is how much money you're making right now, and how much you think you should be making \[[4](#footnotes)\]. It would also be nice to ask you to link your Twitter account and Github profiles if you have them. I like the idea of allowing you to express some personality. Some may shy away from putting private, or silly messages on a job site, but do you really want to work for someone who wouldn't hire you if they knew who you were? I'd rather the opportunity to allow a small glimpse into the type of person I am, whether it ends up being more or less likely that I get any given job.
 
-Next, we're going to ask you to explain what it is you do, how long you've been doing it, and how skilled you are at doing the various requirements of the job. Sound familiar? It's the same process employers had to go through when defining their job postings. The key change here is that for each skill, we also ask for an example of work that you've done that can demonstrate it. There needs to be a preference for concrete examples here as well, though for certain skills that would be impossible. 
+Next, we're going to ask you to explain what it is you do, how long you've been doing it, and how skilled you are at doing the various requirements of the job. Sound familiar? It's the same process employers had to go through when defining their job postings. The key change here is that for each skill, we also ask for an example of work that you've done that can demonstrate it. There needs to be a preference for concrete examples here as well, though for certain skills that would be impossible.
 
 The last thing we ask for is a historical overview of your professional life. Where you worked, your job title, and how long you worked there, merged chronologically with when you want to school, what you studied, etc. Splitting up work experience and education always felt strange to me, and I've often found myself flipping back and forth between the two due to gaps of unaccounted time. Providing a nice, cohesive view feels a lot more natural.
 
-Without a large pool of employee listings, we're never going to be able to attract employers. I think that it's really important that letting employees sign up be fun, and that the resulting page is really attractive and useful. Ideally, after they fill it out, they should be able to export a PDF and have a really great résumé that they can start submitting to employers. It might even be nice to make parts of the system (especially the skills chart) embeddable, so that people can put them into their websites, etc. That would be a great way to let your early adopters spread the word about your site, which is critical. 
+Without a large pool of employee listings, we're never going to be able to attract employers. I think that it's really important that letting employees sign up be fun, and that the resulting page is really attractive and useful. Ideally, after they fill it out, they should be able to export a PDF and have a really great résumé that they can start submitting to employers. It might even be nice to make parts of the system (especially the skills chart) embeddable, so that people can put them into their websites, etc. That would be a great way to let your early adopters spread the word about your site, which is critical.
 
 ### Benefits to Employers
 
