@@ -1,7 +1,6 @@
 .DS_Store
 _site/*
 .sass-cache
-css/.sass-cache
-css/articles/.sass-cache/*
-
+bower_components/
+node_modules/
 lastfm-favs-to-rdio/config.php

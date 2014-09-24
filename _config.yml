@@ -1,3 +1,4 @@
+exclude: [bower.json, assets/, node_modules/, bower_components/]
 permalink:   none
 highlighter: pygments
 timezone:    Canada/Mountain

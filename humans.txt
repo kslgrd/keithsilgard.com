@@ -1,16 +1,9 @@
----
-layout: nil
----
-/* ME! */
 Keith Silgard
-Contact: keith@thesilgards.com
+Contact: ksilgard@gmail.com
 Twitter: @ironkeith
 From: Edmonton, Alberta, Canada
-
-/* SITE */
-Last update: {{ site.time | date_to_xmlschema }}
 Language: English
 Doctype: HTML5 with CSS3
 Tools: SASS, Jekyll, Markdown, Pygments
-Frameworks: HTML5 Reset, HTML5 Boilerplate, 320 & Up
+Frameworks: Bootstrap, HTML5 Shiv, jQuery, Gulp
 IDE: Textmate
