@@ -1,15 +1,8 @@
-#Oh Hey There
+#Oh, hey there...
 
 You're snooping the repo for my site... I wouldn't have any idea why. I guess I can tell you a bit about the site.
 
-* It's built using fun stuff! 
-	* SASS for the CSS
-	* Jekyll for generating files statically
-	* Pygments for syntax highlighting
-* I want to start writing more, so I'm going for a super readable site
-* I really want to make it nice and responsive, stealing some ideas from [Ethan Marcotte](http://unstoppablerobotninja.com/) and [Andy Clarke](http://www.stuffandnonsense.co.uk/)
-* I also stole a bunch of stuff from the [HTML5 Boilerplate](http://html5boilerplate.com/)
-* I do all of my coding, writing, and loving via [TextMate](http://macromates.com/)
-* All of everything I do is on a Macbook
-* If this site doesn't work in IE/Firefox/Opera/etc, it's because I never bothered to check
-* Designed by me in Alberta ;-)
+* It's built [using Jekyll](http://jekyllrb.com), which I like
+* I used Less for the CSS, and stole a bunch of stuff from Bootstrap
+* There is absolutely nothing in the site that will allow a 3rd party to be a creep show and track you
+* If this site doesn't work in IE/Firefox/Opera/etc, it's because I never bothered to check ¯\_(ツ)_/¯
