@@ -119,6 +119,7 @@
   redirect 301 "/meatspin" http://keithsilgard.com/random/why-real-meatspin.html
   redirect 301 "/what-the-internet-knows-about-you.html" http://keithsilgard.com/articles/what-the-internet-knows-about-you.html
   redirect 301 "/articles/lastfm-loved-tracks-to-rdio-playlist.html" http://keithsilgard.com/projects/lastfm-loved-tracks-to-rdio-playlist.html
+  redirect 301 "/atom.xml" http://keithsilgard.com/feed.xml
 
 </IfModule>
 
