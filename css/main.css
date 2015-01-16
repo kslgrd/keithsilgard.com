@@ -62,14 +62,14 @@ hr{border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}
 .btn:focus,.btn:hover{background:#1081f7;text-decoration:none}
 .btn.active,.btn:active{outline:0;background-image:none}
 .navigation ul{list-style-type:none;padding-left:0}
-.navigation li a{color:#8b99a7;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;text-decoration:none}
+.navigation li a{color:#8b99a7;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;white-space:nowrap}
 .navigation li a:hover{color:#419bf9}
 .content{background:linear-gradient(to bottom,#fff 50%,#fafeff 100%)}
 .content,.sidebar{padding:30px 5%}
 @media (max-width:991px){body{background:#DDE8EB;-webkit-flex-direction:column;flex-direction:column}
 .navigation{text-align:center}
-.navigation li{display:inline-block;width:20%}}
-@media (min-width:992px){.content,.sidebar{padding:30px 7.5%}
+.navigation li{display:inline-block;width:30%}}
+@media (min-width:992px){.content,.sidebar{padding:90px 7.5%}
 .sidebar{-webkit-flex:0 0 38.2%;flex:0 0 38.2%}
 .content{-webkit-flex:0 0 61.8%;flex:0 0 61.8%;-webkit-order:-1;order:-1}}
-@media (min-width:1200px){.content{padding:30px 10%}}
+@media (min-width:1200px){.content{padding:90px 10%}}

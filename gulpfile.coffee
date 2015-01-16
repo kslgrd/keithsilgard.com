@@ -65,3 +65,5 @@ gulp.task 'watch', ['scripts', 'images', 'styles'], ->
   gulp.watch 'assets/stylesheets/*.less', ['styles']
   gulp.watch 'assets/javascripts/**/*.*', ['scripts']
   gulp.watch 'assets/images/**/*.*', ['images']
+
+gulp.task 'build', ['uglify', 'images', 'styles']

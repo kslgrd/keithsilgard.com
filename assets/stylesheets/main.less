@@ -154,6 +154,7 @@ hr {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
   }
   li a:hover {
     color: @primary;
@@ -177,7 +178,7 @@ hr {
 
   .navigation {
     text-align: center;
-    li { display: inline-block; width: 20%; }
+    li { display: inline-block; width: 30%; }
   }
 }
 
@@ -185,7 +186,7 @@ hr {
 
   .sidebar,
   .content {
-    padding: @line-height 7.5%
+    padding: 3 * @line-height 7.5%
   }
 
   .sidebar {
@@ -199,7 +200,7 @@ hr {
 
 @media (min-width: @screen-lg) {
   .content {
-    padding: @line-height 10%;
+    padding: 3 * @line-height 10%;
   }
 }
 
