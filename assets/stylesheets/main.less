@@ -214,18 +214,28 @@ hr {
   padding: @line-height 2.5%;
 }
 
+@media (max-width: @screen-xs-max) {
+  body {
+    color: @gray-darker;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 @media (max-width: @screen-sm-max) {
   body {
     background: #DDE8EB;
-    color: @gray-darker;
     flex-direction: column;
-    font-size: 14px;
-    line-height: 21px;
+  }
+
+  .sidebar,
+  .content {
+    padding: @line-height 5%;
   }
 
   .navigation {
     text-align: center;
-    li { display: inline-block; width: 30%; }
+    li { display: inline-block; width: 20%; }
   }
 }
 

@@ -72,9 +72,11 @@ hr{border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}
 .navigation li a:hover{color:#419bf9}
 .content{background:linear-gradient(to bottom,#fff 50%,#fafeff 100%)}
 .content,.sidebar{padding:28px 2.5%}
-@media (max-width:991px){body{background:#DDE8EB;color:#454c54;-webkit-flex-direction:column;flex-direction:column;font-size:14px;line-height:21px}
+@media (max-width:767px){body{color:#454c54;font-size:14px;line-height:21px}}
+@media (max-width:991px){body{background:#DDE8EB;-webkit-flex-direction:column;flex-direction:column}
+.content,.sidebar{padding:28px 5%}
 .navigation{text-align:center}
-.navigation li{display:inline-block;width:30%}}
+.navigation li{display:inline-block;width:20%}}
 @media (min-width:992px){.content,.sidebar{padding:84px 7.5%}
 .sidebar{-webkit-flex:0 0 38.2%;flex:0 0 38.2%}
 .content{-webkit-flex:0 0 61.8%;flex:0 0 61.8%;-webkit-order:-1;order:-1}}

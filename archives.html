@@ -1,22 +1,22 @@
 ---
 layout: default
 title: Archives
-description: Take a gander, it should all be in these here archives.
+description: If I wrote it for this site, it should all be in here somewhere.
 ---
 <p>A complete listing of all the stuff you can find on this site.</p>
 
 {% for category in site.categories %}
 
-	<h5>{{ category | first }}</h5>
+  <h5>{{ category | first }}</h5>
 
-	<ul>
-	{% for posts in category %} 
-		{% for post in posts %} 
-			{% if post.url.size > 0 %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
-			{% endif %}
-		{% endfor %} 
-	{% endfor %}
-	</ul>
+  <ul>
+  {% for posts in category %}
+    {% for post in posts %}
+      {% if post.url.size > 0 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
 
 {% endfor %}
