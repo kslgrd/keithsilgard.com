@@ -2,10 +2,9 @@
 layout: default
 title: Sites I've Built
 description: As close as I can get to a listing of all the sites I've built. There are likely some I've forgotten.
-additional_stylesheets:
-- /css/articles/sites-ive-built.css
+
 ---
-This is a fairly complete listing of all the sites I've built. There are likely some omissions as a result of my generally terrible memory.
+This is a out-of-date listing of some of the sites I've built. There are some omissions due to my generally terrible memory, and lack of willingness to keep this up.
 
 <table class="table">
   <tr>

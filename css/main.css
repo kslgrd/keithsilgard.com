@@ -61,6 +61,12 @@ hr{border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}
 .btn{background:#419bf9;border:1px solid transparent;border-radius:4px;color:#fff;display:inline-block;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14px;font-weight:400;padding:6px 18px;margin-bottom:0;text-align:center;white-space:nowrap;vertical-align:middle;touch-action:manipulation;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .btn:focus,.btn:hover{background:#1081f7;text-decoration:none}
 .btn.active,.btn:active{outline:0;background-image:none}
+.table{width:100%;max-width:100%;margin-bottom:28px}
+.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>th{text-align:left}
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th{padding:3px;line-height:28px;vertical-align:top;border-top:1px solid #e2e6e9}
+.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #e2e6e9}
+.table>caption+thead>tr:first-child>td,.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>td,.table>thead:first-child>tr:first-child>th{border-top:0}
+.table>tbody+tbody{border-top:2px solid #e2e6e9}
 .navigation ul{list-style-type:none;padding-left:0}
 .navigation li a{color:#8b99a7;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:.777777778em;letter-spacing:1px;text-transform:uppercase;text-decoration:none;white-space:nowrap}
 .navigation li a:hover{color:#419bf9}

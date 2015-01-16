@@ -144,6 +144,48 @@ hr {
 
 }
 
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: @line-height;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th { text-align: left; }
+      > th,
+      > td {
+        padding: 3px;
+        line-height: @line-height;
+        vertical-align: top;
+        border-top: 1px solid @gray-lighter;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid @gray-lighter;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid @gray-lighter;
+  }
+
+}
+
 .navigation {
   ul {
     list-style-type: none;

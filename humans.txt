@@ -3,7 +3,3 @@ Contact: ksilgard@gmail.com
 Twitter: @ironkeith
 From: Edmonton, Alberta, Canada
 Language: English
-Doctype: HTML5 with CSS3
-Tools: SASS, Jekyll, Markdown, Pygments
-Frameworks: Bootstrap, HTML5 Shiv, jQuery, Gulp
-IDE: Textmate
