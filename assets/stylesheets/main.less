@@ -77,6 +77,11 @@ a:hover {
   color: @primary;
 }
 
+sup {
+  color: @gray-light;
+  font-style: italic;
+}
+
 #footnotes + ol,
 figcaption {
   color: @gray-light;
@@ -84,7 +89,7 @@ figcaption {
   font-size: 14px;
   line-height: 20px;
 }
-
+#footnotes + ol { padding-left: 20px; }
 figcaption { text-align: center; }
 
 blockquote {
@@ -252,6 +257,7 @@ hr {
   .content {
     flex: 0 0 61.8%;
     order: -1;
+    margin: 5px 0 0 0;
   }
 }
 

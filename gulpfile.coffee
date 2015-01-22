@@ -37,7 +37,7 @@ Compile coffeescript, and concatenate files
 gulp.task 'scripts', ->
   coffeeFilter = plugins.filter '**/*.coffee'
   scripts = [
-    'bower_components/jquery/dist/jquery.js'
+    # 'bower_components/jquery/dist/jquery.js'
     'bower_components/html5shiv/dist/html5shiv.js'
     'assets/javascripts/**/*.*'
   ]
