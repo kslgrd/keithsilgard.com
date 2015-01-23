@@ -54,6 +54,9 @@ img{max-width:100%;height:auto}
 a{color:#637383;position:relative;text-decoration:underline}
 a:hover{color:#419bf9}
 sup{color:#b6bfc8;font-style:italic}
+label{color:#b6bfc8;display:inline-block;max-width:100%;margin-bottom:5px;font:12px HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;letter-spacing:1px;text-transform:uppercase}
+input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],textarea{border:none;border-bottom:1px solid #e2e6e9;display:block;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;margin-bottom:14px;outline:0;padding:3px 0;width:100%}
+input[type=color]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=datetime]:focus,input[type=email]:focus,input[type=month]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=time]:focus,input[type=url]:focus,input[type=week]:focus,textarea:focus{border-bottom-color:#8b99a7}
 #footnotes+ol,figcaption{color:#b6bfc8;font-family:HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14px;line-height:20px}
 #footnotes+ol{padding-left:20px}
 figcaption{text-align:center}

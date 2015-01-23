@@ -82,6 +82,44 @@ sup {
   font-style: italic;
 }
 
+label {
+  color: @gray-light;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font: 12px @font-family-sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  border: none;
+  border-bottom: 1px solid @gray-lighter;
+  display: block;
+  font-family: @font-family-sans-serif;
+  margin-bottom: @line-height/2;
+  outline: 0;
+  padding: 3px 0;
+  width: 100%;
+
+  &:focus {
+    border-bottom-color: @gray;
+  }
+}
+
 #footnotes + ol,
 figcaption {
   color: @gray-light;

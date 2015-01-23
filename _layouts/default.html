@@ -39,6 +39,10 @@
   </div>
 
   <script defer src="{% asset_fingerprint /js/main.min.js %}"></script>
-
+  {% if page.scripts %}
+    {% for script in page.scripts %}
+      <script defer src="{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
 </body>
 </html>

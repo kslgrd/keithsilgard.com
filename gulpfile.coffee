@@ -41,7 +41,6 @@ gulp.task 'scripts', ->
     'bower_components/html5shiv/dist/html5shiv.js'
     'assets/javascripts/**/*.*'
   ]
-
   gulp.src scripts
     .pipe coffeeFilter
     .pipe plugins.coffee(bare: true).on 'error', plugins.util.log
@@ -49,6 +48,11 @@ gulp.task 'scripts', ->
     .pipe plugins.concat 'main.built.js'
     .pipe gulp.dest 'js/'
     .pipe plugins.size()
+
+  # gulp.src ['bower_components/jquery/dist/jquery.js', 'js/projects/lastfm-favs-to-rdio.js']
+  #   .pipe plugins.concat 'lastfm-favs-to-rdio.built.js'
+  #   .pipe gulp.dest 'js/projects/'
+
 
 ###
 Uglify them javascripts!
@@ -60,6 +64,13 @@ gulp.task 'uglify', ['scripts'], ->
     .pipe plugins.concat 'main.min.js'
     .pipe gulp.dest 'js/'
     .pipe plugins.size()
+
+  # gulp.src 'js/projects/lastfm-favs-to-rdio.built.js'
+  #     .pipe plugins.size()
+  #     .pipe plugins.uglify()
+  #     .pipe plugins.concat 'js/projects/lastfm-favs-to-rdio.min.js'
+  #     .pipe gulp.dest 'js/projects/'
+  #     .pipe plugins.size()
 
 gulp.task 'watch', ['scripts', 'images', 'styles'], ->
   gulp.watch 'assets/stylesheets/*.less', ['styles']
