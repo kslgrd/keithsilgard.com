@@ -1,4 +1,0 @@
-exclude: [bower.json, deploy, gulpfile.coffee, gulpfile.js, package.json, README.markdown, sink.html, assets/, bower_components/, node_modules/]
-permalink:   none
-highlighter: pygments
-timezone:    Canada/Mountain
