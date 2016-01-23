@@ -49,9 +49,9 @@ gulp.task 'scripts', ->
     .pipe gulp.dest 'js/'
     .pipe plugins.size()
 
-  # gulp.src ['bower_components/jquery/dist/jquery.js', 'js/projects/lastfm-favs-to-rdio.js']
-  #   .pipe plugins.concat 'lastfm-favs-to-rdio.built.js'
-  #   .pipe gulp.dest 'js/projects/'
+  gulp.src ['bower_components/jquery/dist/jquery.js', 'js/projects/lastfm-favs-to-rdio.js']
+   .pipe plugins.concat 'lastfm-favs-to-rdio.built.js'
+   .pipe gulp.dest 'js/projects/'
 
 
 ###
@@ -65,12 +65,12 @@ gulp.task 'uglify', ['scripts'], ->
     .pipe gulp.dest 'js/'
     .pipe plugins.size()
 
-  # gulp.src 'js/projects/lastfm-favs-to-rdio.built.js'
-  #     .pipe plugins.size()
-  #     .pipe plugins.uglify()
-  #     .pipe plugins.concat 'js/projects/lastfm-favs-to-rdio.min.js'
-  #     .pipe gulp.dest 'js/projects/'
-  #     .pipe plugins.size()
+  gulp.src 'js/projects/lastfm-favs-to-rdio.built.js'
+    .pipe plugins.size()
+    .pipe plugins.uglify()
+    .pipe plugins.concat 'lastfm-favs-to-rdio.min.js'
+    .pipe gulp.dest 'js/projects/'
+    .pipe plugins.size()
 
 gulp.task 'watch', ['scripts', 'images', 'styles'], ->
   gulp.watch 'assets/stylesheets/*.less', ['styles']

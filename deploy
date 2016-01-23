@@ -1,7 +1,5 @@
 #!/bin/bash
 
-jekyll build
-
 $ERRORSTRING="Error. Please make sure you've indicated correct parameters"
 if [ $# -eq 0 ]
   then

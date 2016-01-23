@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/ironkeith
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://keithsilgard.com
+  * I am ironkeith (https://keybase.io/ironkeith) on keybase.
+  * I have a public key with fingerprint RETU RN T HIS. PGP. GET_  FING ERPR INT( );
+     }
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "37857fe472c8a1d5327138bb17b05d749d6c46c0",
+            "host": "keybase.io",
+            "key_id": "17b05d749d6c46c0",
+            "kid": "01014129e1ed54a4635715d84696d787d44dbf0a1a724b7ecc1e40b2233f50022af50a",
+            "uid": "8e1facd234755c503b6b1bc94ec64600",
+            "username": "ironkeith"
+        },
+        "revoke": {
+            "sig_ids": [
+                "550d1c2e166c8e90b7d3bb2b2427357aece6b870d4dc4751b7ed4d0a4b09be630f"
+            ]
+        },
+        "service": {
+            "hostname": "keithsilgard.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1422033206,
+    "expire_in": 157680000,
+    "prev": "1e04f77b947708bf9578b54ad465604bb72065bd734d7313d66aa110ecacb68c",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMJiAnicbZJbaBVHHMbPSeKlEUHwQVCsOhBOK0mcmZ3L7qEPKqUYqg+NIgnVxLnt
+yXqS3ePunuMtKQhFBIuxhbaU1mJNbeuDF1ARCYJGbdU+CFoRUftgIwYqBUvQplXo
+7EHfXFhmduab3/ft/z+XZjfmmvO3xu+tmOeP4/yvF76r5taN7WI7gYz0dlDcCcqm
+PvhBWDJxJQ7CFBSBw13KfUM4Vq5AmjqYI8eVEnEJqebE00wRpiBoBX1Rkp2wGCkS
+0x5Eds1+9Abarr5GX65vQAQRQdgzyGhKBGEO5YhqlzCPae5yTYiWPhRIcEwkN0oh
+Q6DE2HF8CiHGwg7C4qp1nGuQL5TGDuGUKgodySSSyiNGMcJg5ltNTByKAWPVQRyF
+ZROkfWCoFcSmFpVNVoIkKNnUCSh+CCiFGilsEGPKNR6UXDtSYokJ5japMMow6XKo
+iVbWEtmEdgoFkdCThjnQBxst21rWAlWHZ2V6aV+3ToL+koh1u4oGbLhKHKWRivrt
+bl+aVopZsHR7JVNvNbL3JadXBqG2fbIHaiZOgigERWSVKg0yMCIYQ8fBkLUCs60S
+xKY3yBSUMxfaJ7MxtawrBhKfc+kRzqErfY9yV9ouaMIog0RKbhlUau4Q+yJHMyYE
+QtAooSRzFcj+bEsYgSK1MUXJIm3tQpFWYwOGxs5vaMrlm3PTpzVkNy3X/MacV/fP
+nTEzd2jui7i7NPNhenK0dnU+9AqLDgWn59UGHwz81dkwuOPg7dEzy9HjLl6Zfv35
+j1P7Iv/83GudTeNf3Ova3HKjNOEs/KHz7+sFZ3LD3l/+G73/x9TvDR/MPrL7+OT8
+58PR+p78qUfscOHzaNHXu3sWNNx5c+/Nsfyc/KUtf65tE9+/9dPPXs9vWy92tHz2
+rHH1yLWvLh/At/YMPy2cuLs4GvHFk7c7Gqe61iy9sWT/xNBk2DZ57qNjq7r9Yvc/
+p899e/Dj91+8c+DZplm7VieP1+04Oza6lKxtL0zbX2u7mS5/ssy4C9b8m5yofrl+
+ZXniwcqR9+jhT/ZdaervaExHJi63fDN89Minswafvvs/dqxD4g==
+=1Xoi
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ironkeith
+
+==================================================================
