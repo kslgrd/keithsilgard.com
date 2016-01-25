@@ -1,6 +1,6 @@
 {
   "name": "keithsilgard.com",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "homepage": "https://github.com/ironkeith/keithsilgard.com",
   "authors": [
     "Keith Silgard <ksilgard@gmail.com>"
@@ -13,7 +13,5 @@
     "bower_components"
   ],
   "devDependencies": {
-    "html5shiv": "~3.7.2",
-    "jquery": "~1.11"
   }
 }
